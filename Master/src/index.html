@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Home || Pucu - HTML Portfolio Web Template</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Place favicon.ico in the root directory -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/favicon.ico"
+    />
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script>
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+  </head>
+
+  <body class="dark:bg-body">
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> href improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- Preloader Start-->
+
+    <div class="InitLoader">
+      <div class="fingerprint-spinner">
+        <div class="spinner-ring"></div>
+        <div class="spinner-ring"></div>
+        <div class="spinner-ring"></div>
+        <div class="spinner-ring"></div>
+        <div class="spinner-ring"></div>
+        <div class="spinner-ring"></div>
+        <div class="spinner-ring"></div>
+        <div class="spinner-ring"></div>
+        <div class="spinner-ring"></div>
+      </div>
+    </div>
+
+    <!-- back href top start  -->
+    <div class="progress-wrap">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+    <!-- back href top end -->
+
+    <!-- header-area-start -->
+
+    <header>
+      <div class="container mx-auto pt-[30px]">
+        <div
+          class="flex justify-between items-center rounded-[10px] bg-white py-[24px] dark:bg-card"
+        >
+          <div class="logo flex items-center px-[30px]">
+            <a href="index.html">
+              <img
+                src="assets/images/logo.svg"
+                alt="pucu portfolio web template"
+              />
+            </a>
+          </div>
+          <nav
+            class="hidden items-center md:flex border border-btn px-[30px] rounded-full py-[10px]"
+          >
+            <ul class="flex gap-5">
+              <li class="relative">
+                <a href="index.html" class="p-2 navActive">
+                  <i class="fa-sharp fa-regular fa-house text-[18px]"></i>
+                </a>
+              </li>
+              <li class="relative">
+                <a href="index.html" class="p-2 navDefault">
+                  <i class="fa-light fa-user text-[18px]"></i>
+                </a>
+              </li>
+              <li class="relative">
+                <a href="index.html" class="p-2 navDefault">
+                  <i class="fa-sharp fa-light fa-id-card-clip text-[18px]"></i>
+                </a>
+              </li>
+              <li class="relative">
+                <a href="index.html" class="p-2 navDefault">
+                  <i class="fa-light fa-grid-2-plus text-[18px]"></i>
+                </a>
+              </li>
+              <li class="relative">
+                <a href="index.html" class="p-2 navDefault">
+                  <i class="fa-light fa-laptop-code text-[18px]"></i>
+                </a>
+              </li>
+              <li class="relative">
+                <a href="index.html" class="p-2 navDefault">
+                  <i class="fa-light fa-envelope text-[18px]"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div>
+            <div class="flex items-center gap-4 px-[30px]">
+              <button id="theme-toggle" class="hidden md:flex" type="button">
+                <span class="flex gap-3 items-center">
+                  <span>
+                    <span class="dark:text-white text-btn">Dark</span>
+                    <span class="dark:text-white text-btn">/</span>
+                    <span class="dark:text-white text-btn">Light</span>
+                  </span>
+                  <svg
+                    id="theme-toggle-dark-icon"
+                    class="hidden w-[30px] h-[30px] text-theme"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                    ></path>
+                  </svg>
+                  <svg
+                    id="theme-toggle-light-icon"
+                    class="hidden w-[30px] h-[30px] text-theme"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+              <button
+                class="sidebar-open rounded-full border border-[#919295] p-[10px] text-[25px]"
+              >
+                <i
+                  class="fa-solid fa-bars-staggered text-text dark:text-text block text-[20px]"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- header-area-end -->
+
+    <!-- sidebar area start -->
+    <section
+      class="sidebar fixed leftFull h-full overflow-y-scroll top-0 z-[999] w-full bg-btn/60 transition-all duration-500"
+    >
+      <div
+        class="ml-auto w-[300px] h-full min-h-[750px] md:min-h-[700px] bg-white px-[30px] pt-[60px] dark:bg-card"
+      >
+        <div class="relative flex justify-center">
+          <button
+            class="sidebar-close group absolute left-[-70px] rounded-lg bg-white px-[15px] py-[10px] text-[26px] dark:bg-card"
+          >
+            <i
+              class="fa-solid block fa-xmark text-btn transition-all duration-500 group-hover:rotate-90 dark:text-white dark:group-hover:text-theme"
+            ></i>
+          </button>
+          <div>
+            <img
+              src="assets/images/logo.svg"
+              alt="pucu portfolio web template"
+            />
+          </div>
+        </div>
+        <div class="my-[30px] border-t border-[#ddd] dark:border-btn"></div>
+        <nav class="mt-[30px]">
+          <ul class="grid gap-[18px]">
+            <li class="text-[18px] font-semibold inline-block navActive">
+              <a href="index.html"> Home </a>
+            </li>
+            <li class="text-[18px] font-semibold inline-block navDefault">
+              <a href="about.html"> About Us </a>
+            </li>
+            <li class="text-[18px] font-semibold inline-block navDefault">
+              <a href="projects.html"> Projects </a>
+            </li>
+            <li class="text-[18px] font-semibold inline-block navDefault">
+              <a href="blog.html"> Blog </a>
+            </li>
+            <li class="text-[18px] font-semibold inline-block navDefault">
+              <a href="service.html"> Services </a>
+            </li>
+            <li class="text-[18px] font-semibold inline-block navDefault">
+              <a href="testimonial.html"> Testimonial </a>
+            </li>
+            <li class="text-[18px] font-semibold inline-block navDefault">
+              <a href="contact.html"> Contact </a>
+            </li>
+            <li class="text-[18px] font-semibold inline-block navDefault">
+              <a href="error.html"> Error </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="my-[30px] border-t border-[#ddd] dark:border-btn"></div>
+        <button id="theme-toggle-mobile" type="button" class="md:hidden">
+          <span class="flex gap-3 items-center">
+            <span>
+              <span class="dark:text-white text-btn">Dark</span>
+              <span class="dark:text-white text-btn">/</span>
+              <span class="dark:text-white text-btn">Light</span>
+            </span>
+            <svg
+              id="theme-toggle-dark-icon-mobile"
+              class="hidden w-[30px] h-[30px] text-theme"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+              ></path>
+            </svg>
+            <svg
+              id="theme-toggle-light-icon-mobile"
+              class="hidden w-[30px] h-[30px] text-theme"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </span>
+        </button>
+        <div class="contact mt-[40px] md:mt-[30px] pb-[20px]">
+          <div>
+            <p class="text-[20px] font-semibold text-btn dark:text-white">
+              Follow Me:
+            </p>
+
+            <div class="mt-[20px] flex gap-3">
+              <a href="#" class="block">
+                <i class="fa-brands fa-facebook-f socialIcon"></i>
+              </a>
+              <a href="#" class="block">
+                <i class="fa-brands fa-github socialIcon"></i>
+              </a>
+              <a href="#" class="block">
+                <i class="fa-brands fa-linkedin-in socialIcon"></i>
+              </a>
+              <a href="#" class="block">
+                <i class="fa-brands fa-medium socialIcon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sidebar area end -->
+
+    <main>
+      <section>
+        <div class="container mx-auto">
+          <div class="grid grid-cols-12">
+            <div
+              class="col-span-12 lg:col-span-3"
+              data-wow-duration="1.5s"
+              data-wow-delay="0.3s"
+            >
+              <div class="info-card mt-[60px]">
+                <div
+                  class="rounded-[20px] bg-white px-[30px] py-[40px] dark:bg-card"
+                >
+                  <div>
+                    <div class="mt-[25px]">
+                      <div class="text-center">
+                        <h3
+                          class="text-[24px] font-semibold text-btn dark:text-white wow animated fadeIn"
+                        >
+                          Hy! I’m
+                          <span class="text-theme"> Ricky Whyte</span>
+                        </h3>
+                        <p class="mt-[6px] text-text">Software Developer</p>
+                        <div
+                          class="flex justify-center wow animated fadeIn mt-[26px]"
+                        >
+                          <img
+                            src="assets/images/show/profile.png"
+                            alt="pucu portfolio web template"
+                            class="w-full object-cover rounded-2xl"
+                          />
+                        </div>
+                        <div class="mt-[26px]">
+                          <p class="text-text text-[20px]">admin@demo.com</p>
+                          <p class="mt-[10px] text-text">
+                            4688 Hickman Street <br />
+                            Chicago, IL 60605
+                          </p>
+                        </div>
+
+                        <div
+                          class="mt-[30px] flex justify-center gap-3 wow animated fadeIn"
+                        >
+                          <a href="#" class="block">
+                            <i class="fa-brands fa-facebook-f socialRound"></i>
+                          </a>
+                          <a href="#" class="block">
+                            <i class="fa-brands fa-github socialRound"></i>
+                          </a>
+                          <a href="#" class="block">
+                            <i class="fa-brands fa-linkedin-in socialRound"></i>
+                          </a>
+                          <a href="#" class="block">
+                            <i class="fa-brands fa-medium socialRound"></i>
+                          </a>
+                        </div>
+                        <div class="mt-[30px] wow animated fadeIn">
+                          <a
+                            href="contact.html"
+                            class="block rounded-full border-2 border-theme bg-theme py-[10px] font-medium text-btn transition-all duration-300 dark:hover:bg-transparent dark:hover:text-theme"
+                          >
+                            Download CV
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-span-12 lg:col-span-9 lg:ml-[30px]"
+              data-wow-duration="1.5s"
+              data-wow-delay="0.3s"
+            >
+              <div class="main__body mt-[60px]">
+                <!-- Home Section -->
+                <div class="home__section">
+                  <div class="menuBox">
+                    <div
+                      class="border border-btn px-[20px] py-[5px] rounded-full inline-block"
+                    >
+                      <span
+                        ><i class="fa-sharp fa-regular fa-house text-[14px]"></i
+                      ></span>
+                      <span class="pl-[6px] text-[14px]">Home</span>
+                    </div>
+                  </div>
+                  <div class="mt-[40px]">
+                    <p class="text-[20px]">Hi There I’m</p>
+                    <h2 class="text-[55px] font-medium mt-[10px]">
+                      Software Developers <span class="text-theme">!</span>
+                    </h2>
+                  </div>
+                  <div class="mt-[10px]">
+                    <p class="text-text">
+                      I'm an experienced software engineer who constantly seeks
+                      out innovative solutions to everyday problems. In my seven
+                      years in this industry, I've honed my analytical thinking
+                      and collaboration skills, and I love working with a team.
+                    </p>
+                  </div>
+                  <div
+                    class="grid mt-[40px] gap-2 grid-cols-12"
+                    data-wow-duration="1.5s"
+                    data-wow-delay="0.3s"
+                  >
+                    <div class="col-span-4">
+                      <h2
+                        class="text-[50px] font-semibold text-btn dark:text-theme wow animated fadeIn"
+                      >
+                        <span class="counter">20</span>+
+                      </h2>
+                      <p class="text-text dark:text-white wow animated fadeIn">
+                        YEARS OF AWESOME <br />
+                        EXPERIENCE
+                      </p>
+                    </div>
+                    <div class="col-span-4">
+                      <h2
+                        class="text-[50px] font-semibold text-btn dark:text-theme wow animated fadeIn"
+                      >
+                        <span class="counter">20</span>+
+                      </h2>
+                      <p class="text-text dark:text-white wow animated fadeIn">
+                        PROJECTS COMPLETED <br />
+                        ON THIS YEAR
+                      </p>
+                    </div>
+                    <div class="col-span-4">
+                      <h2
+                        class="text-[50px] font-semibold text-btn dark:text-theme wow animated fadeIn"
+                      >
+                        <span class="counter">780</span>+
+                      </h2>
+                      <p class="text-text dark:text-white wow animated fadeIn">
+                        HAVE TEAM MEMBER <br />
+                        ON 10 COUNTRY
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- About Section -->
+                <div class="about__section mt-[100px]">
+                  <div class="menuBox">
+                    <div
+                      class="border border-btn px-[20px] py-[5px] rounded-full inline-block"
+                    >
+                      <span><i class="fa-light fa-user text-[14px]"></i></span>
+                      <span class="pl-[6px] text-[14px]">About</span>
+                    </div>
+                  </div>
+                  <div class="mt-[40px]">
+                    <h2 class="text-[40px] font-medium leading-[50px]">
+                      Researching, Designing and <br />
+                      Managing <span class="text-theme">Software Programs</span>
+                    </h2>
+                    <p class="text-text mt-[20px]">
+                      Since starting my excursion as an independent creator
+                      almost quite a while back, I've accomplished remote work
+                      for organizations, counseled for new companies, and teamed
+                      up with capable individuals to make computerized items for
+                      both business and purchaser use. I'm discreetly sure,
+                      normally inquisitive, and ceaselessly dealing with further
+                      developing my chops each plan issue in turn.
+                    </p>
+                  </div>
+                  <div class="mt-[30px]">
+                    <h3 class="text-[24px] font-medium">Personal Info:</h3>
+                    <div class="mt-[20px] flex gap-[50px]">
+                      <ul class="grid gap-5">
+                        <li class="flex gap-2 items-center">
+                          <i class="fa-regular fa-circle-dot text-theme"></i>
+                          <span>First Name: Ricky </span>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                          <i class="fa-regular fa-circle-dot text-theme"></i>
+                          <span>Address: Chicago </span>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                          <i class="fa-regular fa-circle-dot text-theme"></i>
+                          <span>Age: 29 Years </span>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                          <i class="fa-regular fa-circle-dot text-theme"></i>
+                          <span>Nationality: Romanian </span>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                          <i class="fa-regular fa-circle-dot text-theme"></i>
+                          <span>Freelance: Available </span>
+                        </li>
+                      </ul>
+                      <ul class="grid gap-5">
+                        <li class="flex gap-2 items-center">
+                          <i class="fa-regular fa-circle-dot text-theme"></i>
+                          <span>Last Name: Whyte </span>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                          <i class="fa-regular fa-circle-dot text-theme"></i>
+                          <span>Phone: +88 123 456 88 </span>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                          <i class="fa-regular fa-circle-dot text-theme"></i>
+                          <span>Email: info@domain.com </span>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                          <i class="fa-regular fa-circle-dot text-theme"></i>
+                          <span>Fax: 1-800-444-4444 </span>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                          <i class="fa-regular fa-circle-dot text-theme"></i>
+                          <span>Languages: Montenegrin, English </span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="wow animated fadeIn mt-[50px]">
+                      <a href="contact.html" class="customBtn"> Hire Me! </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Resume Section -->
+                <div class="resume__section mt-[100px]">
+                  <div class="menuBox">
+                    <div
+                      class="border border-btn px-[20px] py-[5px] rounded-full inline-block"
+                    >
+                      <span
+                        ><i
+                          class="fa-sharp fa-light fa-id-card-clip text-[14px]"
+                        ></i
+                      ></span>
+                      <span class="pl-[6px] text-[14px]">Resume</span>
+                    </div>
+                  </div>
+                  <div class="mt-[40px]">
+                    <h2 class="text-[40px] font-medium leading-[50px]">
+                      Working <span class="text-theme">Experience</span>
+                    </h2>
+
+                    <div class="items mt-[40px] pl-[35px]">
+                      <div class="item relative">
+                        <div>
+                          <span
+                            class="shape absolute w-[2px] h-[300px] bg-btn left-[-35px] top-[4px]"
+                          ></span>
+                          <span
+                            class="w-[20px] h-[20px] left-[-44px] top-[4px] bg-body border border-btn rounded-full absolute"
+                          ></span>
+                        </div>
+                        <p class="text-text pt-[2px]">2021 - Present</p>
+                        <h3 class="text-[25px] font-medium mt-[15px]">
+                          Framer Designer & Developer
+                        </h3>
+                        <p class="text-text mt-[5px]">Liza Yoolo ITC Company</p>
+                        <p class="text-text mt-[15px]">
+                          Brought into the world in 1994, Stomach muscle type
+                          living in USA. We give on-screen plan to sites and
+                          applications, as well as front-end execution. We will
+                          keep on chasing after a large number of articulations
+                          and better code by seeking after our "likes". Featured
+                          and popular products are the best-selling items for
+                          your product.
+                        </p>
+                        <div class="mt-[30px]">
+                          <h3 class="text-[18px] font-normal">Performance</h3>
+                          <div class="mt-[20px]">
+                            <div id="bar1" class="barfiller">
+                              <div class="tipWrap">
+                                <span class="tip"></span>
+                              </div>
+                              <span class="fill" data-percentage="90"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item relative mt-[60px]">
+                        <div>
+                          <span
+                            class="shape absolute w-[2px] h-[300px] bg-btn left-[-35px] top-[4px]"
+                          ></span>
+                          <span
+                            class="w-[20px] h-[20px] left-[-44px] top-[4px] bg-body border border-btn rounded-full absolute"
+                          ></span>
+                        </div>
+                        <p class="text-text pt-[2px]">2015 - 2021</p>
+                        <h3 class="text-[25px] font-medium mt-[15px]">
+                          Web Application Manager
+                        </h3>
+                        <p class="text-text mt-[5px]">Ultra Luca Company</p>
+                        <p class="text-text mt-[15px]">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Featured and popular products are
+                          the best-selling items for your product.
+                        </p>
+                        <div class="mt-[30px]">
+                          <h3 class="text-[18px] font-normal">Performance</h3>
+                          <div class="mt-[20px]">
+                            <div id="bar2" class="barfiller">
+                              <div class="tipWrap">
+                                <span class="tip"></span>
+                              </div>
+                              <span class="fill" data-percentage="50"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item relative mt-[60px]">
+                        <div>
+                          <span
+                            class="shape absolute w-[2px] h-[300px] bg-btn left-[-35px] top-[4px]"
+                          ></span>
+                          <span
+                            class="w-[20px] h-[20px] left-[-44px] top-[4px] bg-body border border-btn rounded-full absolute"
+                          ></span>
+                        </div>
+                        <p class="text-text pt-[2px]">2010 - 2015</p>
+                        <h3 class="text-[25px] font-medium mt-[15px]">
+                          Front-End WordPress Developer
+                        </h3>
+                        <p class="text-text mt-[5px]">Unix Company</p>
+                        <p class="text-text mt-[15px]">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. consectetur adipisicing elit, sed
+                          do eiusmod tempor incididunt ut labore et dolore magna
+                          aliqua. Featured and popular products are the
+                          best-selling items for your product.
+                        </p>
+                        <div class="mt-[30px]">
+                          <h3 class="text-[18px] font-normal">Performance</h3>
+                          <div class="mt-[20px]">
+                            <div id="bar3" class="barfiller">
+                              <div
+                                class="tipWrap wow !block"
+                                style="width: 60%"
+                              >
+                                <span class="tip"></span>
+                              </div>
+                              <span
+                                class="fill wow"
+                                data-wow-duration="2s"
+                                data-wow-delay="5s"
+                                data-percentage="60"
+                              ></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-[120px]">
+                    <h2 class="text-[40px] font-medium leading-[50px]">
+                      Educational <span class="text-theme">Qualifications</span>
+                    </h2>
+
+                    <div class="items mt-[40px] pl-[35px]">
+                      <div class="item relative">
+                        <div>
+                          <span
+                            class="shape absolute w-[2px] h-[300px] bg-btn left-[-35px] top-[4px]"
+                          ></span>
+                          <span
+                            class="w-[20px] h-[20px] left-[-44px] top-[4px] bg-body border border-btn rounded-full absolute"
+                          ></span>
+                        </div>
+                        <p class="text-text pt-[2px]">May 2018–Present</p>
+                        <h3 class="text-[25px] font-medium mt-[15px]">
+                          Software Engineer
+                        </h3>
+                        <p class="text-text mt-[5px]">
+                          Carnegie Mellon University
+                        </p>
+                        <p class="text-text mt-[15px]">
+                          We give on-screen plan to sites and applications, as
+                          well as front-end execution. We will keep on chasing
+                          after a large number of articulations and better code
+                          by seeking after our "likes". Featured and popular
+                          products are the best-selling items for your product.
+                        </p>
+                        <div class="mt-[30px]">
+                          <h3 class="text-[18px] font-normal">Performance</h3>
+                          <div class="mt-[20px]">
+                            <div id="bar4" class="barfiller">
+                              <div class="tipWrap">
+                                <span class="tip"></span>
+                              </div>
+                              <span class="fill" data-percentage="90"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item relative mt-[60px]">
+                        <div>
+                          <span
+                            class="shape absolute w-[2px] h-[300px] bg-btn left-[-35px] top-[4px]"
+                          ></span>
+                          <span
+                            class="w-[20px] h-[20px] left-[-44px] top-[4px] bg-body border border-btn rounded-full absolute"
+                          ></span>
+                        </div>
+                        <p class="text-text pt-[2px]">2014-2018</p>
+                        <h3 class="text-[25px] font-medium mt-[15px]">
+                          Bachelor of Computer Science
+                        </h3>
+                        <p class="text-text mt-[5px]">Ultra Luca Company</p>
+                        <p class="text-text mt-[15px]">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Featured and popular products are
+                          the best-selling items for your product.
+                        </p>
+                        <div class="mt-[30px]">
+                          <h3 class="text-[18px] font-normal">Performance</h3>
+                          <div class="mt-[20px]">
+                            <div id="bar5" class="barfiller">
+                              <div class="tipWrap">
+                                <span class="tip"></span>
+                              </div>
+                              <span class="fill" data-percentage="70"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item relative mt-[60px]">
+                        <div>
+                          <span
+                            class="shape absolute w-[2px] h-[300px] bg-btn left-[-35px] top-[4px]"
+                          ></span>
+                          <span
+                            class="w-[20px] h-[20px] left-[-44px] top-[4px] bg-body border border-btn rounded-full absolute"
+                          ></span>
+                        </div>
+                        <p class="text-text pt-[2px]">2012-2014</p>
+                        <h3 class="text-[25px] font-medium mt-[15px]">
+                          Masters of Sciences
+                        </h3>
+                        <p class="text-text mt-[5px]">University of Oregon</p>
+                        <p class="text-text mt-[15px]">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. consectetur adipisicing elit, sed
+                          do eiusmod tempor incididunt ut labore et dolore magna
+                          aliqua. Featured and popular products are the
+                          best-selling items for your product.
+                        </p>
+                        <div class="mt-[30px]">
+                          <h3 class="text-[18px] font-normal">Performance</h3>
+                          <div class="mt-[20px]">
+                            <div id="bar6" class="barfiller">
+                              <div class="tipWrap wow !block">
+                                <span class="tip"></span>
+                              </div>
+                              <span
+                                class="fill wow"
+                                data-wow-duration="2s"
+                                data-wow-delay="5s"
+                                data-percentage="80"
+                              ></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-[120px]">
+                    <h2 class="text-[40px] font-medium leading-[50px]">
+                      My <span class="text-theme">Advantages</span>
+                    </h2>
+
+                    <div class="items mt-[40px]">
+                      <div class="grid grid-cols-12 gap-5">
+                        <div class="col-span-4">
+                          <div
+                            class="item p-[30px] border grid justify-center border-btn rounded-2xl"
+                          >
+                            <div class="imgFile flex justify-center">
+                              <img
+                                src="../src/assets/images/show/figma.png"
+                                alt=""
+                              />
+                            </div>
+                            <h3 class="text-[40px] font-medium mt-2 text-theme">
+                              <span class="counter w-[50px] inline-block"
+                                >90</span
+                              >
+                              %
+                            </h3>
+                          </div>
+                        </div>
+                        <div class="col-span-4">
+                          <div
+                            class="item p-[30px] border grid justify-center border-btn rounded-2xl"
+                          >
+                            <div class="imgFile flex justify-center">
+                              <img
+                                src="../src/assets/images/show/react.png"
+                                alt=""
+                              />
+                            </div>
+                            <h3 class="text-[40px] font-medium mt-2 text-theme">
+                              <span class="counter w-[50px] inline-block"
+                                >80</span
+                              >
+                              %
+                            </h3>
+                          </div>
+                        </div>
+                        <div class="col-span-4">
+                          <div
+                            class="item p-[30px] border grid justify-center border-btn rounded-2xl"
+                          >
+                            <div class="imgFile flex justify-center">
+                              <img
+                                src="../src/assets/images/show/php.png"
+                                alt=""
+                              />
+                            </div>
+                            <h3 class="text-[40px] font-medium mt-2 text-theme">
+                              <span class="counter w-[50px] inline-block"
+                                >82</span
+                              >
+                              %
+                            </h3>
+                          </div>
+                        </div>
+                        <div class="col-span-4">
+                          <div
+                            class="item p-[30px] border grid justify-center border-btn rounded-2xl"
+                          >
+                            <div class="imgFile flex justify-center">
+                              <img
+                                src="../src/assets/images/show/vue.png"
+                                alt=""
+                              />
+                            </div>
+                            <h3 class="text-[40px] font-medium mt-2 text-theme">
+                              <span class="counter w-[50px] inline-block"
+                                >72</span
+                              >
+                              %
+                            </h3>
+                          </div>
+                        </div>
+                        <div class="col-span-4">
+                          <div
+                            class="item p-[30px] border grid justify-center border-btn rounded-2xl"
+                          >
+                            <div class="imgFile flex justify-center">
+                              <img
+                                src="../src/assets/images/show/laravel.png"
+                                alt=""
+                              />
+                            </div>
+                            <h3 class="text-[40px] font-medium mt-2 text-theme">
+                              <span class="counter w-[50px] inline-block"
+                                >68</span
+                              >
+                              %
+                            </h3>
+                          </div>
+                        </div>
+                        <div class="col-span-4">
+                          <div
+                            class="item p-[30px] border grid justify-center border-btn rounded-2xl"
+                          >
+                            <div class="imgFile flex justify-center">
+                              <img
+                                src="../src/assets/images/show/js.png"
+                                alt=""
+                              />
+                            </div>
+                            <h3 class="text-[40px] font-medium mt-2 text-theme">
+                              <span class="counter w-[50px] inline-block"
+                                >83</span
+                              >
+                              %
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Service Section -->
+                <div class="service__section mt-[100px]">
+                  <div class="menuBox">
+                    <div
+                      class="border border-btn px-[20px] py-[5px] rounded-full inline-block"
+                    >
+                      <span><i class="fa-light fa-user text-[14px]"></i></span>
+                      <span class="pl-[6px] text-[14px]">Services</span>
+                    </div>
+                  </div>
+                  <div class="mt-[40px]">
+                    <h2 class="text-[40px] font-medium leading-[50px]">
+                      All the general services that <br />
+                      I provide to <span class="text-theme">clients</span>
+                    </h2>
+                    <p class="text-text mt-[20px]">
+                      Since starting my excursion as an independent creator
+                      almost quite a while back, I've accomplished remote work
+                      for organizations, counseled for new companies, and teamed
+                      up with capable individuals to make computerized items for
+                      both business and purchaser use. I'm discreetly sure,
+                      normally inquisitive, and ceaselessly dealing with further
+                      developing my chops each plan issue in turn.
+                    </p>
+                  </div>
+                  <div class="mt-[80px]">
+                    <div class="grid grid-cols-12 gap-[30px]">
+                      <div class="col-span-6">
+                        <div
+                          class="p-[20px] border border-btn rounded-lg relative"
+                        >
+                          <div
+                            class="sup absolute top-[-30px] left-[30px] bg-white w-[80px] h-[80px] rounded-2xl flex justify-center items-center"
+                          >
+                            <img
+                              src="../src/assets/images/show/coding.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="pt-[60px]">
+                            <h2 class="text-[26px] font-medium">
+                              Front-end Development
+                            </h2>
+                            <p class="mt-[10px] text-text">
+                              Counseled for new companies, and teamed up with
+                              capable individuals to make computerized items for
+                              both business and purchaser use.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-span-6">
+                        <div
+                          class="p-[20px] border border-btn rounded-lg relative"
+                        >
+                          <div
+                            class="sup absolute top-[-30px] left-[30px] bg-white w-[80px] h-[80px] rounded-2xl flex justify-center items-center"
+                          >
+                            <img
+                              src="../src/assets/images/show/backend.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="pt-[60px]">
+                            <h2 class="text-[26px] font-medium">
+                              Back-end Development
+                            </h2>
+                            <p class="mt-[10px] text-text">
+                              Counseled for new companies, and teamed up with
+                              capable individuals to make computerized items for
+                              both business and purchaser use.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-span-6 mt-[30px]">
+                        <div
+                          class="p-[20px] border border-btn rounded-lg relative"
+                        >
+                          <div
+                            class="sup absolute top-[-30px] left-[30px] bg-white w-[80px] h-[80px] rounded-2xl flex justify-center items-center"
+                          >
+                            <img
+                              src="../src/assets/images/show/backend.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="pt-[60px]">
+                            <h2 class="text-[26px] font-medium">
+                              Planning and Strategy
+                            </h2>
+                            <p class="mt-[10px] text-text">
+                              Counseled for new companies, and teamed up with
+                              capable individuals to make computerized items for
+                              both business and purchaser use.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-span-6 mt-[30px]">
+                        <div
+                          class="p-[20px] border border-btn rounded-lg relative"
+                        >
+                          <div
+                            class="sup absolute top-[-30px] left-[30px] bg-white w-[80px] h-[80px] rounded-2xl flex justify-center items-center"
+                          >
+                            <img
+                              src="../src/assets/images/show/ux.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="pt-[60px]">
+                            <h2 class="text-[26px] font-medium">(UX) Design</h2>
+                            <p class="mt-[10px] text-text">
+                              Counseled for new companies, and teamed up with
+                              capable individuals to make computerized items for
+                              both business and purchaser use.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-[80px]">
+                    <h2 class="text-[40px] font-medium leading-[50px]">
+                      What People <span class="text-theme">Says?</span>
+                    </h2>
+                    <div class="mt-[40px]">
+                      <!-- Slider  -->
+                      <div class="swiper review overflow-hidden">
+                        <div class="swiper-wrapper">
+                          <div
+                            class="swiper-slide py-[40px] px-[30px] rounded-xl border border-btn"
+                          >
+                            <p class="italic text-[18px] text-text pb-[25px]">
+                              I recently had the pleasure of using LoraXD for my
+                              business, and I must say it has exceeded my
+                              expectations in every way possible.
+                            </p>
+                            <hr />
+                            <div class="flex gap-4 items-center mt-[30px]">
+                              <div
+                                class="overflow-hidden w-[80px] rounded-full inline-block"
+                              >
+                                <img
+                                  src="../src/assets/images/user/user-1.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="grid gap-[16px]">
+                                <p class="text-[24px] font-normal">
+                                  Larry N. Alexandre
+                                </p>
+                                <div class="flex gap-[5px]">
+                                  <i
+                                    class="fa-sharp fa-solid fa-star text-theme"
+                                  ></i>
+                                  <i
+                                    class="fa-sharp fa-solid fa-star text-theme"
+                                  ></i>
+                                  <i
+                                    class="fa-sharp fa-solid fa-star text-theme"
+                                  ></i>
+                                  <i
+                                    class="fa-sharp fa-solid fa-star text-theme"
+                                  ></i>
+                                  <i
+                                    class="fa-sharp fa-solid fa-star text-theme"
+                                  ></i>
+                                </div>
+                                <div
+                                  class="absolute bottom-[38px] right-[115px]"
+                                >
+                                  <img
+                                    src="../src/assets/images/show/qut.svg"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="swiper-slide py-[40px] px-[30px] rounded-xl border border-btn"
+                          >
+                            <p class="italic text-[18px] text-text pb-[25px]">
+                              I had the pleasure of interacting with a product
+                              that truly stood out in terms of its exceptional
+                              UX design. Resulting in a seamless and intuitive
+                              experience.
+                            </p>
+                            <hr />
+                            <div class="flex gap-4 items-center mt-[30px]">
+                              <div
+                                class="overflow-hidden w-[80px] rounded-full inline-block"
+                              >
+                                <img
+                                  src="../src/assets/images/user/user-4.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="grid gap-[16px]">
+                                <p class="text-[24px] font-normal">
+                                  Neil E. Saulter
+                                </p>
+                                <div class="flex gap-[5px]">
+                                  <i
+                                    class="fa-sharp fa-solid fa-star text-theme"
+                                  ></i>
+                                  <i
+                                    class="fa-sharp fa-solid fa-star text-theme"
+                                  ></i>
+                                  <i
+                                    class="fa-sharp fa-solid fa-star text-theme"
+                                  ></i>
+                                  <i
+                                    class="fa-sharp fa-solid fa-star text-theme"
+                                  ></i>
+                                  <i
+                                    class="fa-sharp fa-solid fa-star text-theme"
+                                  ></i>
+                                </div>
+                                <div
+                                  class="absolute bottom-[38px] right-[115px]"
+                                >
+                                  <img
+                                    src="../src/assets/images/show/qut.svg"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="swiper-slide py-[40px] px-[30px] rounded-xl border border-btn"
+                          >
+                            <p class="italic text-[18px] text-text pb-[25px]">
+                              I recently had the pleasure of using LoraXD for my
+                              business, and I must say it has exceeded my
+                              expectations in every way possible.
+                            </p>
+                            <hr />
+                            <div class="flex gap-4 items-center mt-[30px]">
+                              <div
+                                class="overflow-hidden w-[80px] rounded-full inline-block"
+                              >
+                                <img
+                                  src="../src/assets/images/user/user-6.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="grid gap-[16px]">
+                                <p class="text-[24px] font-normal">
+                                  Maria Isala
+                                </p>
+                                <div class="flex gap-[5px]">
+                                  <i
+                                    class="fa-sharp fa-solid fa-star text-theme"
+                                  ></i>
+                                  <i
+                                    class="fa-sharp fa-solid fa-star text-theme"
+                                  ></i>
+                                  <i
+                                    class="fa-sharp fa-solid fa-star text-theme"
+                                  ></i>
+                                  <i
+                                    class="fa-sharp fa-solid fa-star text-theme"
+                                  ></i>
+                                  <i
+                                    class="fa-sharp fa-solid fa-star text-theme"
+                                  ></i>
+                                </div>
+                                <div
+                                  class="absolute bottom-[38px] right-[115px]"
+                                >
+                                  <img
+                                    src="../src/assets/images/show/qut.svg"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex gap-[60px] mt-[30px] relative">
+                          <button
+                            class="z-10 swiper-next border hover:border-theme transition-all duration-150 hover:text-theme border-btn w-[50px] h-[50px] flex justify-center items-center rounded-full"
+                          >
+                            <i class="fa-light fa-chevron-left"></i>
+                          </button>
+                          <button
+                            class="z-10 swiper-prev border hover:border-theme transition-all duration-150 hover:text-theme border-btn w-[50px] h-[50px] flex justify-center items-center rounded-full"
+                          >
+                            <i class="fa-light fa-chevron-right"></i>
+                          </button>
+                          <span
+                            class="pagination absolute left-[64px] z-0"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-[100px]">
+                    <h2
+                      class="text-[40px] font-medium leading-[50px] capitalize"
+                    >
+                      A collection for web <br />
+                      Apps pricing <span class="text-theme">Tables</span>
+                    </h2>
+                    <div class="flex gap-[40px] mt-[40px]">
+                      <div
+                        class="border border-btn px-[30px] py-[40px] rounded-2xl w-full"
+                      >
+                        <h2 class="text-[26px] font-normal uppercase">
+                          Regular Plan
+                        </h2>
+                        <div class="mt-[16px] pb-[16px]">
+                          <span>$</span>
+                          <span class="text-[40px]">29.99</span>
+                          <span>/Hours</span>
+                        </div>
+                        <hr />
+                        <div class="mt-[30px]">
+                          <ul class="grid gap-[20px]">
+                            <li class="capitalize">
+                              <i
+                                class="fa-solid fa-caret-right text-theme mr-2"
+                              ></i>
+                              <span class="text-text text-[16px]"
+                                >Simple portfolio website.</span
+                              >
+                            </li>
+                            <li class="capitalize">
+                              <i
+                                class="fa-solid fa-caret-right text-theme mr-2"
+                              ></i>
+                              <span class="text-text text-[16px]"
+                                >Responsive design.</span
+                              >
+                            </li>
+                            <li class="capitalize">
+                              <i
+                                class="fa-solid fa-caret-right text-theme mr-2"
+                              ></i>
+                              <span class="text-text text-[16px]"
+                                >Integration with GitHub or Bitbucket.</span
+                              >
+                            </li>
+                            <li class="capitalize">
+                              <i
+                                class="fa-solid fa-caret-right text-theme mr-2"
+                              ></i>
+                              <span class="text-text text-[16px]"
+                                >Contact form and basic information.</span
+                              >
+                            </li>
+                            <li class="capitalize">
+                              <i
+                                class="fa-solid fa-caret-right text-theme mr-2"
+                              ></i>
+                              <span class="text-text text-[16px]"
+                                >Tailored solution based on specific.</span
+                              >
+                            </li>
+                            <li class="capitalize">
+                              <i
+                                class="fa-solid fa-caret-right text-theme mr-2"
+                              ></i>
+                              <span class="text-text text-[16px]"
+                                >Support 6 months.</span
+                              >
+                            </li>
+                          </ul>
+                          <div class="mt-[40px] wow animated fadeIn">
+                            <a
+                              href="#"
+                              class="block text-center rounded-full border-2 border-theme bg-theme py-[13px] font-normal text-btn transition-all duration-300 dark:hover:bg-transparent dark:hover:text-theme text-[16px]"
+                            >
+                              Pick This Package!
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="border border-btn px-[30px] py-[40px] rounded-2xl w-full"
+                      >
+                        <h2 class="text-[26px] font-normal uppercase">
+                          Premium Plan
+                        </h2>
+                        <div class="mt-[16px] pb-[16px]">
+                          <span>$</span>
+                          <span class="text-[40px]">49.79</span>
+                          <span>/Hours</span>
+                        </div>
+                        <hr />
+                        <div class="mt-[30px]">
+                          <ul class="grid gap-[20px]">
+                            <li class="capitalize">
+                              <i
+                                class="fa-solid fa-caret-right text-theme mr-2"
+                              ></i>
+                              <span class="text-text text-[16px]"
+                                >All features from the Basic package.</span
+                              >
+                            </li>
+                            <li class="capitalize">
+                              <i
+                                class="fa-solid fa-caret-right text-theme mr-2"
+                              ></i>
+                              <span class="text-text text-[16px]"
+                                >Custom domain setup.</span
+                              >
+                            </li>
+                            <li class="capitalize">
+                              <i
+                                class="fa-solid fa-caret-right text-theme mr-2"
+                              ></i>
+                              <span class="text-text text-[16px]"
+                                >Project showcase with descriptions.</span
+                              >
+                            </li>
+                            <li class="capitalize">
+                              <i
+                                class="fa-solid fa-caret-right text-theme mr-2"
+                              ></i>
+                              <span class="text-text text-[16px]"
+                                >Additional pages for projects & resume.</span
+                              >
+                            </li>
+                            <li class="capitalize">
+                              <i
+                                class="fa-solid fa-caret-right text-theme mr-2"
+                              ></i>
+                              <span class="text-text text-[16px]"
+                                >Advanced customization options.</span
+                              >
+                            </li>
+                            <li class="capitalize">
+                              <i
+                                class="fa-solid fa-caret-right text-theme mr-2"
+                              ></i>
+                              <span class="text-text text-[16px]"
+                                >SEO optimization.</span
+                              >
+                            </li>
+                          </ul>
+                          <div class="mt-[40px] wow animated fadeIn">
+                            <a
+                              href="#"
+                              class="block text-center rounded-full border-2 border-theme bg-theme py-[13px] font-normal text-btn transition-all duration-300 dark:hover:bg-transparent dark:hover:text-theme text-[16px]"
+                            >
+                              Pick This Package!
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-[100px]">
+                    <h2
+                      class="text-[40px] font-medium leading-[50px] capitalize"
+                    >
+                      WORK WITH 60+ <br />
+                      BRANDS <span class="text-theme">WORLDWIDE</span>
+                    </h2>
+                    <div class="mt-[50px]">
+                      <div class="grid grid-cols-12 gap-[10px]">
+                        <div class="col-span-3">
+                          <img
+                            src="../src/assets/images/brand/brand-1.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-span-3">
+                          <img
+                            src="../src/assets/images/brand/brand-2.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-span-3">
+                          <img
+                            src="../src/assets/images/brand/brand-3.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-span-3">
+                          <img
+                            src="../src/assets/images/brand/brand-4.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-span-3">
+                          <img
+                            src="../src/assets/images/brand/brand-5.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-span-3">
+                          <img
+                            src="../src/assets/images/brand/brand-6.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-span-3">
+                          <img
+                            src="../src/assets/images/brand/brand-7.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-span-3">
+                          <img
+                            src="../src/assets/images/brand/brand-8.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section one start -->
+    <footer data-wow-duration="1.5s" data-wow-delay="0.3s">
+      <div class="container mx-auto mt-[60px] flex justify-center pb-[40px]">
+        <div>
+          <p class="text-center text-text wow animated fadeIn">
+            Copyright <span class="text-theme">pucu</span> &#169; 2023. All
+            rights reserved
+          </p>
+          <div
+            class="mt-[20px] flex justify-center text-center wow animated fadeIn"
+          >
+            <img
+              src="assets/images/logo.svg"
+              alt="pucu portfolio web template"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section one end -->
+
+    <!-- JS here -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/waypoints.js"></script>
+    <script src="assets/js/backtotop.js"></script>
+    <script src="assets/js/counterup.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/typer.js"></script>
+    <script src="assets/js/barfiller.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/swiper-bundle.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

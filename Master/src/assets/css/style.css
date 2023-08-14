@@ -731,6 +731,10 @@ h1,
   position: relative;
 }
 
+.sticky{
+  position: sticky;
+}
+
 .bottom-\[38px\]{
   bottom: 38px;
 }
@@ -773,6 +777,10 @@ h1,
 
 .top-\[4px\]{
   top: 4px;
+}
+
+.top-\[200px\]{
+  top: 200px;
 }
 
 .z-0{
@@ -1371,6 +1379,14 @@ h1,
   transition-duration: 500ms;
 }
 
+.duration-200{
+  transition-duration: 200ms;
+}
+
+.duration-\[500\]{
+  transition-duration: 500;
+}
+
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1510,6 +1526,12 @@ h1,
 
 .group:hover .group-hover\:rotate-90{
   --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:scale-\[110\%\]{
+  --tw-scale-x: 110%;
+  --tw-scale-y: 110%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 

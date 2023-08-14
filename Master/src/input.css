@@ -53,7 +53,7 @@ Version      : 1.0.1
   .left-0 {
     left: 0;
   }
-  .navActive {
+  .current {
     @apply text-theme;
   }
   .navDefault {
@@ -122,7 +122,7 @@ Version      : 1.0.1
   text-align: center;
   line-height: 46px;
   font-size: 20px;
-  color: #2ff093;
+  color: #eeff03;
   left: 0;
   top: 0;
   height: 46px;
@@ -138,7 +138,7 @@ Version      : 1.0.1
   fill: none;
 }
 .progress-wrap svg.progress-circle path {
-  stroke: #2ff093;
+  stroke: #eeff03;
   stroke-width: 4;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -194,4 +194,49 @@ Version      : 1.0.1
   left: 9px;
   top: 100%;
   z-index: 9;
+}
+
+.sideNav {
+  visibility: hidden;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+  right: -80px;
+}
+.sideNav.show {
+  visibility: visible;
+  opacity: 1;
+  right: 20px;
+}
+
+/* Clock */
+
+.font-color {
+  background: #eeff03;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.timeDiv {
+  position: relative;
+}
+
+#time {
+  text-shadow: 0 0 55px #eeff03;
+  font-size: 60px;
+}
+
+#med {
+  position: absolute;
+  top: 18px;
+  right: -26px;
+  display: inline-block;
+  width: 20px;
+}
+#sec {
+  position: absolute;
+  bottom: 15px;
+  right: -28px;
+  display: inline-block;
+  width: 20px;
 }

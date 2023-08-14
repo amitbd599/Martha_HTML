@@ -212,18 +212,99 @@
     });
   }
 
-  $("[data-background").each(function () {
-    $(this).css(
-      "background-image",
-      "url( " + $(this).attr("data-background") + "  )"
-    );
+  //Add One pageNav / Sidebar
+  function sideNav() {
+    if ($(".menu-box .sticky-menu").length) {
+      $(".menu-box .sticky-menu ul").onePageNav();
+    }
+  }
+
+  //Add Scroll Bar To Sidebar
+  if ($(".sidebarNav .menu-box").length) {
+    $(".sidebarNav .menu-box").mCustomScrollbar({
+      axis: "y",
+      autoExpandScrollbar: false,
+    });
+  }
+
+  //animate to top on Page Refresh
+  $("html, body").animate(
+    {
+      scrollTop: $("html, body").offset().top,
+    },
+    1000
+  );
+
+  gsap.registerPlugin(ScrollTrigger, ScrollSmoother, TweenMax);
+
+  let device_width = window.innerWidth;
+
+  const smoother = ScrollSmoother.create({
+    smooth: 1.2,
+    effects: device_width < 1025 ? false : true,
+    smoothTouch: false,
+    normalizeScroll: false,
+    ignoreMobileResize: true,
   });
 
-  $("[data-width]").each(function () {
-    $(this).css("width", $(this).attr("data-width"));
+  //! Navbar
+
+  $(window).scroll(function () {
+    var scrollPosition = $(this).scrollTop();
+
+    if (scrollPosition > 120) {
+      $(".sideNav").addClass("show");
+    } else {
+      $(".sideNav").removeClass("show");
+    }
   });
 
-  $("[data-bg-color]").each(function () {
-    $(this).css("background-color", $(this).attr("data-bg-color"));
+  $(document).on("ready", function () {
+    sideNav();
+    function currentTime() {
+      var date = new Date();
+      var day = date.getDay();
+      var hour = date.getHours();
+      var min = date.getMinutes();
+      var sec = date.getSeconds();
+      var month = date.getMonth();
+      var currDate = date.getDate();
+      var year = date.getFullYear();
+      var monthName = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+      var showDay = $(".dayDiv span");
+      var midDay = "AM";
+      midDay = hour >= 12 ? "PM" : "AM";
+      hour = hour == 0 ? 12 : hour < 12 ? hour : hour - 12;
+      hour = updateTime(hour);
+      min = updateTime(min);
+      sec = updateTime(sec);
+      currDate = updateTime(currDate);
+      $("#time").html(`${hour}:${min}`);
+      $("#sec").html(`${sec}`);
+      $("#med").html(`${midDay}`);
+      $("#full-date").html(`${monthName[month]} ${currDate} ${year}`);
+      showDay.eq(day).css("opacity", "1");
+    }
+    var updateTime = function (x) {
+      if (x < 10) {
+        return "0" + x;
+      } else {
+        return x;
+      }
+    };
+    setInterval(currentTime, 1000);
   });
 })(jQuery);

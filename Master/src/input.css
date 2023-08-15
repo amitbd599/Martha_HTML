@@ -216,6 +216,15 @@ Version      : 1.0.1
   visibility: visible;
   opacity: 1;
 }
+.blogPopUp {
+  visibility: hidden;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+}
+.blogPopUp.show {
+  visibility: visible;
+  opacity: 1;
+}
 
 /* Clock */
 

@@ -228,12 +228,12 @@
   }
 
   //animate to top on Page Refresh
-  $("html, body").animate(
-    {
-      scrollTop: $("html, body").offset().top,
-    },
-    1000
-  );
+  // $("html, body").animate(
+  //   {
+  //     scrollTop: $("html, body").offset().top,
+  //   },
+  //   1000
+  // );
 
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother, TweenMax);
 
@@ -259,13 +259,22 @@
     }
   });
 
-  //! 10. Sidebar Js
+  //! 10. Portfolio PopUp
   $(".portfolio-button-open").on("click", function () {
     $(".portfolioPopUp").addClass("show");
   });
 
   $(".portfolio-button-close").on("click", function () {
     $(".portfolioPopUp").removeClass("show");
+  });
+
+  //! 10. Blog PopUp
+  $(".blog-button-open").on("click", function () {
+    $(".blogPopUp").addClass("show");
+  });
+
+  $(".blog-button-close").on("click", function () {
+    $(".blogPopUp").removeClass("show");
   });
 
   $(document).on("ready", function () {

@@ -259,6 +259,15 @@
     }
   });
 
+  //! 10. Sidebar Js
+  $(".portfolio-button-open").on("click", function () {
+    $(".portfolioPopUp").addClass("show");
+  });
+
+  $(".portfolio-button-close").on("click", function () {
+    $(".portfolioPopUp").removeClass("show");
+  });
+
   $(document).on("ready", function () {
     sideNav();
     function currentTime() {

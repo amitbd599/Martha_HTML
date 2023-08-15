@@ -207,6 +207,15 @@ Version      : 1.0.1
   opacity: 1;
   right: 20px;
 }
+.portfolioPopUp {
+  visibility: hidden;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+}
+.portfolioPopUp.show {
+  visibility: visible;
+  opacity: 1;
+}
 
 /* Clock */
 
@@ -224,6 +233,8 @@ Version      : 1.0.1
 #time {
   text-shadow: 0 0 55px #eeff03;
   font-size: 60px;
+  width: 155px;
+  display: inline-block;
 }
 
 #med {
@@ -239,4 +250,20 @@ Version      : 1.0.1
   right: -28px;
   display: inline-block;
   width: 20px;
+}
+
+.servicePopUp {
+}
+
+.ss {
+  overflow-x: auto;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.ss::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
 }

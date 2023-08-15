@@ -77,8 +77,114 @@
         </nav>
       </section>
     </aside>
-
     <!-- Sticky Navbar End -->
+
+    <!-- Service Popup Start -->
+    <section
+      class="fixed portfolioPopUp show min-h-screen h-full top-0 left-0 bg-body w-screen z-[999999] flex justify-center items-center"
+    >
+      <div
+        class="rounded-2xl ss bg-card p-[40px] w-[calc(100vw-200px)] h-[calc(100vh-80px)]"
+      >
+        <div class="container">
+          <div class="grid grid-cols-12 gap-[30px]">
+            <div class="col-span-8">
+              <img
+                src="../src/assets/images/projects/project-6.png"
+                alt=""
+                class="object-cover w-full h-full rounded-2xl"
+              />
+            </div>
+            <div class="col-span-4">
+              <img
+                src="../src/assets/images/projects/project-7.png"
+                alt=""
+                class="object-cover w-full h-full rounded-2xl"
+              />
+            </div>
+          </div>
+          <div class="mt-[30px]">
+            <div class="flex gap-[20px]">
+              <span class="text-[18px] text-text">Mobile Application</span>
+              <span class="text-[18px] text-text"
+                >Tuesday, August 15, 2023</span
+              >
+            </div>
+            <h2 class="text-[30px] capitalize mt-[10px] font-medium">
+              A vibrant and colorful Mobile application
+            </h2>
+          </div>
+          <div class="mt-[30px]">
+            <p class="text-text">
+              Featured and popular products are the best-selling items for your
+              product, product range, or company. However, a featured product
+              could be a new product line or seasonal products instead.
+            </p>
+            <br />
+            <p class="text-text">
+              Materio MUI React Next.js Admin Template – is the most
+              developer-friendly 🤘🏻 & highly customizable✨ React Admin
+              Dashboard Template based on React. Even though it is not one of
+              the Open Source React Projects, you can still use it for your
+              professional react project. If you’re a developer looking for the
+              Best React Admin Template that is enriched with features, and
+              highly customizable look no further than the Materio 🤩. Besides,
+              the highest industry standards are considered to bring you one of
+              the best React Admin Templates. It is not just fast 🚀 and easy to
+              use, but highly scalable. Furthermore, it offers ultimate
+              convenience and flexibility, you’ll be able to build whatever
+              application you want with very little hassle. Materio also offers
+              invaluable features that aim to help you create premium quality
+              single-page apps exactly as you imagine them🤘🏻. Furthermore, it
+              comes with unique and useful tools such as fuzzy search, Dark,
+              Semi-Dark & Bordered layout options, Advanced cards, and Charts.
+              In addition, it offers amazing features as follows.
+            </p>
+            <div class="flex gap-[30px] mt-[30px]">
+              <span
+                ><img
+                  src="../src/assets/images/projects/project-1.png"
+                  class="rounded-2xl"
+                  alt=""
+              /></span>
+              <span
+                ><img
+                  src="../src/assets/images/projects/project-2.png"
+                  class="rounded-2xl"
+                  alt=""
+              /></span>
+            </div>
+            <br />
+            <p class="text-text">
+              Materio MUI React Next.js Admin Template – is the most
+              developer-friendly 🤘🏻 & highly customizable✨ React Admin
+              Dashboard Template based on React. Even though it is not one of
+              the Open Source React Projects, you can still use it for your
+              professional react project. If you’re a developer looking for the
+              Best React Admin Template that is enriched with features, and
+              highly customizable look no further than the Materio 🤩. Besides,
+              the highest industry standards are considered to bring you one of
+              the best React Admin Templates. It is not just fast 🚀 and easy to
+              use, but highly scalable. Furthermore, it offers ultimate
+              convenience and flexibility, you’ll be able to build whatever
+              application you want with very little hassle. Materio also offers
+              invaluable features that aim to help you create premium quality
+              single-page apps exactly as you imagine them🤘🏻. Furthermore, it
+              comes with unique and useful tools such as fuzzy search, Dark,
+              Semi-Dark & Bordered layout options, Advanced cards, and Charts.
+              In addition, it offers amazing features as follows.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="portfolio-button-close w-[40px] border border-btn hover:text-theme hover:border-theme transition-all duration-300 rounded-full h-[40px] absolute top-[35px] right-[50px]"
+      >
+        <i class="fa-sharp fa-regular fa-xmark"></i>
+      </button>
+    </section>
+    <!-- Service Popup End -->
 
     <div id="smooth-wrapper">
       <div id="smooth-content">
@@ -1546,8 +1652,8 @@
                       </div>
                     </div>
 
-                    <!-- Resume Section -->
-                    <div id="portfolio" class="resume__section mt-[100px]">
+                    <!-- portfolio Section -->
+                    <div id="portfolio" class="portfolio__section mt-[100px]">
                       <div class="menuBox">
                         <div
                           class="border border-btn px-[20px] py-[5px] rounded-full inline-block"
@@ -1583,15 +1689,15 @@
                                   <p class="text-text text-[18px] mt-[16px]">
                                     Mobile Application
                                   </p>
-                                  <a
-                                    href="#"
-                                    class="hover:text-theme transition-all duration-200"
-                                    ><h2
+                                  <div
+                                    class="hover:text-theme cursor-pointer portfolio-button-open transition-all duration-200"
+                                  >
+                                    <h2
                                       class="mt-[15px] text-[26px] font-medium capitalize"
                                     >
                                       A vibrant and colorful Mobile application
-                                    </h2></a
-                                  >
+                                    </h2>
+                                  </div>
                                 </div>
                               </div>
                             </div>

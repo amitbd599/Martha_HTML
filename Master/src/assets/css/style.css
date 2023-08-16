@@ -458,9 +458,6 @@ html,
   font-family: "Rubik", sans-serif;
   color: #fff;
   font-size: 15px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 p {
@@ -631,6 +628,10 @@ h1,
 
 .leftFull {
   left: 100%;
+}
+
+.bgGradient {
+  background-color: linear-gradient(145deg, #e2e8ec, #ffffff);
 }
 
 .left-0 {
@@ -861,6 +862,16 @@ h1,
 .my-\[30px\]{
   margin-top: 30px !important;
   margin-bottom: 30px !important;
+}
+
+.my-2{
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.mx-2{
+  margin-left: 0.5rem !important;
+  margin-right: 0.5rem !important;
 }
 
 .ml-auto{
@@ -1203,19 +1214,24 @@ h1,
   border-color: rgb(64 64 66 / var(--tw-border-opacity)) !important;
 }
 
-.border-theme{
-  --tw-border-opacity: 1 !important;
-  border-color: rgb(238 255 3 / var(--tw-border-opacity)) !important;
-}
-
 .border-text{
   --tw-border-opacity: 1 !important;
   border-color: rgb(145 146 149 / var(--tw-border-opacity)) !important;
 }
 
+.border-theme{
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(238 255 3 / var(--tw-border-opacity)) !important;
+}
+
 .bg-body{
   --tw-bg-opacity: 1 !important;
   background-color: rgb(37 37 37 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-bodyWhite{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(236 240 243 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-btn{
@@ -1244,10 +1260,6 @@ h1,
 .bg-white{
   --tw-bg-opacity: 1 !important;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/bg\/banner\.jpg\'\)\]{
-  background-image: url('/src/assets/images/bg/banner.jpg') !important;
 }
 
 .object-cover{
@@ -1332,6 +1344,11 @@ h1,
 .py-\[5px\]{
   padding-top: 5px !important;
   padding-bottom: 5px !important;
+}
+
+.py-2{
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
 }
 
 .pb-\[16px\]{
@@ -1467,11 +1484,6 @@ h1,
 .text-theme{
   --tw-text-opacity: 1 !important;
   color: rgb(238 255 3 / var(--tw-text-opacity)) !important;
-}
-
-.text-white{
-  --tw-text-opacity: 1 !important;
-  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 .shadow{
@@ -1738,14 +1750,19 @@ h1,
   border-color: rgb(238 255 3 / var(--tw-border-opacity)) !important;
 }
 
-.hover\:text-theme:hover{
-  --tw-text-opacity: 1 !important;
-  color: rgb(238 255 3 / var(--tw-text-opacity)) !important;
+.hover\:border-text:hover{
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(145 146 149 / var(--tw-border-opacity)) !important;
 }
 
 .hover\:text-btn:hover{
   --tw-text-opacity: 1 !important;
   color: rgb(64 64 66 / var(--tw-text-opacity)) !important;
+}
+
+.hover\:text-theme:hover{
+  --tw-text-opacity: 1 !important;
+  color: rgb(238 255 3 / var(--tw-text-opacity)) !important;
 }
 
 .group:hover .group-hover\:rotate-90{
@@ -1757,6 +1774,10 @@ h1,
   --tw-scale-x: 110% !important;
   --tw-scale-y: 110% !important;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+:is(.dark .dark\:border-none){
+  border-style: none !important;
 }
 
 :is(.dark .dark\:border-btn){
@@ -1774,8 +1795,13 @@ h1,
   background-color: rgb(29 28 34 / var(--tw-bg-opacity)) !important;
 }
 
-:is(.dark .dark\:bg-\[url\(\'\.\.\.\'\)\]){
-  background-image: url('...') !important;
+:is(.dark .dark\:bg-transparent){
+  background-color: transparent !important;
+}
+
+:is(.dark .dark\:bg-btn){
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(64 64 66 / var(--tw-bg-opacity)) !important;
 }
 
 :is(.dark .dark\:text-text){
@@ -1793,9 +1819,21 @@ h1,
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
-:is(.dark .dark\:text-btn){
-  --tw-text-opacity: 1 !important;
-  color: rgb(64 64 66 / var(--tw-text-opacity)) !important;
+:is(.dark .dark\:shadow-none){
+  --tw-shadow: 0 0 rgb(0, 0 / 0, 0) !important;
+  --tw-shadow-colored: 0 0 var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+
+:is(.dark .dark\:shadow){
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+
+:is(.dark .dark\:hover\:border-theme:hover){
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(238 255 3 / var(--tw-border-opacity)) !important;
 }
 
 :is(.dark .dark\:hover\:bg-transparent:hover){

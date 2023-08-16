@@ -227,7 +227,7 @@
     });
   }
 
-  //animate to top on Page Refresh
+  // animate to top on Page Refresh
   // $("html, body").animate(
   //   {
   //     scrollTop: $("html, body").offset().top,
@@ -235,17 +235,17 @@
   //   1000
   // );
 
-  gsap.registerPlugin(ScrollTrigger, ScrollSmoother, TweenMax);
+  // gsap.registerPlugin(ScrollTrigger, ScrollSmoother, TweenMax);
 
-  let device_width = window.innerWidth;
+  // let device_width = window.innerWidth;
 
-  const smoother = ScrollSmoother.create({
-    smooth: 1.2,
-    effects: device_width < 1025 ? false : true,
-    smoothTouch: false,
-    normalizeScroll: false,
-    ignoreMobileResize: true,
-  });
+  // const smoother = ScrollSmoother.create({
+  //   smooth: 1.2,
+  //   effects: device_width < 1025 ? false : true,
+  //   smoothTouch: false,
+  //   normalizeScroll: false,
+  //   ignoreMobileResize: true,
+  // });
 
   //! Navbar
 

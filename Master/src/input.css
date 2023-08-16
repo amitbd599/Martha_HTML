@@ -23,9 +23,11 @@ Version      : 1.0.1
   body {
     overflow-x: hidden;
     font-family: "Rubik", sans-serif;
-    background: #ecf0f3;
     color: #fff;
     font-size: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   p {
@@ -60,7 +62,7 @@ Version      : 1.0.1
     @apply hover:text-theme transition-all duration-100;
   }
   .socialRound {
-    @apply boxShadow rounded-lg text-[18px] bg-white flex justify-center items-center w-[40px] h-[40px] text-white transition duration-300 hover:text-btn dark:bg-btn dark:shadow-none dark:hover:text-theme;
+    @apply boxShadow rounded-lg text-[18px] bg-white flex justify-center items-center w-[40px] h-[40px] text-text transition duration-300 hover:text-btn dark:bg-btn dark:shadow-none dark:hover:text-theme;
   }
   .customBtn {
     @apply rounded-full inline-block border-2 border-theme bg-theme py-[10px] px-[30px] font-medium text-btn transition-all duration-300 dark:hover:bg-transparent dark:hover:text-theme;
@@ -89,7 +91,7 @@ Version      : 1.0.1
 
 .progress-wrap {
   position: fixed;
-  right: 50px;
+  left: 50px;
   bottom: 50px;
   height: 46px;
   width: 46px;
@@ -228,21 +230,21 @@ Version      : 1.0.1
 
 /* Clock */
 
-.font-color {
+/* .font-color {
   background: #eeff03;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-}
+} */
 
 .timeDiv {
   position: relative;
 }
 
 #time {
-  text-shadow: 0 0 55px #eeff03;
-  font-size: 60px;
-  width: 155px;
+  /* text-shadow: 0 0 55px #eeff03; */
+  font-size: 55px;
+  width: 150px;
   display: inline-block;
 }
 
@@ -259,9 +261,6 @@ Version      : 1.0.1
   right: -28px;
   display: inline-block;
   width: 20px;
-}
-
-.servicePopUp {
 }
 
 .ss {

@@ -16,11 +16,7 @@ module.exports = withMT({
         "2xl": "4rem",
       },
     },
-    extend: {
-      backgroundImage: {
-        "hero-pattern": "url('/assets/images/show/image-2.png')",
-      },
-    },
+
     colors: {
       transparent: "transparent",
       current: "currentColor",
@@ -48,6 +44,6 @@ module.exports = withMT({
       // => @media (min-width: 1536px) { ... }
     },
   },
-  important: false,
+  important: true,
   plugins: [],
 });

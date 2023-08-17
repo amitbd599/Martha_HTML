@@ -56,11 +56,17 @@ Version      : 1.0.1
   .left-0 {
     left: 0;
   }
-  .current {
-    @apply text-theme;
+
+  .filter-grayscale {
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
   }
+
   .navDefault {
-    @apply hover:text-theme transition-all duration-100;
+    @apply dark:hover:text-theme hover:text-btn text-text dark:text-white transition-all duration-100;
+  }
+  .current {
+    @apply dark:text-theme text-btn font-semibold;
   }
   .socialRound {
     @apply boxShadow rounded-lg text-[18px] bg-white flex justify-center items-center w-[40px] h-[40px] text-text transition duration-300 hover:text-btn dark:bg-btn dark:shadow-none dark:hover:text-theme;
@@ -69,7 +75,7 @@ Version      : 1.0.1
     @apply rounded-full inline-block border-2 border-theme bg-theme py-[10px] px-[30px] font-medium text-btn transition-all duration-300 dark:hover:bg-transparent dark:hover:text-theme;
   }
   .inputBox {
-    @apply w-full bg-transparent focus:outline-none h-[45px] border border-btn rounded-lg pl-[10px];
+    @apply w-full bg-transparent focus:outline-none text-text h-[45px] border  dark:border-btn rounded-lg pl-[10px];
   }
 }
 

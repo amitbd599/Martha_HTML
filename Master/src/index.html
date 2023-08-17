@@ -33,15 +33,15 @@
     </script>
   </head>
 
-  <body class="dark:bg-body body bg-bodyWhite ">
+  <body class="dark:bg-body body bg-bodyWhite">
     <!-- Sticky Navbar Start -->
     <section class="sidebarNav">
       <section class="menu-box">
         <nav
-          class="fixed sticky-menu w-[calc(100%_-_30px)] 2xl:w-auto z-[9999]    bottom-[20px] 2xl:bottom-auto translate-x-[-50%] 2xl:translate-x-auto  left-[50%] 2xl:left-auto 2xl:right-[20px] 2xl:h-screen 2xl:top-[50%] 2xl:translate-y-[-25%] sideNav"
+          class="fixed sticky-menu w-[calc(100%_-_30px)] xl:w-auto z-[9999] bottom-[15px] xl:bottom-auto translate-x-[-50%] xl:translate-x-auto left-[50%] xl:left-auto xl:right-0 xl:h-screen xl:top-[50%] xl:translate-y-[-25%] sideNav"
         >
           <ul
-            class="2xl:grid flex gap-[10px] 2xl:gap-[20px] justify-center items-center border dark:border-theme dark:bg-btn 2xl:dark:border-btn 2xl:bg-white 2xl:dark:bg-transparent boxShadow dark:shadow-none px-[30px] 2xl:px-[5px] rounded-full py-[8px] 2xl:py-[40px]"
+            class="xl:grid flex gap-[10px] xl:gap-[20px] justify-center items-center border dark:border-theme dark:bg-btn xl:dark:border-btn xl:bg-white xl:dark:bg-transparent boxShadow dark:shadow-none px-[30px] xl:px-[5px] rounded-full py-[8px] xl:py-[40px]"
           >
             <li class="flex justify-center navDefault current">
               <a href="#home" class="p-2">
@@ -565,7 +565,7 @@
     <!-- Service Popup End -->
 
     <!-- back href top start  -->
-    <div class="progress-wrap">
+    <div class="progress-wrap right-[20px] md:right-auto left-auto md:left-[50px] md:bottom-[50px] bottom-[80px]">
       <svg
         class="progress-circle svg-content"
         width="100%"
@@ -663,7 +663,7 @@
                   </li>
                 </ul>
               </nav>
-              <div class="content">
+              <div class="content hidden md:block">
                 <div class="timeDiv">
                   <span
                     class="font-color text-btn dark:text-theme"
@@ -680,10 +680,10 @@
                 </div>
               </div>
               <div>
-                <div class="flex items-center gap-4 px-[30px]">
+                <div class="flex items-center gap-4 md:px-[30px] w-[140px] md:w-auto">
                   <button
                     id="theme-toggle"
-                    class="hidden md:flex"
+                    class="flex"
                     type="button"
                   >
                     <span class="flex gap-3 items-center">
@@ -718,13 +718,6 @@
                       </svg>
                     </span>
                   </button>
-                  <button
-                    class="sidebar-open rounded-full border border-[#919295] p-[10px] text-[25px]"
-                  >
-                    <i
-                      class="fa-solid fa-bars-staggered text-text dark:text-text block text-[20px]"
-                    ></i>
-                  </button>
                 </div>
               </div>
             </div>
@@ -732,117 +725,6 @@
         </header>
 
         <!-- header-area-end -->
-
-        <!-- sidebar area start -->
-        <section
-          class="sidebar fixed leftFull h-full overflow-y-scroll top-0 z-[999] w-full bg-btn/60 transition-all duration-500"
-        >
-          <div
-            class="ml-auto w-[300px] h-full min-h-[750px] md:min-h-[700px] bg-white px-[30px] pt-[60px] dark:bg-card"
-          >
-            <div class="relative flex justify-center">
-              <button
-                class="sidebar-close group absolute left-[-70px] rounded-lg bg-white px-[15px] py-[10px] text-[26px] dark:bg-card"
-              >
-                <i
-                  class="fa-solid block fa-xmark text-btn transition-all duration-500 group-hover:rotate-90 dark:text-white dark:group-hover:text-theme"
-                ></i>
-              </button>
-              <div>
-                <img
-                  src="assets/images/logo.svg"
-                  alt="pucu portfolio web template"
-                />
-              </div>
-            </div>
-            <div class="my-[30px] border-t border-[#ddd] dark:border-btn"></div>
-            <nav class="mt-[30px]">
-              <ul class="grid gap-[18px]">
-                <li class="text-[18px] font-semibold inline-block navActive">
-                  <a href="index.html"> Home </a>
-                </li>
-                <li class="text-[18px] font-semibold inline-block navDefault">
-                  <a href="about.html"> About Us </a>
-                </li>
-                <li class="text-[18px] font-semibold inline-block navDefault">
-                  <a href="projects.html"> Projects </a>
-                </li>
-                <li class="text-[18px] font-semibold inline-block navDefault">
-                  <a href="blog.html"> Blog </a>
-                </li>
-                <li class="text-[18px] font-semibold inline-block navDefault">
-                  <a href="service.html"> Services </a>
-                </li>
-                <li class="text-[18px] font-semibold inline-block navDefault">
-                  <a href="testimonial.html"> Testimonial </a>
-                </li>
-                <li class="text-[18px] font-semibold inline-block navDefault">
-                  <a href="contact.html"> Contact </a>
-                </li>
-                <li class="text-[18px] font-semibold inline-block navDefault">
-                  <a href="error.html"> Error </a>
-                </li>
-              </ul>
-            </nav>
-            <div class="my-[30px] border-t border-[#ddd] dark:border-btn"></div>
-            <button id="theme-toggle-mobile" type="button" class="md:hidden">
-              <span class="flex gap-3 items-center">
-                <span>
-                  <span class="dark:text-white text-btn">Dark</span>
-                  <span class="dark:text-white text-btn">/</span>
-                  <span class="dark:text-white text-btn">Light</span>
-                </span>
-                <svg
-                  id="theme-toggle-dark-icon-mobile"
-                  class="hidden w-[30px] h-[30px] text-theme"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                  ></path>
-                </svg>
-                <svg
-                  id="theme-toggle-light-icon-mobile"
-                  class="hidden w-[30px] h-[30px] text-theme"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </span>
-            </button>
-            <div class="contact mt-[40px] md:mt-[30px] pb-[20px]">
-              <div>
-                <p class="text-[20px] font-semibold text-btn dark:text-white">
-                  Follow Me:
-                </p>
-
-                <div class="mt-[20px] flex gap-3">
-                  <a href="#" class="block">
-                    <i class="fa-brands fa-facebook-f socialIcon"></i>
-                  </a>
-                  <a href="#" class="block">
-                    <i class="fa-brands fa-github socialIcon"></i>
-                  </a>
-                  <a href="#" class="block">
-                    <i class="fa-brands fa-linkedin-in socialIcon"></i>
-                  </a>
-                  <a href="#" class="block">
-                    <i class="fa-brands fa-medium socialIcon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- sidebar area end -->
 
         <main>
           <section class="main">
@@ -928,7 +810,7 @@
                   data-wow-delay="0.3s"
                 >
                   <div
-                    class="main__body mt-[60px] p-[30px] bg-white rounded-2xl dark:bg-card"
+                    class="main__body mt-[60px] p-[20px] md:p-[30px] bg-white rounded-2xl dark:bg-card"
                   >
                     <!-- Home Section -->
                     <div class="home__section">
@@ -952,7 +834,7 @@
                           Hi There I’m
                         </p>
                         <h2
-                          class="text-[55px] font-medium mt-[10px] text-btn dark:text-white"
+                          class="text-[26px] md:text-[55px] font-medium mt-[10px] text-btn dark:text-white"
                         >
                           Software Developers
                           <span class="dark:text-theme">!</span>
@@ -970,11 +852,11 @@
                         </p>
                       </div>
                       <div
-                        class="grid mt-[40px] gap-2 grid-cols-12"
+                        class="grid mt-[40px] gap-[30px] md:gap-2 grid-cols-12"
                         data-wow-duration="1.5s"
                         data-wow-delay="0.3s"
                       >
-                        <div class="col-span-4">
+                        <div class="col-span-12 md:col-span-4">
                           <h2
                             class="text-[50px] font-semibold text-btn dark:text-theme wow animated fadeIn"
                           >
@@ -987,7 +869,7 @@
                             EXPERIENCE
                           </p>
                         </div>
-                        <div class="col-span-4">
+                        <div class="col-span-12 md:col-span-4">
                           <h2
                             class="text-[50px] font-semibold text-btn dark:text-theme wow animated fadeIn"
                           >
@@ -1000,7 +882,7 @@
                             ON THIS YEAR
                           </p>
                         </div>
-                        <div class="col-span-4">
+                        <div class="col-span-12 md:col-span-4">
                           <h2
                             class="text-[50px] font-semibold text-btn dark:text-theme wow animated fadeIn"
                           >
@@ -1035,9 +917,9 @@
                       </div>
                       <div class="mt-[40px]">
                         <h2
-                          class="text-[40px] font-medium leading-[50px] text-btn dark:text-white"
+                          class="text-[24px] leading-[34px] md:text-[40px] font-medium md:leading-[50px] text-btn dark:text-white"
                         >
-                          Researching, Designing and <br />
+                          Researching, Designing and <br class="hidden md:block"/>
                           Managing
                           <span class="text-btn dark:text-theme"
                             >Software Programs</span
@@ -1060,7 +942,7 @@
                         >
                           Personal Info:
                         </h3>
-                        <div class="mt-[20px] flex gap-[50px]">
+                        <div class="mt-[20px] grid md:flex gap-[20px] md:gap-[50px]">
                           <ul class="grid gap-5">
                             <li class="flex gap-2 items-center">
                               <i
@@ -1072,7 +954,7 @@
                               <i
                                 class="fa-regular fa-circle-dot text-text dark:text-theme"
                               ></i>
-                              <span class="text-text">Address: Chicago </span>
+                              <span class="text-text">  Last Name: Whyte</span>
                             </li>
                             <li class="flex gap-2 items-center">
                               <i
@@ -1102,7 +984,7 @@
                               <i
                                 class="fa-regular fa-circle-dot text-text dark:text-theme"
                               ></i>
-                              <span class="text-text">Last Name: Whyte </span>
+                              <span class="text-text">Address: Chicago </span>
                             </li>
                             <li class="flex gap-2 items-center">
                               <i
@@ -1165,7 +1047,7 @@
                       </div>
                       <div class="mt-[40px]">
                         <h2
-                          class="text-[40px] font-medium leading-[50px] text-btn dark:text-white"
+                          class="text-[26px] md:text-[40px] font-medium leading-[36px] md:leading-[50px] text-btn dark:text-white"
                         >
                           Working
                           <span class="text-btn dark:text-theme"
@@ -1184,7 +1066,7 @@
                             </div>
                             <p class="text-text">2021 - Present</p>
                             <h3
-                              class="text-[25px] font-medium mt-[15px] text-btn dark:text-white"
+                              class="text-[20px] md:text-[25px] font-medium mt-[15px] text-btn dark:text-white"
                             >
                               Framer Designer & Developer
                             </h3>
@@ -1229,7 +1111,7 @@
                             </div>
                             <p class="text-text pt-[2px]">2015 - 2021</p>
                             <h3
-                              class="text-[25px] font-medium mt-[15px] text-btn dark:text-white"
+                              class="text-[20px] md:text-[25px] font-medium mt-[15px] text-btn dark:text-white"
                             >
                               Web Application Manager
                             </h3>
@@ -1254,7 +1136,7 @@
                                   </div>
                                   <span
                                     class="fill"
-                                    data-percentage="50"
+                                    data-percentage="80"
                                   ></span>
                                 </div>
                               </div>
@@ -1270,7 +1152,7 @@
                             </div>
                             <p class="text-text pt-[2px]">2010 - 2015</p>
                             <h3
-                              class="text-[25px] font-medium mt-[15px] text-btn dark:text-white"
+                              class="text-[20px] md:text-[25px] font-medium mt-[15px] text-btn dark:text-white"
                             >
                               Front-End WordPress Developer
                             </h3>
@@ -1312,7 +1194,7 @@
                       </div>
                       <div class="mt-[120px]">
                         <h2
-                          class="text-[40px] font-medium leading-[50px] text-btn dark:text-white"
+                          class="text-[26px] md:text-[40px] font-medium leading-[36px] md:leading-[50px] text-btn dark:text-white"
                         >
                           Educational
                           <span class="text-btn dark:text-theme"
@@ -1331,7 +1213,7 @@
                             </div>
                             <p class="text-text pt-[2px]">May 2018–Present</p>
                             <h3
-                              class="text-[25px] font-medium mt-[15px] text-btn dark:text-white"
+                              class="text-[20px] md:text-[25px] font-medium mt-[15px] text-btn dark:text-white"
                             >
                               Software Engineer
                             </h3>
@@ -1375,7 +1257,7 @@
                             </div>
                             <p class="text-text pt-[2px]">2014-2018</p>
                             <h3
-                              class="text-[25px] font-medium mt-[15px] text-btn dark:text-white"
+                              class="text-[20px] md:text-[25px] font-medium mt-[15px] text-btn dark:text-white"
                             >
                               Bachelor of Computer Science
                             </h3>
@@ -1416,7 +1298,7 @@
                             </div>
                             <p class="text-text pt-[2px]">2012-2014</p>
                             <h3
-                              class="text-[25px] font-medium mt-[15px] text-btn dark:text-white"
+                              class="text-[20px] md:text-[25px] font-medium mt-[15px] text-btn dark:text-white"
                             >
                               Masters of Sciences
                             </h3>
@@ -1457,7 +1339,7 @@
                       </div>
                       <div class="mt-[120px]">
                         <h2
-                          class="text-[40px] font-medium leading-[50px] text-btn dark:text-white"
+                          class="text-[26px] md:text-[40px] font-medium leading-[36px] md:leading-[50px] text-btn dark:text-white"
                         >
                           My
                           <span class="text-btn dark:text-theme"
@@ -1467,7 +1349,7 @@
 
                         <div class="items mt-[40px]">
                           <div class="grid grid-cols-12 gap-5">
-                            <div class="col-span-4">
+                            <div class="col-span-12 md:col-span-4">
                               <div
                                 class="item p-[30px] dark:bg-transparent boxShadow dark:shadow-none border grid justify-center dark:border-btn rounded-2xl"
                               >
@@ -1487,7 +1369,7 @@
                                 </h3>
                               </div>
                             </div>
-                            <div class="col-span-4">
+                            <div class="col-span-12 md:col-span-4">
                               <div
                                 class="item p-[30px] dark:bg-transparent boxShadow dark:shadow-none border grid justify-center dark:border-btn rounded-2xl"
                               >
@@ -1507,7 +1389,7 @@
                                 </h3>
                               </div>
                             </div>
-                            <div class="col-span-4">
+                            <div class="col-span-12 md:col-span-4">
                               <div
                                 class="item p-[30px] dark:bg-transparent boxShadow dark:shadow-none border grid justify-center dark:border-btn rounded-2xl"
                               >
@@ -1527,7 +1409,7 @@
                                 </h3>
                               </div>
                             </div>
-                            <div class="col-span-4">
+                            <div class="col-span-12 md:col-span-4">
                               <div
                                 class="item p-[30px] dark:bg-transparent boxShadow dark:shadow-none border grid justify-center dark:border-btn rounded-2xl"
                               >
@@ -1547,7 +1429,7 @@
                                 </h3>
                               </div>
                             </div>
-                            <div class="col-span-4">
+                            <div class="col-span-12 md:col-span-4">
                               <div
                                 class="item p-[30px] dark:bg-transparent boxShadow dark:shadow-none border grid justify-center dark:border-btn rounded-2xl"
                               >
@@ -1567,7 +1449,7 @@
                                 </h3>
                               </div>
                             </div>
-                            <div class="col-span-4">
+                            <div class="col-span-12 md:col-span-4">
                               <div
                                 class="item p-[30px] dark:bg-transparent boxShadow dark:shadow-none border grid justify-center dark:border-btn rounded-2xl"
                               >
@@ -1611,18 +1493,18 @@
                       </div>
                       <div class="mt-[40px]">
                         <h2
-                          class="text-[40px] font-medium capitalize leading-[50px] text-btn dark:text-white"
+                          class="text-[26px] md:text-[40px] font-medium capitalize leading-[36px] md:leading-[50px] text-btn dark:text-white"
                         >
-                          Visit my blog and leave your <br />
+                          Visit my blog and leave your <br class="hidden md:block"/>
                           feedback
                           <span class="text-btn dark:text-theme">My Blog</span>
                         </h2>
                       </div>
                       <div class="mt-[40px]">
-                        <div class="grid grid-cols-12 gap-[30px]">
-                          <div class="col-span-6">
+                        <div class="grid grid-cols-12 gap-[20px] md:gap-[30px]">
+                          <div class="col-span-12 md:col-span-6">
                             <div
-                              class="item group dark:bg-btn bg-white boxShadow dark:shadow-none p-[30px] rounded-2xl"
+                              class="item group dark:bg-btn bg-white boxShadow dark:shadow-none p-[20px] md:p-[30px] rounded-2xl"
                             >
                               <div class="overflow-hidden rounded-2xl">
                                 <img
@@ -1648,7 +1530,7 @@
                                   class="dark:hover:text-theme dark:text-white text-text hover:text-btn blog-button-open cursor-pointer transition-all duration-300"
                                 >
                                   <h2
-                                    class="text-[24px] font-medium capitalize"
+                                    class="text-[18px] md:text-[24px] font-medium capitalize"
                                   >
                                     Secondary research might come from reports
                                     found on the websites.
@@ -1657,9 +1539,9 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-span-6">
+                          <div class="col-span-12 md:col-span-6">
                             <div
-                              class="item group dark:bg-btn bg-white boxShadow dark:shadow-none p-[30px] rounded-2xl"
+                              class="item group dark:bg-btn bg-white boxShadow dark:shadow-none p-[20px] md:p-[30px] rounded-2xl"
                             >
                               <div class="overflow-hidden rounded-2xl">
                                 <img
@@ -1685,7 +1567,7 @@
                                   class="dark:hover:text-theme dark:text-white text-text hover:text-btn blog-button-open cursor-pointer transition-all duration-300"
                                 >
                                   <h2
-                                    class="text-[24px] font-medium capitalize"
+                                    class="text-[18px] md:text-[24px] font-medium capitalize"
                                   >
                                     consider adding a survey form to your
                                     website or sending a addresses.
@@ -1694,9 +1576,9 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-span-6">
+                          <div class="col-span-12 md:col-span-6">
                             <div
-                              class="item group dark:bg-btn bg-white boxShadow dark:shadow-none p-[30px] rounded-2xl"
+                              class="item group dark:bg-btn bg-white boxShadow dark:shadow-none p-[20px] md:p-[30px] rounded-2xl"
                             >
                               <div class="overflow-hidden rounded-2xl">
                                 <img
@@ -1722,7 +1604,7 @@
                                   class="dark:hover:text-theme dark:text-white text-text hover:text-btn blog-button-open cursor-pointer transition-all duration-300"
                                 >
                                   <h2
-                                    class="text-[24px] font-medium capitalize"
+                                    class="text-[18px] md:text-[24px] font-medium capitalize"
                                   >
                                     Surveys are one of the most effective ways
                                     to conduct business.
@@ -1731,9 +1613,9 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-span-6">
+                          <div class="col-span-12 md:col-span-6">
                             <div
-                              class="item group dark:bg-btn bg-white boxShadow dark:shadow-none p-[30px] rounded-2xl"
+                              class="item group dark:bg-btn bg-white boxShadow dark:shadow-none p-[20px] md:p-[30px] rounded-2xl"
                             >
                               <div class="overflow-hidden rounded-2xl">
                                 <img
@@ -1759,7 +1641,7 @@
                                   class="dark:hover:text-theme dark:text-white text-text hover:text-btn blog-button-open cursor-pointer transition-all duration-300"
                                 >
                                   <h2
-                                    class="text-[24px] font-medium capitalize"
+                                    class="text-[18px] md:text-[24px] font-medium capitalize"
                                   >
                                     Surveys allow you to solicit feedback from
                                     prospective and existing customers.
@@ -1791,9 +1673,9 @@
                       </div>
                       <div class="mt-[40px]">
                         <h2
-                          class="text-[40px] font-medium leading-[50px] text-btn dark:text-white"
+                          class="text-[26px] md:text-[40px] font-medium leading-[36px] md:leading-[50px] text-btn dark:text-white"
                         >
-                          All the general services that <br />
+                          All the general services that <br class="hidden md:block"/>
                           I provide to
                           <span class="text-btn dark:text-theme">clients</span>
                         </h2>
@@ -1809,7 +1691,7 @@
                         </p>
                       </div>
                       <div class="mt-[80px]">
-                        <div class="grid grid-cols-12 gap-[30px]">
+                        <div class="grid md:grid-cols-12 gap-[60px] md:gap-[30px]">
                           <div class="col-span-6">
                             <div
                               class="p-[20px] border border-text dark:border-btn rounded-lg relative"
@@ -1824,7 +1706,7 @@
                               </div>
                               <div class="pt-[60px]">
                                 <h2
-                                  class="text-[26px] font-medium dark:text-white text-btn"
+                                  class="text-[20px] md:text-[26px] font-medium dark:text-white text-btn"
                                 >
                                   Front-end Development
                                 </h2>
@@ -1850,7 +1732,7 @@
                               </div>
                               <div class="pt-[60px]">
                                 <h2
-                                  class="text-[26px] font-medium dark:text-white text-btn"
+                                  class="text-[20px] md:text-[26px] font-medium dark:text-white text-btn"
                                 >
                                   Back-end Development
                                 </h2>
@@ -1862,7 +1744,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-span-6 mt-[30px]">
+                          <div class="col-span-6 md:mt-[30px]">
                             <div
                               class="p-[20px] border border-text dark:border-btn rounded-lg relative"
                             >
@@ -1876,7 +1758,7 @@
                               </div>
                               <div class="pt-[60px]">
                                 <h2
-                                  class="text-[26px] font-medium dark:text-white text-btn"
+                                  class="text-[20px] md:text-[26px] font-medium dark:text-white text-btn"
                                 >
                                   Planning and Strategy
                                 </h2>
@@ -1888,7 +1770,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-span-6 mt-[30px]">
+                          <div class="col-span-6 md:mt-[30px]">
                             <div
                               class="p-[20px] border border-text dark:border-btn rounded-lg relative"
                             >
@@ -1902,7 +1784,7 @@
                               </div>
                               <div class="pt-[60px]">
                                 <h2
-                                  class="text-[26px] font-medium dark:text-white text-btn"
+                                  class="text-[20px] md:text-[26px] font-medium dark:text-white text-btn"
                                 >
                                   (UX) Design
                                 </h2>
@@ -1918,7 +1800,7 @@
                       </div>
                       <div class="mt-[80px]">
                         <h2
-                          class="text-[40px] font-medium leading-[50px] text-btn dark:text-white"
+                          class="text-[26px] md:text-[40px] font-medium leading-[36px] md:leading-[50px] text-btn dark:text-white"
                         >
                           What People
                           <span class="text-btn dark:text-theme">Says?</span>
@@ -2113,15 +1995,15 @@
                       </div>
                       <div class="mt-[100px]">
                         <h2
-                          class="text-[40px] font-medium leading-[50px] capitalize text-btn dark:text-white"
+                          class="text-[26px] md:text-[40px] font-medium leading-[36px] md:leading-[50px] capitalize text-btn dark:text-white"
                         >
-                          A collection for web <br />
+                          A collection for web <br class="hidden md:block"/>
                           Apps pricing
                           <span class="text-btn dark:text-theme">Tables</span>
                         </h2>
-                        <div class="flex gap-[40px] mt-[40px]">
+                        <div class=" grid md:flex gap-[40px] mt-[40px]">
                           <div
-                            class="border dark:border-btn border-none boxShadow dark:shadow-none px-[30px] py-[40px] rounded-2xl w-full"
+                            class="border border-transparent dark:border-btn  boxShadow dark:shadow-none px-[30px] py-[40px] rounded-2xl w-full"
                           >
                             <h2
                               class="text-[26px] font-normal uppercase text-btn dark:text-white"
@@ -2200,7 +2082,7 @@
                             </div>
                           </div>
                           <div
-                            class="border dark:border-btn border-none boxShadow dark:shadow-none px-[30px] py-[40px] rounded-2xl w-full"
+                            class="border dark:border-btn border-transparent boxShadow dark:shadow-none px-[30px] py-[40px] rounded-2xl w-full"
                           >
                             <h2
                               class="text-[26px] font-normal uppercase text-btn dark:text-white"
@@ -2248,8 +2130,7 @@
                                     class="fa-solid fa-caret-right text-btn dark:text-theme mr-2"
                                   ></i>
                                   <span class="text-text text-[16px]"
-                                    >Additional pages for projects &
-                                    resume.</span
+                                    >Additional pages for projects .</span
                                   >
                                 </li>
                                 <li class="capitalize">
@@ -2283,7 +2164,7 @@
                       </div>
                       <div class="mt-[100px]">
                         <h2
-                          class="text-[40px] font-medium leading-[50px] capitalize text-btn dark:text-white"
+                          class="text-[26px] md:text-[40px] font-medium leading-[36px] md:leading-[50px] capitalize text-btn dark:text-white"
                         >
                           WORK WITH 60+ <br />
                           BRANDS
@@ -2292,7 +2173,7 @@
                           >
                         </h2>
                         <div class="mt-[50px]">
-                          <div class="grid grid-cols-12 gap-[40px]">
+                          <div class="grid md:grid-cols-12 gap-[60px] md:gap-[40px]">
                             <div class="col-span-3">
                               <img
                                 src="../src/assets/images/brand/brand-1.png"
@@ -2373,15 +2254,15 @@
                       </div>
                       <div class="mt-[40px]">
                         <h2
-                          class="text-[40px] font-medium leading-[50px] capitalize text-btn dark:text-white"
+                          class="text-[26px] md:text-[40px] font-medium leading-[36px] md:leading-[50px] capitalize text-btn dark:text-white"
                         >
-                          Never compromise for our <br />
+                          Never compromise for our <br class="hidden md:block"/>
                           portfolio
                           <span class="text-btn dark:text-theme">quality!</span>
                         </h2>
 
                         <div class="items mt-[40px]">
-                          <div class="grid grid-cols-12 gap-[30px]">
+                          <div class="grid md:grid-cols-12 gap-[30px]">
                             <div class="col-span-6">
                               <div
                                 class="p-[30px] dark:bg-btn boxShadow dark:shadow-none rounded-2xl group"
@@ -2401,7 +2282,7 @@
                                     class="hover:text-btn dark:hover:text-theme text-text dark:text-white cursor-pointer portfolio-button-open transition-all duration-300"
                                   >
                                     <h2
-                                      class="mt-[15px] text-[26px] font-medium capitalize"
+                                      class="mt-[15px] text-[20px] md:text-[26px] font-medium capitalize"
                                     >
                                       A vibrant and colorful Mobile application
                                     </h2>
@@ -2428,7 +2309,7 @@
                                     class="hover:text-btn dark:hover:text-theme text-text dark:text-white cursor-pointer portfolio-button-open transition-all duration-300"
                                   >
                                     <h2
-                                      class="mt-[15px] text-[26px] font-medium capitalize"
+                                      class="mt-[15px] text-[20px] md:text-[26px] font-medium capitalize"
                                     >
                                       flexible and versatile web application
                                       template
@@ -2459,7 +2340,7 @@
                                     class="hover:text-btn dark:hover:text-theme text-text dark:text-white cursor-pointer portfolio-button-open transition-all duration-300"
                                   >
                                     <h2
-                                      class="mt-[15px] text-[26px] font-medium capitalize"
+                                      class="mt-[15px] text-[20px] md:text-[26px] font-medium capitalize"
                                     >
                                       An all-in-one Mobile application template
                                       that combines multiple functionalities
@@ -2470,7 +2351,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="grid grid-cols-12 gap-[30px] mt-[30px]">
+                          <div class="grid md:grid-cols-12 gap-[30px] mt-[30px]">
                             <div class="col-span-6">
                               <div
                                 class="p-[30px] dark:bg-btn boxShadow dark:shadow-none rounded-2xl group"
@@ -2490,7 +2371,7 @@
                                     class="hover:text-btn dark:hover:text-theme text-text dark:text-white cursor-pointer portfolio-button-open transition-all duration-300"
                                   >
                                     <h2
-                                      class="mt-[15px] text-[26px] font-medium capitalize"
+                                      class="mt-[15px] text-[20px] md:text-[26px] font-medium capitalize"
                                     >
                                       A pixel-perfect Mobile application
                                       template
@@ -2518,7 +2399,7 @@
                                     class="hover:text-btn dark:hover:text-theme text-text dark:text-white cursor-pointer portfolio-button-open transition-all duration-300"
                                   >
                                     <h2
-                                      class="mt-[15px] text-[26px] font-medium capitalize"
+                                      class="mt-[15px] text-[20px] md:text-[26px] font-medium capitalize"
                                     >
                                       A sleek and modern web application
                                       designed
@@ -2551,7 +2432,7 @@
                       </div>
                       <div class="mt-[40px]">
                         <h2
-                          class="text-[40px] font-medium leading-[50px] text-btn dark:text-white"
+                          class="text-[26px] md:text-[40px] font-medium leading-[36px] md:leading-[50px] text-btn dark:text-white"
                         >
                           Let's Work
                           <span class="text-btn dark:text-theme"
@@ -2561,7 +2442,7 @@
                       </div>
                       <div class="mt-[30px]">
                         <form action="post">
-                          <div class="flex gap-[30px]">
+                          <div class="grid md:flex gap-[30px]">
                             <input
                               type="text"
                               placeholder="Full Name:"
@@ -2610,7 +2491,7 @@
         </main>
 
         <!-- footer section one start -->
-        <footer data-wow-duration="1.5s" data-wow-delay="0.3s">
+        <footer data-wow-duration="1.5s" data-wow-delay="0.3s" class="pb-[100px] md:pb-0">
           <div
             class="container mx-auto mt-[100px] flex justify-center pb-[40px]"
           >

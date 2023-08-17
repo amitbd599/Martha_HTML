@@ -73,52 +73,52 @@
   });
 
   // Dark For Mobile
-  var themeToggleDarkIconMobile = document.getElementById(
-    "theme-toggle-dark-icon-mobile"
-  );
-  var themeToggleLightIconMobile = document.getElementById(
-    "theme-toggle-light-icon-mobile"
-  );
+  // var themeToggleDarkIconMobile = document.getElementById(
+  //   "theme-toggle-dark-icon-mobile"
+  // );
+  // var themeToggleLightIconMobile = document.getElementById(
+  //   "theme-toggle-light-icon-mobile"
+  // );
 
   // Change the icons inside the button based on previous settings
-  if (
-    localStorage.getItem("color-theme") === "dark" ||
-    (!("color-theme" in localStorage) &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches)
-  ) {
-    themeToggleLightIconMobile.classList.remove("hidden");
-  } else {
-    themeToggleDarkIconMobile.classList.remove("hidden");
-  }
+  // if (
+  //   localStorage.getItem("color-theme") === "dark" ||
+  //   (!("color-theme" in localStorage) &&
+  //     window.matchMedia("(prefers-color-scheme: dark)").matches)
+  // ) {
+  //   themeToggleLightIconMobile.classList.remove("hidden");
+  // } else {
+  //   themeToggleDarkIconMobile.classList.remove("hidden");
+  // }
 
-  var themeToggleBtn = document.getElementById("theme-toggle-mobile");
+  // var themeToggleBtn = document.getElementById("theme-toggle-mobile");
 
-  themeToggleBtn.addEventListener("click", function () {
-    // toggle icons inside button
-    themeToggleDarkIcon.classList.toggle("hidden");
-    themeToggleLightIcon.classList.toggle("hidden");
+  // themeToggleBtn.addEventListener("click", function () {
+  //   // toggle icons inside button
+  //   themeToggleDarkIcon.classList.toggle("hidden");
+  //   themeToggleLightIcon.classList.toggle("hidden");
 
-    // if set via local storage previously
-    if (localStorage.getItem("color-theme")) {
-      if (localStorage.getItem("color-theme") === "light") {
-        document.documentElement.classList.add("dark");
-        localStorage.setItem("color-theme", "dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-        localStorage.setItem("color-theme", "light");
-      }
+  //   // if set via local storage previously
+  //   if (localStorage.getItem("color-theme")) {
+  //     if (localStorage.getItem("color-theme") === "light") {
+  //       document.documentElement.classList.add("dark");
+  //       localStorage.setItem("color-theme", "dark");
+  //     } else {
+  //       document.documentElement.classList.remove("dark");
+  //       localStorage.setItem("color-theme", "light");
+  //     }
 
-      // if NOT set via local storage previously
-    } else {
-      if (document.documentElement.classList.contains("dark")) {
-        document.documentElement.classList.remove("dark");
-        localStorage.setItem("color-theme", "light");
-      } else {
-        document.documentElement.classList.add("dark");
-        localStorage.setItem("color-theme", "dark");
-      }
-    }
-  });
+  //     // if NOT set via local storage previously
+  //   } else {
+  //     if (document.documentElement.classList.contains("dark")) {
+  //       document.documentElement.classList.remove("dark");
+  //       localStorage.setItem("color-theme", "light");
+  //     } else {
+  //       document.documentElement.classList.add("dark");
+  //       localStorage.setItem("color-theme", "dark");
+  //     }
+  //   }
+  // });
 
   //! 04. Counter Js
   $(".counter").counterUp({
@@ -127,13 +127,13 @@
   });
 
   //! 10. Sidebar Js
-  $(".sidebar-open").on("click", function () {
-    $(".sidebar").addClass("left-0");
-  });
+  // $(".sidebar-open").on("click", function () {
+  //   $(".sidebar").addClass("left-0");
+  // });
 
-  $(".sidebar-close").on("click", function () {
-    $(".sidebar").removeClass("left-0");
-  });
+  // $(".sidebar-close").on("click", function () {
+  //   $(".sidebar").removeClass("left-0");
+  // });
 
   //! 11. PreLoader Js
   windowOn.on("load", function () {

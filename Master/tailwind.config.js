@@ -13,7 +13,7 @@ module.exports = withMT({
         md: "2rem",
         lg: "2rem",
         xl: "2rem",
-        "2xl": "4rem",
+        "2xl": "3rem",
       },
     },
 
@@ -40,7 +40,7 @@ module.exports = withMT({
       xl: "1280px",
       // => @media (min-width: 1280px) { ... }
 
-      "2xl": "1300px",
+      "2xl": "1600px",
       // => @media (min-width: 1366px) { ... }
     },
   },

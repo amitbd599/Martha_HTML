@@ -3,20 +3,20 @@
 ****************************************************
 
 
-01. Hero Slider One
-02. Team Slider One
-03. service Slider One
-04. Counter Js
-05. Testimonial Slider One
-06. Testimonial Slider two
-07. magnificPopup video view
-08. Sticky Header-1 Js
-09. Sticky Header-2 Js
-10. Sidebar Js
-11. PreLoader Js
-12. Mobile Menu Js
-13. Body overlay Js
-14. Wow Js
+01. Dark Control
+02. Counter Js
+03. PreLoader Js
+04. Type js
+05. Wow Js
+06. Barfiller
+07. Swiper
+08. Add One pageNav / Sidebar
+09. Add Scroll Bar To Sidebar
+10. animate to top on Page Refresh
+11. Gsap
+12. Navbar
+13. Portfolio PopUp
+14. Blog PopUp
 15. Sidebar Js
 16. Data CSS Js
 
@@ -27,7 +27,7 @@
 
   var windowOn = $(window);
 
-  //! Dark Mode
+  //! Dark Control
 
   var themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
   var themeToggleLightIcon = document.getElementById("theme-toggle-light-icon");
@@ -72,13 +72,13 @@
     }
   });
 
-  //! 04. Counter Js
+  //! Counter Js
   $(".counter").counterUp({
     delay: 10,
     time: 1000,
   });
 
-  //! 11. PreLoader Js
+  //! PreLoader Js
   windowOn.on("load", function () {
     $(".InitLoader").fadeOut(1000);
   });
@@ -90,16 +90,12 @@
     typeSpeed: 300,
   });
 
-  //! 13. Body overlay Js
-  $(".body-overlay").on("click", function () {
-    $(".sidebar__area").removeClass("sidebar-opened");
-    $(".body-overlay").removeClass("opened");
-  });
 
-  //! 14. Wow Js
+
+  //! Wow Js
   new WOW().init();
 
-  // !barfiller
+  // ! Barfiller
   $("#bar1").barfiller({ barColor: "#EEFF03" });
   $("#bar2").barfiller({ barColor: "#EEFF03" });
   $("#bar3").barfiller({ barColor: "#EEFF03" });
@@ -107,7 +103,7 @@
   $("#bar5").barfiller({ barColor: "#EEFF03" });
   $("#bar6").barfiller({ barColor: "#EEFF03" });
 
-  //! swiper
+  //! Swiper
   if (jQuery(".review").length > 0) {
     var review = new Swiper(".review", {
       slidesPerView: 2,
@@ -155,14 +151,14 @@
     });
   }
 
-  //Add One pageNav / Sidebar
+  //! Add One pageNav / Sidebar
   function sideNav() {
     if ($(".menu-box .sticky-menu").length) {
       $(".menu-box .sticky-menu ul").onePageNav();
     }
   }
 
-  //Add Scroll Bar To Sidebar
+  //! Add Scroll Bar To Sidebar
   if ($(".sidebarNav .menu-box").length) {
     $(".sidebarNav .menu-box").mCustomScrollbar({
       axis: "y",
@@ -170,7 +166,7 @@
     });
   }
 
-  // animate to top on Page Refresh
+  //! animate to top on Page Refresh
   $("html, body").animate(
     {
       scrollTop: $("html, body").offset().top,
@@ -178,6 +174,8 @@
     1000
   );
 
+
+  //! Gsap  
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother, TweenMax);
 
   let device_width = window.innerWidth;
@@ -202,7 +200,7 @@
     }
   });
 
-  //! 10. Portfolio PopUp
+  //! Portfolio PopUp
   $(".portfolio-button-open").on("click", function () {
     $(".portfolioPopUp").addClass("show");
   });
@@ -211,7 +209,7 @@
     $(".portfolioPopUp").removeClass("show");
   });
 
-  //! 10. Blog PopUp
+  //! Blog PopUp
   $(".blog-button-open").on("click", function () {
     $(".blogPopUp").addClass("show");
   });

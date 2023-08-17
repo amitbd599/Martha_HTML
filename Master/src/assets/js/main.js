@@ -72,68 +72,11 @@
     }
   });
 
-  // Dark For Mobile
-  // var themeToggleDarkIconMobile = document.getElementById(
-  //   "theme-toggle-dark-icon-mobile"
-  // );
-  // var themeToggleLightIconMobile = document.getElementById(
-  //   "theme-toggle-light-icon-mobile"
-  // );
-
-  // Change the icons inside the button based on previous settings
-  // if (
-  //   localStorage.getItem("color-theme") === "dark" ||
-  //   (!("color-theme" in localStorage) &&
-  //     window.matchMedia("(prefers-color-scheme: dark)").matches)
-  // ) {
-  //   themeToggleLightIconMobile.classList.remove("hidden");
-  // } else {
-  //   themeToggleDarkIconMobile.classList.remove("hidden");
-  // }
-
-  // var themeToggleBtn = document.getElementById("theme-toggle-mobile");
-
-  // themeToggleBtn.addEventListener("click", function () {
-  //   // toggle icons inside button
-  //   themeToggleDarkIcon.classList.toggle("hidden");
-  //   themeToggleLightIcon.classList.toggle("hidden");
-
-  //   // if set via local storage previously
-  //   if (localStorage.getItem("color-theme")) {
-  //     if (localStorage.getItem("color-theme") === "light") {
-  //       document.documentElement.classList.add("dark");
-  //       localStorage.setItem("color-theme", "dark");
-  //     } else {
-  //       document.documentElement.classList.remove("dark");
-  //       localStorage.setItem("color-theme", "light");
-  //     }
-
-  //     // if NOT set via local storage previously
-  //   } else {
-  //     if (document.documentElement.classList.contains("dark")) {
-  //       document.documentElement.classList.remove("dark");
-  //       localStorage.setItem("color-theme", "light");
-  //     } else {
-  //       document.documentElement.classList.add("dark");
-  //       localStorage.setItem("color-theme", "dark");
-  //     }
-  //   }
-  // });
-
   //! 04. Counter Js
   $(".counter").counterUp({
     delay: 10,
     time: 1000,
   });
-
-  //! 10. Sidebar Js
-  // $(".sidebar-open").on("click", function () {
-  //   $(".sidebar").addClass("left-0");
-  // });
-
-  // $(".sidebar-close").on("click", function () {
-  //   $(".sidebar").removeClass("left-0");
-  // });
 
   //! 11. PreLoader Js
   windowOn.on("load", function () {
@@ -228,24 +171,24 @@
   }
 
   // animate to top on Page Refresh
-  // $("html, body").animate(
-  //   {
-  //     scrollTop: $("html, body").offset().top,
-  //   },
-  //   1000
-  // );
+  $("html, body").animate(
+    {
+      scrollTop: $("html, body").offset().top,
+    },
+    1000
+  );
 
-  // gsap.registerPlugin(ScrollTrigger, ScrollSmoother, TweenMax);
+  gsap.registerPlugin(ScrollTrigger, ScrollSmoother, TweenMax);
 
-  // let device_width = window.innerWidth;
+  let device_width = window.innerWidth;
 
-  // const smoother = ScrollSmoother.create({
-  //   smooth: 1.2,
-  //   effects: device_width < 1025 ? false : true,
-  //   smoothTouch: false,
-  //   normalizeScroll: false,
-  //   ignoreMobileResize: true,
-  // });
+  const smoother = ScrollSmoother.create({
+    smooth: 1.2,
+    effects: device_width < 1025 ? false : true,
+    smoothTouch: false,
+    normalizeScroll: false,
+    ignoreMobileResize: true,
+  });
 
   //! Navbar
 

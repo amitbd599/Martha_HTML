@@ -89,18 +89,18 @@
       class="fixed blogPopUp min-h-screen h-full top-0 left-0 bg-bodyWhite dark:bg-body w-screen z-[999999] flex justify-center items-center"
     >
       <div
-        class="rounded-2xl ss bg-white dark:bg-card p-[40px] w-[calc(100vw-200px)] h-[calc(100vh-80px)]"
+        class="rounded-2xl ss bg-white dark:bg-card p-[20px] md:p-[40px] w-[calc(100vw-40px)] md:w-[calc(100vw-200px)] h-[calc(100vh-80px)]"
       >
         <div class="container">
           <div>
             <img
               src="../src/assets/images/blog/blog-5.jpg"
               alt=""
-              class="rounded-2xl"
+              class="rounded-2xl object-cover"
             />
           </div>
           <div class="mt-[30px]">
-            <div class="flex gap-[30px]">
+            <div class="md:flex grid gap-[10px] md:gap-[30px]">
               <span class="text-[18px] text-text"
                 ><strong>Written by</strong> : Marry biden
               </span>
@@ -109,7 +109,7 @@
               >
             </div>
             <h2
-              class="text-[30px] capitalize mt-[10px] font-medium text-btn dark:text-white"
+              class="md:text-[30px] text-[22px] capitalize mt-[20px] md:mt-[10px] font-medium text-btn dark:text-white"
             >
               Secondary Research Might Come From Reports Found On The Websites.
             </h2>
@@ -134,7 +134,7 @@
               placerat vulputate. Praesent ullamcorper dui in dui sagittis
               commodo.
             </p>
-            <div class="flex gap-[30px] mt-[30px]">
+            <div class="md:flex grid gap-[30px] mt-[30px]">
               <span
                 ><img
                   src="../src/assets/images/blog/blog-6.jpg"
@@ -239,7 +239,7 @@
           </div>
 
           <div class="mt-[30px]">
-            <div class="grid grid-cols-12 gap-[30px]">
+            <div class="grid md:grid-cols-12 gap-[30px]">
               <div class="col-span-6">
                 <div>
                   <h2 class="text-[22px] font-medium dark:text-white text-btn">
@@ -333,7 +333,7 @@
       </div>
 
       <button
-        class="blog-button-close w-[40px] border dark:text-white text-btn border-btn dark:hover:text-theme dark:hover:border-theme transition-all duration-300 rounded-full h-[40px] absolute top-[35px] right-[50px]"
+        class="blog-button-close w-[40px] border dark:text-white text-btn border-btn dark:hover:text-theme dark:hover:border-theme transition-all duration-300 rounded-full h-[40px] absolute top-[20px] md:top-[35px] md:right-[50px] right-[20px]"
       >
         <i class="fa-sharp fa-regular fa-xmark"></i>
       </button>
@@ -345,10 +345,10 @@
       class="fixed portfolioPopUp min-h-screen h-full top-0 left-0 bg-bodyWhite dark:bg-body w-screen z-[999999] flex justify-center items-center"
     >
       <div
-        class="rounded-2xl ss bg-white dark:bg-card p-[40px] w-[calc(100vw-200px)] h-[calc(100vh-80px)]"
+        class="rounded-2xl ss bg-white dark:bg-card p-[20px] md:p-[40px] w-[calc(100vw-40px)] md:w-[calc(100vw-200px)] h-[calc(100vh-80px)]"
       >
         <div class="container">
-          <div class="grid grid-cols-12 gap-[30px]">
+          <div class="grid md:grid-cols-12 gap-[30px]">
             <div class="col-span-8">
               <img
                 src="../src/assets/images/projects/project-6.png"
@@ -365,14 +365,14 @@
             </div>
           </div>
           <div class="mt-[30px]">
-            <div class="flex gap-[20px]">
+            <div class="md:flex grid md:gap-[20px] gap-[10px]">
               <span class="text-[18px] text-text">Mobile Application</span>
               <span class="text-[18px] text-text"
                 >Tuesday, August 15, 2023</span
               >
             </div>
             <h2
-              class="text-[30px] capitalize mt-[10px] font-medium text-btn dark:text-white"
+              class="md:text-[30px] text-[22px] capitalize mt-[20px] md:mt-[10px] font-medium text-btn dark:text-white"
             >
               A vibrant and colorful Mobile application
             </h2>
@@ -403,7 +403,7 @@
               Semi-Dark & Bordered layout options, Advanced cards, and Charts.
               In addition, it offers amazing features as follows.
             </p>
-            <div class="flex gap-[30px] mt-[30px]">
+            <div class="md:flex grid gap-[30px] mt-[30px]">
               <span
                 ><img
                   src="../src/assets/images/projects/project-8.png"
@@ -451,7 +451,7 @@
           </div>
 
           <div class="mt-[30px]">
-            <div class="grid grid-cols-12 gap-[30px]">
+            <div class="grid md:grid-cols-12 gap-[30px]">
               <div class="col-span-4">
                 <div>
                   <h2 class="text-[22px] font-medium dark:text-white text-btn">
@@ -557,7 +557,7 @@
       </div>
 
       <button
-        class="portfolio-button-close w-[40px] border dark:text-white text-btn border-btn dark:hover:text-theme dark:hover:border-theme transition-all duration-300 rounded-full h-[40px] absolute top-[35px] right-[50px]"
+        class="portfolio-button-close w-[40px] border dark:text-white text-btn border-btn dark:hover:text-theme dark:hover:border-theme transition-all duration-300 rounded-full h-[40px] absolute top-[20px] md:top-[35px] md:right-[50px] right-[20px]"
       >
         <i class="fa-sharp fa-regular fa-xmark"></i>
       </button>
@@ -565,7 +565,9 @@
     <!-- Service Popup End -->
 
     <!-- back href top start  -->
-    <div class="progress-wrap right-[20px] md:right-auto left-auto md:left-[50px] md:bottom-[50px] bottom-[80px]">
+    <div
+      class="progress-wrap right-[20px] md:right-auto left-auto md:left-[50px] md:bottom-[50px] bottom-[80px]"
+    >
       <svg
         class="progress-circle svg-content"
         width="100%"
@@ -680,12 +682,10 @@
                 </div>
               </div>
               <div>
-                <div class="flex items-center gap-4 md:px-[30px] w-[140px] md:w-auto">
-                  <button
-                    id="theme-toggle"
-                    class="flex"
-                    type="button"
-                  >
+                <div
+                  class="flex items-center gap-4 md:px-[30px] w-[140px] md:w-auto"
+                >
+                  <button id="theme-toggle" class="flex" type="button">
                     <span class="flex gap-3 items-center">
                       <span>
                         <span class="dark:text-white text-btn">Dark</span>
@@ -919,7 +919,8 @@
                         <h2
                           class="text-[24px] leading-[34px] md:text-[40px] font-medium md:leading-[50px] text-btn dark:text-white"
                         >
-                          Researching, Designing and <br class="hidden md:block"/>
+                          Researching, Designing and
+                          <br class="hidden md:block" />
                           Managing
                           <span class="text-btn dark:text-theme"
                             >Software Programs</span
@@ -942,7 +943,9 @@
                         >
                           Personal Info:
                         </h3>
-                        <div class="mt-[20px] grid md:flex gap-[20px] md:gap-[50px]">
+                        <div
+                          class="mt-[20px] grid md:flex gap-[20px] md:gap-[50px]"
+                        >
                           <ul class="grid gap-5">
                             <li class="flex gap-2 items-center">
                               <i
@@ -954,7 +957,7 @@
                               <i
                                 class="fa-regular fa-circle-dot text-text dark:text-theme"
                               ></i>
-                              <span class="text-text">  Last Name: Whyte</span>
+                              <span class="text-text"> Last Name: Whyte</span>
                             </li>
                             <li class="flex gap-2 items-center">
                               <i
@@ -1495,14 +1498,17 @@
                         <h2
                           class="text-[26px] md:text-[40px] font-medium capitalize leading-[36px] md:leading-[50px] text-btn dark:text-white"
                         >
-                          Visit my blog and leave your <br class="hidden md:block"/>
+                          Visit my blog and leave your
+                          <br class="hidden md:block" />
                           feedback
                           <span class="text-btn dark:text-theme">My Blog</span>
                         </h2>
                       </div>
                       <div class="mt-[40px]">
-                        <div class="grid grid-cols-12 gap-[20px] md:gap-[30px]">
-                          <div class="col-span-12 md:col-span-6">
+                        <div
+                          class="grid md:grid-cols-12 gap-[50px] md:gap-[30px]"
+                        >
+                          <div class="col-span-6">
                             <div
                               class="item group dark:bg-btn bg-white boxShadow dark:shadow-none p-[20px] md:p-[30px] rounded-2xl"
                             >
@@ -1539,7 +1545,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-span-12 md:col-span-6">
+                          <div class="col-span-6">
                             <div
                               class="item group dark:bg-btn bg-white boxShadow dark:shadow-none p-[20px] md:p-[30px] rounded-2xl"
                             >
@@ -1576,7 +1582,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-span-12 md:col-span-6">
+                          <div class="col-span-6">
                             <div
                               class="item group dark:bg-btn bg-white boxShadow dark:shadow-none p-[20px] md:p-[30px] rounded-2xl"
                             >
@@ -1613,7 +1619,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-span-12 md:col-span-6">
+                          <div class="col-span-6">
                             <div
                               class="item group dark:bg-btn bg-white boxShadow dark:shadow-none p-[20px] md:p-[30px] rounded-2xl"
                             >
@@ -1675,7 +1681,8 @@
                         <h2
                           class="text-[26px] md:text-[40px] font-medium leading-[36px] md:leading-[50px] text-btn dark:text-white"
                         >
-                          All the general services that <br class="hidden md:block"/>
+                          All the general services that
+                          <br class="hidden md:block" />
                           I provide to
                           <span class="text-btn dark:text-theme">clients</span>
                         </h2>
@@ -1691,7 +1698,9 @@
                         </p>
                       </div>
                       <div class="mt-[80px]">
-                        <div class="grid md:grid-cols-12 gap-[60px] md:gap-[30px]">
+                        <div
+                          class="grid md:grid-cols-12 gap-[60px] md:gap-[30px]"
+                        >
                           <div class="col-span-6">
                             <div
                               class="p-[20px] border border-text dark:border-btn rounded-lg relative"
@@ -1997,13 +2006,13 @@
                         <h2
                           class="text-[26px] md:text-[40px] font-medium leading-[36px] md:leading-[50px] capitalize text-btn dark:text-white"
                         >
-                          A collection for web <br class="hidden md:block"/>
+                          A collection for web <br class="hidden md:block" />
                           Apps pricing
                           <span class="text-btn dark:text-theme">Tables</span>
                         </h2>
-                        <div class=" grid md:flex gap-[40px] mt-[40px]">
+                        <div class="grid md:flex gap-[40px] mt-[40px]">
                           <div
-                            class="border border-transparent dark:border-btn  boxShadow dark:shadow-none px-[30px] py-[40px] rounded-2xl w-full"
+                            class="border border-transparent dark:border-btn boxShadow dark:shadow-none px-[30px] py-[40px] rounded-2xl w-full"
                           >
                             <h2
                               class="text-[26px] font-normal uppercase text-btn dark:text-white"
@@ -2173,7 +2182,9 @@
                           >
                         </h2>
                         <div class="mt-[50px]">
-                          <div class="grid md:grid-cols-12 gap-[60px] md:gap-[40px]">
+                          <div
+                            class="grid md:grid-cols-12 gap-[60px] md:gap-[40px]"
+                          >
                             <div class="col-span-3">
                               <img
                                 src="../src/assets/images/brand/brand-1.png"
@@ -2256,7 +2267,8 @@
                         <h2
                           class="text-[26px] md:text-[40px] font-medium leading-[36px] md:leading-[50px] capitalize text-btn dark:text-white"
                         >
-                          Never compromise for our <br class="hidden md:block"/>
+                          Never compromise for our
+                          <br class="hidden md:block" />
                           portfolio
                           <span class="text-btn dark:text-theme">quality!</span>
                         </h2>
@@ -2351,7 +2363,9 @@
                               </div>
                             </div>
                           </div>
-                          <div class="grid md:grid-cols-12 gap-[30px] mt-[30px]">
+                          <div
+                            class="grid md:grid-cols-12 gap-[30px] mt-[30px]"
+                          >
                             <div class="col-span-6">
                               <div
                                 class="p-[30px] dark:bg-btn boxShadow dark:shadow-none rounded-2xl group"
@@ -2441,30 +2455,46 @@
                         </h2>
                       </div>
                       <div class="mt-[30px]">
-                        <form action="post">
+                        <form
+                          id="contact-form"
+                          class="contact-form"
+                          action="mail.php"
+                          method="POST"
+                        >
                           <div class="grid md:flex gap-[30px]">
                             <input
-                              type="text"
-                              placeholder="Full Name:"
                               class="inputBox"
+                              type="text"
+                              placeholder="Enter Your Name"
+                              id="name"
+                              name="name"
+                              required="required"
                             />
                             <input
-                              type="text"
-                              placeholder="Your Email:"
                               class="inputBox"
+                              type="email"
+                              id="email"
+                              name="email"
+                              required="required"
+                              placeholder="Enter Your Email"
                             />
                           </div>
                           <div class="mt-[30px]">
                             <input
-                              type="text"
-                              placeholder="Website Link:"
                               class="inputBox"
+                              placeholder="Website Link:"
+                              type="url"
+                              id="website"
+                              name="website"
+                              required="required"
                             />
                           </div>
                           <div class="mt-[30px]">
                             <textarea
-                              name=""
-                              id=""
+                              name="message"
+                              id="massage"
+                              placeholder="Enter Your Massage"
+                              required
                               rows="10"
                               cols="50"
                               placeholder="Write your Comment here:"
@@ -2473,12 +2503,15 @@
                           </div>
 
                           <div class="mt-[30px] wow animated fadeIn">
-                            <a
-                              href="contact.html"
+                            <button
+                              type="button"
                               class="inline-block rounded-full border-2 border-theme bg-theme px-[26px] py-[10px] font-normal text-btn transition-all duration-300 dark:hover:bg-transparent dark:hover:text-theme"
                             >
                               SEND MESSAGE
-                            </a>
+                            </button>
+                            <p
+                                  class="mt-[15px] text-theme form-Messages"
+                                ></p>
                           </div>
                         </form>
                       </div>
@@ -2491,7 +2524,11 @@
         </main>
 
         <!-- footer section one start -->
-        <footer data-wow-duration="1.5s" data-wow-delay="0.3s" class="pb-[100px] md:pb-0">
+        <footer
+          data-wow-duration="1.5s"
+          data-wow-delay="0.3s"
+          class="pb-[100px] md:pb-0"
+        >
           <div
             class="container mx-auto mt-[100px] flex justify-center pb-[40px]"
           >

@@ -83,13 +83,6 @@
     $(".InitLoader").fadeOut(1000);
   });
 
-  //! Type js
-
-  $(".typeIntro").typer({
-    strings: ["Hire Me!", "Need Help?", "Contact Now"],
-    typeSpeed: 300,
-  });
-
 
 
   //! Wow Js
@@ -174,19 +167,22 @@
     1000
   );
 
+  //! Gsap
 
-  //! Gsap  
-  gsap.registerPlugin(ScrollTrigger, ScrollSmoother, TweenMax);
+  function isMobileDevice() {
+    return window.innerWidth < 768; // You can adjust the threshold as needed
+  }
 
-  let device_width = window.innerWidth;
+  if (!isMobileDevice()) {
+    gsap.registerPlugin(ScrollTrigger, ScrollSmoother, TweenMax);
 
-  const smoother = ScrollSmoother.create({
-    smooth: 1.2,
-    effects: device_width < 1025 ? false : true,
-    smoothTouch: false,
-    normalizeScroll: false,
-    ignoreMobileResize: true,
-  });
+    const smoother = ScrollSmoother.create({
+      smooth: 1.2,
+      smoothTouch: false,
+      normalizeScroll: false,
+      ignoreMobileResize: true,
+    });
+  }
 
   //! Navbar
 

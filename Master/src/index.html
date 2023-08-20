@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Home || Pucu - HTML Portfolio Web Template</title>
+    <title>Home || ESTRANDA - HTML Portfolio Web Template</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -34,14 +34,19 @@
   </head>
 
   <body class="dark:bg-body body bg-bodyWhite">
+    <!-- Preloader Start-->
+
+    <div class="InitLoader">
+      <div class="loading-bar">Loading</div>
+    </div>
     <!-- Sticky Navbar Start -->
-    <section class="sidebarNav">
-      <section class="menu-box">
+    <div class="sidebarNav">
+      <div class="menu-box">
         <nav
           class="fixed sticky-menu w-[calc(100%_-_30px)] xl:w-auto z-[9999] bottom-[15px] xl:bottom-auto translate-x-[-50%] xl:translate-x-auto left-[50%] xl:left-auto xl:right-0 xl:h-screen xl:top-[50%] xl:translate-y-[-25%] sideNav"
         >
           <ul
-            class="xl:grid flex gap-[10px] xl:gap-[20px] justify-center items-center border dark:border-theme dark:bg-btn xl:dark:border-btn xl:bg-white xl:dark:bg-transparent boxShadow dark:shadow-none px-[30px] xl:px-[5px] rounded-full py-[8px] xl:py-[40px]"
+            class="xl:grid flex gap-[15px] xl:gap-[20px] justify-center items-center border dark:border-theme dark:bg-btn xl:dark:border-btn bg-white xl:dark:bg-transparent boxShadow dark:shadow-none px-[30px] xl:px-[5px] rounded-full py-[8px] xl:py-[40px]"
           >
             <li class="flex justify-center navDefault current">
               <a href="#home" class="p-2">
@@ -80,8 +85,8 @@
             </li>
           </ul>
         </nav>
-      </section>
-    </section>
+      </div>
+    </div>
     <!-- Sticky Navbar End -->
 
     <!-- Blog Popup Start -->
@@ -589,36 +594,19 @@
           </p>
         <![endif]-->
 
-        <!-- Preloader Start-->
-
-        <div class="InitLoader">
-          <div class="fingerprint-spinner">
-            <div class="spinner-ring"></div>
-            <div class="spinner-ring"></div>
-            <div class="spinner-ring"></div>
-            <div class="spinner-ring"></div>
-            <div class="spinner-ring"></div>
-            <div class="spinner-ring"></div>
-            <div class="spinner-ring"></div>
-            <div class="spinner-ring"></div>
-            <div class="spinner-ring"></div>
-          </div>
-        </div>
-
         <!-- header-area-start -->
 
         <header class="sidebarNav">
           <div class="container mx-auto pt-[30px] menu-box" id="home">
             <div
-              class="flex justify-between items-center rounded-[10px] bg-white py-[20px] dark:bg-card"
+              class="flex min-h-[123px] justify-between items-center rounded-[10px] bg-white py-[20px] dark:bg-card"
             >
               <div class="logo flex items-center px-[30px]">
                 <a href="index.html">
                   <img
                     src="assets/images/logo.svg"
                     alt="pucu portfolio web template"
-                    width="200px"
-                    class="filter-grayscale dark:filter-none"
+                    class="filter-grayscale dark:filter-none w-[200px]"
                   />
                 </a>
               </div>
@@ -1457,10 +1445,7 @@
                                 class="item p-[30px] dark:bg-transparent boxShadow dark:shadow-none border grid justify-center dark:border-btn rounded-2xl"
                               >
                                 <div class="imgFile flex justify-center">
-                                  <img
-                                    src="assets/images/show/js.png"
-                                    alt=""
-                                  />
+                                  <img src="assets/images/show/js.png" alt="" />
                                 </div>
                                 <h3
                                   class="text-[40px] font-medium mt-2 text-btn dark:text-theme"
@@ -1786,10 +1771,7 @@
                               <div
                                 class="sup absolute top-[-30px] left-[30px] bg-white w-[80px] h-[80px] rounded-2xl flex justify-center items-center"
                               >
-                                <img
-                                  src="assets/images/show/ux.svg"
-                                  alt=""
-                                />
+                                <img src="assets/images/show/ux.svg" alt="" />
                               </div>
                               <div class="pt-[60px]">
                                 <h2
@@ -2497,7 +2479,6 @@
                               required
                               rows="10"
                               cols="50"
-                              placeholder="Write your Comment here:"
                               class="w-full p-[15px] bg-transparent border text-text focus:outline-none dark:border-btn rounded-lg pl-[10px]"
                             ></textarea>
                           </div>
@@ -2510,8 +2491,8 @@
                               SEND MESSAGE
                             </button>
                             <p
-                                  class="mt-[15px] dark:text-theme text-btn form-Messages"
-                                ></p>
+                              class="mt-[15px] dark:text-theme text-btn form-Messages"
+                            ></p>
                           </div>
                         </form>
                       </div>
@@ -2559,7 +2540,6 @@
     <script src="assets/js/waypoints.js"></script>
     <script src="assets/js/backtotop.js"></script>
     <script src="assets/js/ajax-form.js"></script>
-    <script src="assets/js/typer.js"></script>
     <script src="assets/js/barfiller.js"></script>
     <script src="assets/js/wow.js"></script>
     <script src="assets/js/swiper-bundle.js"></script>

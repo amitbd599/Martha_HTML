@@ -1,0 +1,2557 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Home || ESTRANDA - HTML Portfolio Web Template</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Place favicon.ico in the root directory -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/favicon.ico"
+    />
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+    <link rel="stylesheet" href="assets/css/scrollbar.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script>
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+  </head>
+
+  <body class="dark:bg-body body bg-bodyWhite">
+    <!-- Preloader Start-->
+
+    <div class="InitLoader">
+      <div class="loading-bar">Loading</div>
+    </div>
+    <!-- Sticky Navbar Start -->
+    <div class="sidebarNav">
+      <div class="menu-box">
+        <nav
+          class="fixed sticky-menu w-[calc(100%_-_30px)] xl:w-auto z-[9999] bottom-[15px] xl:bottom-auto translate-x-[-50%] xl:translate-x-auto left-[50%] xl:left-auto xl:right-0 xl:h-screen xl:top-[50%] xl:translate-y-[-25%] sideNav"
+        >
+          <ul
+            class="xl:grid flex gap-[15px] xl:gap-[20px] justify-center items-center border dark:border-theme dark:bg-btn xl:dark:border-btn bg-white xl:dark:bg-transparent boxShadow dark:shadow-none px-[30px] xl:px-[5px] rounded-full py-[8px] xl:py-[40px]"
+          >
+            <li class="flex justify-center navDefault current">
+              <a href="#home" class="p-2">
+                <i class="fa-sharp fa-regular fa-house text-[18px]"></i>
+              </a>
+            </li>
+            <li class="flex justify-center navDefault">
+              <a href="#about" class="p-2">
+                <i class="fa-light fa-user text-[18px]"></i>
+              </a>
+            </li>
+            <li class="flex justify-center navDefault">
+              <a href="#resume" class="p-2">
+                <i class="fa-sharp fa-light fa-id-card-clip text-[18px]"></i>
+              </a>
+            </li>
+            <li class="flex justify-center navDefault">
+              <a href="#blogs" class="p-2">
+                <i class="fa-sharp fa-regular fa-blog text-[18px]"></i>
+              </a>
+            </li>
+            <li class="flex justify-center navDefault">
+              <a href="#services" class="p-2">
+                <i class="fa-light fa-grid-2-plus text-[18px]"></i>
+              </a>
+            </li>
+            <li class="flex justify-center navDefault">
+              <a href="#portfolio" class="p-2">
+                <i class="fa-light fa-laptop-code text-[18px]"></i>
+              </a>
+            </li>
+            <li class="flex justify-center navDefault">
+              <a href="#contact" class="p-2">
+                <i class="fa-light fa-envelope text-[18px]"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Sticky Navbar End -->
+
+    <!-- Blog Popup Start -->
+    <section
+      class="fixed blogPopUp min-h-screen h-full top-0 left-0 bg-bodyWhite dark:bg-body w-screen z-[999999] flex justify-center items-center"
+    >
+      <div
+        class="rounded-2xl ss bg-white dark:bg-card p-[20px] md:p-[40px] w-[calc(100vw-40px)] md:w-[calc(100vw-200px)] h-[calc(100vh-80px)]"
+      >
+        <div class="container">
+          <div>
+            <img
+              src="assets/images/blog/blog-5.jpg"
+              alt=""
+              class="rounded-2xl object-cover"
+            />
+          </div>
+          <div class="mt-[30px]">
+            <div class="md:flex grid gap-[10px] md:gap-[30px]">
+              <span class="text-[18px] text-text"
+                ><strong>Written by</strong> : Marry biden
+              </span>
+              <span class="text-[18px] text-text"
+                >Tuesday, August 15, 2023</span
+              >
+            </div>
+            <h2
+              class="md:text-[30px] text-[22px] capitalize mt-[20px] md:mt-[10px] font-medium text-btn dark:text-white"
+            >
+              Secondary Research Might Come From Reports Found On The Websites.
+            </h2>
+          </div>
+          <div class="mt-[30px]">
+            <p class="text-text">
+              Proin ultricies ultricies est vitae cursus. Nulla sit amet
+              suscipit tortor. Maecenas dui erat, ornare eget tristique vitae,
+              rutrum pretium justo. Phasellus vitae consequat nisi, quis luctus
+              nisl. Praesent faucibus sem id massa semper ornare. Nam eu magna
+              at mi pellentesque mattis. Morbi at condimentum velit. Phasellus
+              aliquet, leo auctor volutpat ultrices, metus dolor dictum enim,
+              sed convallis lacus urna nec erat.
+            </p>
+            <br />
+            <p class="text-text">
+              consectetur adipiscing elit. Etiam at mauris accumsan mi pulvinar
+              lacinia a in justo. Ut tempor et libero quis dignissim. Nulla at
+              convallis libero, vitae aliquam leo. Etiam ut augue nibh. In
+              laoreet neque quis ex ornare, quis auctor elit facilisis. Mauris
+              dapibus massa rhoncus ligula luctus vulputate. Fusce condimentum
+              placerat vulputate. Praesent ullamcorper dui in dui sagittis
+              commodo.
+            </p>
+            <div class="md:flex grid gap-[30px] mt-[30px]">
+              <span
+                ><img
+                  src="assets/images/blog/blog-6.jpg"
+                  class="rounded-2xl"
+                  alt=""
+              /></span>
+              <span
+                ><img
+                  src="assets/images/blog/blog-7.jpg"
+                  class="rounded-2xl"
+                  alt=""
+              /></span>
+            </div>
+            <br />
+            <p class="text-text">
+              Materio MUI React Next.js Admin Template – is the most
+              developer-friendly 🤘🏻 & highly customizable✨ React Admin
+              Dashboard Template based on React. Even though it is not one of
+              the Open Source React Projects, you can still use it for your
+              professional react project. If you’re a developer looking for the
+              Best React Admin Template that is enriched with features, and
+              highly customizable look no further than the Materio 🤩. Besides,
+              the highest industry standards are considered to bring you one of
+              the best React Admin Templates. It is not just fast 🚀 and easy to
+              use, but highly scalable. Furthermore, it offers ultimate
+              convenience and flexibility, you’ll be able to build whatever
+              application you want with very little hassle. Materio also offers
+              invaluable features that aim to help you create premium quality
+              single-page apps exactly as you imagine them🤘🏻. Furthermore, it
+              comes with unique and useful tools such as fuzzy search, Dark,
+              Semi-Dark & Bordered layout options, Advanced cards, and Charts.
+              In addition, it offers amazing features as follows.
+            </p>
+            <br />
+            <ul class="text-text grid gap-[15px]">
+              <li>
+                <i
+                  class="fa-light fa-circle-dot dark:text-theme text-btn mr-2"
+                ></i>
+                Mauris maximus diam ac imperdiet dictum.
+              </li>
+              <li>
+                <i
+                  class="fa-light fa-circle-dot dark:text-theme text-btn mr-2"
+                ></i>
+                Maecenas eget ipsum dapibus, rutrum mi non, ultricies massa.
+              </li>
+              <li>
+                <i
+                  class="fa-light fa-circle-dot dark:text-theme text-btn mr-2"
+                ></i>
+                Nam non purus porta risus tincidunt cursus.
+              </li>
+              <li>
+                <i
+                  class="fa-light fa-circle-dot dark:text-theme text-btn mr-2"
+                ></i>
+                Quisque blandit lacus vel urna pellentesque mattis.
+              </li>
+              <li>
+                <i
+                  class="fa-light fa-circle-dot dark:text-theme text-btn mr-2"
+                ></i>
+                Maecenas vehicula tortor et consectetur faucibus.
+              </li>
+            </ul>
+
+            <br />
+            <div class="testimonial bg-btn p-[30px] rounded-2xl mt-[20px]">
+              <i
+                class="fa-sharp fa-regular fa-quote-left mr-2 text-theme text-[20px]"
+              ></i>
+              <h2 class="text-[30px] italic">
+                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit...
+              </h2>
+            </div>
+            <br />
+            <p class="text-text">
+              Proin ultricies ultricies est vitae cursus. Nulla sit amet
+              suscipit tortor. Maecenas dui erat, ornare eget tristique vitae,
+              rutrum pretium justo. Phasellus vitae consequat nisi, quis luctus
+              nisl. Praesent faucibus sem id massa semper ornare. Nam eu magna
+              at mi pellentesque mattis. Morbi at condimentum velit. Phasellus
+              aliquet, leo auctor volutpat ultrices, metus dolor dictum enim,
+              sed convallis lacus urna nec erat.
+            </p>
+            <br />
+            <p class="text-text">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don’t look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum. You need to be sure there isn’t anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend toitrrepeat predefined chunks. Necessary, making
+              this the first true generator on the Internet. It re are many
+              variations of passages of Lorem Ipsum available, but the majority
+              have suffered alteration in some form, by injectedeed eedhumour,
+              or randomised words which don’t look even slightly believable.
+            </p>
+          </div>
+
+          <div class="mt-[30px]">
+            <div class="grid md:grid-cols-12 gap-[30px]">
+              <div class="col-span-6">
+                <div>
+                  <h2 class="text-[22px] font-medium dark:text-white text-btn">
+                    Business
+                  </h2>
+                  <p class="mt-[10px] text-[18px] text-text">
+                    Proin ultricies ultricies est vitae cursus. Nulla sit
+                    suscipit tortor.
+                  </p>
+                  <ul class="grid gap-[14px] mt-[20px]">
+                    <li>
+                      <i
+                        class="fa-light fa-circle-dot mr-2 dark:text-theme text-btn"
+                      ></i>
+                      <span class="text-text">The Design Approach</span>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-light fa-circle-dot mr-2 dark:text-theme text-btn"
+                      ></i>
+                      <span class="text-text">Project Challenge</span>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-light fa-circle-dot mr-2 dark:text-theme text-btn"
+                      ></i>
+                      <span class="text-text">The Solution</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-span-6">
+                <div>
+                  <h2 class="text-[22px] font-medium dark:text-white text-btn">
+                    Maecenas eget
+                  </h2>
+                  <p class="mt-[10px] text-[18px] text-text">
+                    Nam eu magna at mi pellentesque mattis. Morbi at velit
+                  </p>
+                  <ul class="grid gap-[14px] mt-[20px]">
+                    <li>
+                      <i
+                        class="fa-light fa-circle-dot mr-2 dark:text-theme text-btn"
+                      ></i>
+                      <span class="text-text">Project Challenge</span>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-light fa-circle-dot mr-2 dark:text-theme text-btn"
+                      ></i>
+                      <span class="text-text">The Design Approach</span>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-light fa-circle-dot mr-2 dark:text-theme text-btn"
+                      ></i>
+                      <span class="text-text">The Solution</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-[30px]">
+            <p class="text-text">
+              Addition, it comes with unique and useful tools such as fuzzy
+              search, Dark, Semi-Dark & Bordered layout options, Advanced cards,
+              and Charts. In addition, it offers amazing features as follows.
+            </p>
+            <br />
+            <p class="text-text">
+              Furthermore, it offers ultimate convenience and flexibility,
+              you’ll be able to build whatever application you want with very
+              little hassle. Materio also offers invaluable features that aim to
+              help you create premium quality single-page apps exactly as you
+              imagine them🤘🏻. Furthermore, it comes with unique and useful tools
+              such as fuzzy search, Dark, Semi-Dark & Bordered layout options,
+              Advanced cards, and Charts. In addition, it offers amazing
+              features as follows.
+            </p>
+            <br />
+            <p class="text-text">
+              Necessary, making this the first true generator on the Internet.
+              It re are many variations of passages of Lo rem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injectedeed eedhumour, or randomised words which don’t look even
+              slightly believable.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="blog-button-close w-[40px] border dark:text-white text-btn border-btn dark:hover:text-theme dark:hover:border-theme transition-all duration-300 rounded-full h-[40px] absolute top-[20px] md:top-[35px] md:right-[50px] right-[20px]"
+      >
+        <i class="fa-sharp fa-regular fa-xmark"></i>
+      </button>
+    </section>
+    <!-- Service Popup End -->
+
+    <!-- portfolio Popup Start -->
+    <section
+      class="fixed portfolioPopUp min-h-screen h-full top-0 left-0 bg-bodyWhite dark:bg-body w-screen z-[999999] flex justify-center items-center"
+    >
+      <div
+        class="rounded-2xl ss bg-white dark:bg-card p-[20px] md:p-[40px] w-[calc(100vw-40px)] md:w-[calc(100vw-200px)] h-[calc(100vh-80px)]"
+      >
+        <div class="container">
+          <div class="grid md:grid-cols-12 gap-[30px]">
+            <div class="col-span-8">
+              <img
+                src="assets/images/projects/project-6.png"
+                alt=""
+                class="object-cover w-full h-full rounded-2xl"
+              />
+            </div>
+            <div class="col-span-4">
+              <img
+                src="assets/images/projects/project-7.png"
+                alt=""
+                class="object-cover w-full h-full rounded-2xl"
+              />
+            </div>
+          </div>
+          <div class="mt-[30px]">
+            <div class="md:flex grid md:gap-[20px] gap-[10px]">
+              <span class="text-[18px] text-text">Mobile Application</span>
+              <span class="text-[18px] text-text"
+                >Tuesday, August 15, 2023</span
+              >
+            </div>
+            <h2
+              class="md:text-[30px] text-[22px] capitalize mt-[20px] md:mt-[10px] font-medium text-btn dark:text-white"
+            >
+              A vibrant and colorful Mobile application
+            </h2>
+          </div>
+          <div class="mt-[30px]">
+            <p class="text-text">
+              Featured and popular products are the best-selling items for your
+              product, product range, or company. However, a featured product
+              could be a new product line or seasonal products instead.
+            </p>
+            <br />
+            <p class="text-text">
+              Materio MUI React Next.js Admin Template – is the most
+              developer-friendly 🤘🏻 & highly customizable✨ React Admin
+              Dashboard Template based on React. Even though it is not one of
+              the Open Source React Projects, you can still use it for your
+              professional react project. If you’re a developer looking for the
+              Best React Admin Template that is enriched with features, and
+              highly customizable look no further than the Materio 🤩. Besides,
+              the highest industry standards are considered to bring you one of
+              the best React Admin Templates. It is not just fast 🚀 and easy to
+              use, but highly scalable. Furthermore, it offers ultimate
+              convenience and flexibility, you’ll be able to build whatever
+              application you want with very little hassle. Materio also offers
+              invaluable features that aim to help you create premium quality
+              single-page apps exactly as you imagine them🤘🏻. Furthermore, it
+              comes with unique and useful tools such as fuzzy search, Dark,
+              Semi-Dark & Bordered layout options, Advanced cards, and Charts.
+              In addition, it offers amazing features as follows.
+            </p>
+            <div class="md:flex grid gap-[30px] mt-[30px]">
+              <span
+                ><img
+                  src="assets/images/projects/project-8.png"
+                  class="rounded-2xl"
+                  alt=""
+              /></span>
+              <span
+                ><img
+                  src="assets/images/projects/project-9.png"
+                  class="rounded-2xl"
+                  alt=""
+              /></span>
+            </div>
+            <br />
+            <p class="text-text">
+              Materio MUI React Next.js Admin Template – is the most
+              developer-friendly 🤘🏻 & highly customizable✨ React Admin
+              Dashboard Template based on React. Even though it is not one of
+              the Open Source React Projects, you can still use it for your
+              professional react project. If you’re a developer looking for the
+              Best React Admin Template that is enriched with features, and
+              highly customizable look no further than the Materio 🤩. Besides,
+              the highest industry standards are considered to bring you one of
+              the best React Admin Templates. It is not just fast 🚀 and easy to
+              use, but highly scalable. Furthermore, it offers ultimate
+              convenience and flexibility, you’ll be able to build whatever
+              application you want with very little hassle. Materio also offers
+              invaluable features that aim to help you create premium quality
+              single-page apps exactly as you imagine them🤘🏻. Furthermore, it
+              comes with unique and useful tools such as fuzzy search, Dark,
+              Semi-Dark & Bordered layout options, Advanced cards, and Charts.
+              In addition, it offers amazing features as follows.
+            </p>
+            <br />
+            <p class="text-text">
+              Furthermore, it offers ultimate convenience and flexibility,
+              you’ll be able to build whatever application you want with very
+              little hassle. Materio also offers invaluable features that aim to
+              help you create premium quality single-page apps exactly as you
+              imagine them🤘🏻. Furthermore, it comes with unique and useful tools
+              such as fuzzy search, Dark, Semi-Dark & Bordered layout options,
+              Advanced cards, and Charts. In addition, it offers amazing
+              features as follows.
+            </p>
+          </div>
+
+          <div class="mt-[30px]">
+            <div class="grid md:grid-cols-12 gap-[30px]">
+              <div class="col-span-4">
+                <div>
+                  <h2 class="text-[22px] font-medium dark:text-white text-btn">
+                    Strategy
+                  </h2>
+                  <p class="mt-[10px] text-[18px] text-text">
+                    A strategy is a general plan to achieve one or more
+                    long-term.
+                  </p>
+                  <ul class="grid gap-[14px] mt-[20px]">
+                    <li>
+                      <i
+                        class="fa-regular fa-circle-dot mr-2 dark:text-theme text-btn"
+                      ></i>
+                      <span class="text-text">The Design Approach</span>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-regular fa-circle-dot mr-2 dark:text-theme text-btn"
+                      ></i>
+                      <span class="text-text">Project Challenge</span>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-regular fa-circle-dot mr-2 dark:text-theme text-btn"
+                      ></i>
+                      <span class="text-text">The Solution</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-span-4">
+                <div>
+                  <h2 class="text-[22px] font-medium dark:text-white text-btn">
+                    Design
+                  </h2>
+                  <p class="mt-[10px] text-[18px] text-text">
+                    UI/UX Design, Art Direction, A design is a plan or
+                    specification for art.
+                  </p>
+                  <ul class="grid gap-[14px] mt-[20px]">
+                    <li>
+                      <i
+                        class="fa-regular fa-circle-dot mr-2 dark:text-theme text-btn"
+                      ></i>
+                      <span class="text-text">Project Challenge</span>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-regular fa-circle-dot mr-2 dark:text-theme text-btn"
+                      ></i>
+                      <span class="text-text">The Design Approach</span>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-regular fa-circle-dot mr-2 dark:text-theme text-btn"
+                      ></i>
+                      <span class="text-text">The Solution</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-span-4">
+                <div>
+                  <h2 class="text-[22px] font-medium dark:text-white text-btn">
+                    Client
+                  </h2>
+                  <p class="mt-[10px] text-[18px] text-text">
+                    Neil A. Garcia <br />
+                    3803 Confederate Drive Syracuse, NY 13202
+                  </p>
+                  <div class="mt-[20px]">
+                    <a
+                      href="#"
+                      class="inline-block rounded-full border-2 border-theme bg-theme py-[10px] px-[24px] text-btn transition-all duration-300 dark:hover:bg-transparent dark:hover:text-theme"
+                    >
+                      View Project
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-[30px]">
+            <p class="text-text">
+              Addition, it comes with unique and useful tools such as fuzzy
+              search, Dark, Semi-Dark & Bordered layout options, Advanced cards,
+              and Charts. In addition, it offers amazing features as follows.
+            </p>
+            <br />
+            <p class="text-text">
+              Furthermore, it offers ultimate convenience and flexibility,
+              you’ll be able to build whatever application you want with very
+              little hassle. Materio also offers invaluable features that aim to
+              help you create premium quality single-page apps exactly as you
+              imagine them🤘🏻. Furthermore, it comes with unique and useful tools
+              such as fuzzy search, Dark, Semi-Dark & Bordered layout options,
+              Advanced cards, and Charts. In addition, it offers amazing
+              features as follows.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="portfolio-button-close w-[40px] border dark:text-white text-btn border-btn dark:hover:text-theme dark:hover:border-theme transition-all duration-300 rounded-full h-[40px] absolute top-[20px] md:top-[35px] md:right-[50px] right-[20px]"
+      >
+        <i class="fa-sharp fa-regular fa-xmark"></i>
+      </button>
+    </section>
+    <!-- Service Popup End -->
+
+    <!-- back href top start  -->
+    <div
+      class="progress-wrap right-[20px] md:right-auto left-auto md:left-[50px] md:bottom-[50px] bottom-[80px]"
+    >
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+    <!-- back href top end -->
+
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <!--[if lte IE 9]>
+          <p class="browserupgrade">
+            You are using an <strong>outdated</strong> browser. Please
+            <a href="https://browsehappy.com/">upgrade your browser</a> href
+            improve your experience and security.
+          </p>
+        <![endif]-->
+
+        <!-- header-area-start -->
+
+        <header class="sidebarNav">
+          <div class="container mx-auto pt-[30px] menu-box" id="home">
+            <div
+              class="flex min-h-[123px] justify-between items-center rounded-[10px] bg-white py-[20px] dark:bg-card"
+            >
+              <div class="logo flex items-center px-[30px]">
+                <a href="index.html">
+                  <img
+                    src="assets/images/logo.svg"
+                    alt="pucu portfolio web template"
+                    class="filter-grayscale dark:filter-none w-[200px]"
+                  />
+                </a>
+              </div>
+              <nav
+                class="hidden sticky-menu items-center border border-btn px-[30px] rounded-full py-[10px]"
+              >
+                <ul class="flex gap-5">
+                  <li class="relative current">
+                    <a href="#home" class="p-2 navDefault">
+                      <i class="fa-sharp fa-regular fa-house text-[18px]"></i>
+                    </a>
+                  </li>
+                  <li class="relative">
+                    <a href="#about" class="p-2 navDefault">
+                      <i class="fa-light fa-user text-[18px]"></i>
+                    </a>
+                  </li>
+                  <li class="relative">
+                    <a href="#resume" class="p-2 navDefault">
+                      <i
+                        class="fa-sharp fa-light fa-id-card-clip text-[18px]"
+                      ></i>
+                    </a>
+                  </li>
+                  <li class="relative">
+                    <a href="#blogs" class="p-2 navDefault">
+                      <i class="fa-sharp fa-regular fa-blog text-[18px]"></i>
+                    </a>
+                  </li>
+                  <li class="relative">
+                    <a href="#services" class="p-2 navDefault">
+                      <i class="fa-light fa-grid-2-plus text-[18px]"></i>
+                    </a>
+                  </li>
+                  <li class="relative">
+                    <a href="#portfolio" class="p-2 navDefault">
+                      <i class="fa-light fa-laptop-code text-[18px]"></i>
+                    </a>
+                  </li>
+                  <li class="relative">
+                    <a href="#contact" class="p-2 navDefault">
+                      <i class="fa-light fa-envelope text-[18px]"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="content hidden md:block">
+                <div class="timeDiv">
+                  <span
+                    class="font-color text-btn dark:text-theme"
+                    id="time"
+                  ></span>
+                  <span
+                    class="font-color text-btn dark:text-theme"
+                    id="sec"
+                  ></span>
+                  <span
+                    class="font-color text-btn dark:text-theme"
+                    id="med"
+                  ></span>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="flex items-center gap-4 md:px-[30px] w-[140px] md:w-auto"
+                >
+                  <button id="theme-toggle" class="flex" type="button">
+                    <span class="flex gap-3 items-center">
+                      <span>
+                        <span class="dark:text-white text-btn">Dark</span>
+                        <span class="dark:text-white text-btn">/</span>
+                        <span class="dark:text-white text-btn">Light</span>
+                      </span>
+                      <svg
+                        id="theme-toggle-dark-icon"
+                        class="hidden w-[30px] h-[30px] text-theme"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                        ></path>
+                      </svg>
+                      <svg
+                        id="theme-toggle-light-icon"
+                        class="hidden w-[30px] h-[30px] text-theme"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- header-area-end -->
+
+        <main>
+          <section class="main">
+            <div class="container mx-auto">
+              <div class="grid grid-cols-12">
+                <div
+                  class="col-span-12 lg:col-span-3"
+                  data-wow-duration="1.5s"
+                  data-wow-delay="0.3s"
+                >
+                  <div class="info-card mt-[60px]">
+                    <div
+                      class="rounded-[20px] bg-white px-[30px] py-[40px] dark:bg-card"
+                    >
+                      <div>
+                        <div class="mt-[25px]">
+                          <div class="text-center">
+                            <h3
+                              class="text-[24px] font-semibold text-text dark:text-white wow animated fadeIn"
+                            >
+                              Hy! I’m
+                              <span class="dark:text-theme text-btn">
+                                Ricky Whyte</span
+                              >
+                            </h3>
+                            <p class="mt-[6px] text-text">Software Developer</p>
+                            <div
+                              class="flex justify-center wow animated fadeIn mt-[26px]"
+                            >
+                              <img
+                                src="assets/images/show/profile.png"
+                                alt="pucu portfolio web template"
+                                class="w-full object-cover rounded-2xl"
+                              />
+                            </div>
+                            <div class="mt-[26px]">
+                              <p class="text-text text-[20px]">
+                                admin@demo.com
+                              </p>
+                              <p class="mt-[10px] text-text">
+                                4688 Hickman Street <br />
+                                Chicago, IL 60605
+                              </p>
+                            </div>
+
+                            <div
+                              class="mt-[30px] flex justify-center gap-3 wow animated fadeIn"
+                            >
+                              <a href="#" class="block">
+                                <i
+                                  class="fa-brands fa-facebook-f socialRound"
+                                ></i>
+                              </a>
+                              <a href="#" class="block">
+                                <i class="fa-brands fa-github socialRound"></i>
+                              </a>
+                              <a href="#" class="block">
+                                <i
+                                  class="fa-brands fa-linkedin-in socialRound"
+                                ></i>
+                              </a>
+                              <a href="#" class="block">
+                                <i class="fa-brands fa-medium socialRound"></i>
+                              </a>
+                            </div>
+                            <div class="mt-[30px] wow animated fadeIn">
+                              <a
+                                href="assets/pdf/Resume-of-Amit-Biswas-MERN.pdf"
+                                class="block rounded-full border-2 border-theme bg-theme py-[10px] font-medium text-btn transition-all duration-300 dark:hover:bg-transparent dark:hover:text-theme"
+                              >
+                                Download CV
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-span-12 lg:col-span-9 lg:ml-[30px]"
+                  data-wow-duration="1.5s"
+                  data-wow-delay="0.3s"
+                >
+                  <div
+                    class="main__body mt-[60px] p-[20px] md:p-[30px] bg-white rounded-2xl dark:bg-card"
+                  >
+                    <!-- Home Section -->
+                    <div class="home__section">
+                      <div class="menuBox">
+                        <div
+                          class="border border-text dark:border-btn px-[20px] py-[5px] rounded-full inline-block"
+                        >
+                          <span
+                            ><i
+                              class="fa-sharp fa-regular fa-house text-btn dark:text-white text-[14px]"
+                            ></i
+                          ></span>
+                          <span
+                            class="pl-[6px] text-[14px] text-btn dark:text-white"
+                            >Home</span
+                          >
+                        </div>
+                      </div>
+                      <div class="mt-[40px]">
+                        <p class="text-[20px] text-text dark:text-text">
+                          Hi There I’m
+                        </p>
+                        <h2
+                          class="text-[26px] md:text-[55px] font-medium mt-[10px] text-btn dark:text-white"
+                        >
+                          Software Developers
+                          <span class="dark:text-theme">!</span>
+                        </h2>
+                      </div>
+                      <div class="mt-[10px]">
+                        <p class="text-text">
+                          I am a Professional Front-end Web Developer and have
+                          been working in this field for more than 4 years. We
+                          are highly experts in converting PSD to HTML, PSD to
+                          Bootstrap, Figma to HTML, Sketch to HTML, and Xd to
+                          HTML ,CSS responsive design and pixel-perfect using
+                          bootstrap latest version, jQuery, JavaScript. I always
+                          take care of code with SEO friendly.
+                        </p>
+                      </div>
+                      <div
+                        class="grid mt-[40px] gap-[30px] md:gap-2 grid-cols-12"
+                        data-wow-duration="1.5s"
+                        data-wow-delay="0.3s"
+                      >
+                        <div class="col-span-12 md:col-span-4">
+                          <h2
+                            class="text-[50px] font-semibold text-btn dark:text-theme wow animated fadeIn"
+                          >
+                            <span class="counter">20</span>+
+                          </h2>
+                          <p
+                            class="text-text dark:text-white wow animated fadeIn"
+                          >
+                            YEARS OF AWESOME <br />
+                            EXPERIENCE
+                          </p>
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                          <h2
+                            class="text-[50px] font-semibold text-btn dark:text-theme wow animated fadeIn"
+                          >
+                            <span class="counter">20</span>+
+                          </h2>
+                          <p
+                            class="text-text dark:text-white wow animated fadeIn"
+                          >
+                            PROJECTS COMPLETED <br />
+                            ON THIS YEAR
+                          </p>
+                        </div>
+                        <div class="col-span-12 md:col-span-4">
+                          <h2
+                            class="text-[50px] font-semibold text-btn dark:text-theme wow animated fadeIn"
+                          >
+                            <span class="counter">780</span>+
+                          </h2>
+                          <p
+                            class="text-text dark:text-white wow animated fadeIn"
+                          >
+                            HAVE TEAM MEMBER <br />
+                            ON 10 COUNTRY
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- About Section -->
+                    <div id="about" class="about__section mt-[100px]">
+                      <div class="menuBox">
+                        <div
+                          class="border border-text darK:border-btn px-[20px] py-[5px] rounded-full inline-block"
+                        >
+                          <span
+                            ><i
+                              class="fa-light fa-user text-[14px] text-btn dark:text-white"
+                            ></i
+                          ></span>
+                          <span
+                            class="pl-[6px] text-[14px] text-btn dark:text-white"
+                            >About</span
+                          >
+                        </div>
+                      </div>
+                      <div class="mt-[40px]">
+                        <h2
+                          class="text-[24px] leading-[34px] md:text-[40px] font-medium md:leading-[50px] text-btn dark:text-white"
+                        >
+                          Researching, Designing and
+                          <br class="hidden md:block" />
+                          Managing
+                          <span class="text-btn dark:text-theme"
+                            >Software Programs</span
+                          >
+                        </h2>
+                        <p class="text-text mt-[20px]">
+                          Since starting my excursion as an independent creator
+                          almost quite a while back, I've accomplished remote
+                          work for organizations, counseled for new companies,
+                          and teamed up with capable individuals to make
+                          computerized items for both business and purchaser
+                          use. I'm discreetly sure, normally inquisitive, and
+                          ceaselessly dealing with further developing my chops
+                          each plan issue in turn.
+                        </p>
+                      </div>
+                      <div class="mt-[30px]">
+                        <h3
+                          class="text-[24px] font-medium text-btn dark:text-white"
+                        >
+                          Personal Info:
+                        </h3>
+                        <div
+                          class="mt-[20px] grid md:flex gap-[20px] md:gap-[50px]"
+                        >
+                          <ul class="grid gap-5">
+                            <li class="flex gap-2 items-center">
+                              <i
+                                class="fa-regular fa-circle-dot text-text dark:text-theme"
+                              ></i>
+                              <span class="text-text">First Name: Ricky </span>
+                            </li>
+                            <li class="flex gap-2 items-center">
+                              <i
+                                class="fa-regular fa-circle-dot text-text dark:text-theme"
+                              ></i>
+                              <span class="text-text"> Last Name: Whyte</span>
+                            </li>
+                            <li class="flex gap-2 items-center">
+                              <i
+                                class="fa-regular fa-circle-dot text-text dark:text-theme"
+                              ></i>
+                              <span class="text-text">Age: 29 Years </span>
+                            </li>
+                            <li class="flex gap-2 items-center">
+                              <i
+                                class="fa-regular fa-circle-dot text-text dark:text-theme"
+                              ></i>
+                              <span class="text-text"
+                                >Nationality: Romanian
+                              </span>
+                            </li>
+                            <li class="flex gap-2 items-center">
+                              <i
+                                class="fa-regular fa-circle-dot text-text dark:text-theme"
+                              ></i>
+                              <span class="text-text"
+                                >Freelance: Available
+                              </span>
+                            </li>
+                          </ul>
+                          <ul class="grid gap-5">
+                            <li class="flex gap-2 items-center">
+                              <i
+                                class="fa-regular fa-circle-dot text-text dark:text-theme"
+                              ></i>
+                              <span class="text-text">Address: Chicago </span>
+                            </li>
+                            <li class="flex gap-2 items-center">
+                              <i
+                                class="fa-regular fa-circle-dot text-text dark:text-theme"
+                              ></i>
+                              <span class="text-text"
+                                >Phone: +88 123 456 88
+                              </span>
+                            </li>
+                            <li class="flex gap-2 items-center">
+                              <i
+                                class="fa-regular fa-circle-dot text-text dark:text-theme"
+                              ></i>
+                              <span class="text-text"
+                                >Email: info@domain.com
+                              </span>
+                            </li>
+                            <li class="flex gap-2 items-center">
+                              <i
+                                class="fa-regular fa-circle-dot text-text dark:text-theme"
+                              ></i>
+                              <span class="text-text"
+                                >Fax: 1-800-444-4444
+                              </span>
+                            </li>
+                            <li class="flex gap-2 items-center">
+                              <i
+                                class="fa-regular fa-circle-dot text-text dark:text-theme"
+                              ></i>
+                              <span class="text-text"
+                                >Languages: Montenegrin, English
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="wow animated fadeIn mt-[50px]">
+                          <a href="contact.html" class="customBtn">
+                            Hire Me!
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Resume Section -->
+                    <div id="resume" class="resume__section mt-[100px]">
+                      <div class="menuBox">
+                        <div
+                          class="border border-text darK:border-btn px-[20px] py-[5px] rounded-full inline-block"
+                        >
+                          <span
+                            ><i
+                              class="fa-sharp fa-light fa-id-card-clip text-[14px] text-btn dark:text-white"
+                            ></i
+                          ></span>
+                          <span
+                            class="pl-[6px] text-[14px] text-btn dark:text-white"
+                            >Resume</span
+                          >
+                        </div>
+                      </div>
+                      <div class="mt-[40px]">
+                        <h2
+                          class="text-[26px] md:text-[40px] font-medium leading-[36px] md:leading-[50px] text-btn dark:text-white"
+                        >
+                          Working
+                          <span class="text-btn dark:text-theme"
+                            >Experience</span
+                          >
+                        </h2>
+
+                        <div class="items mt-[40px] grid gap-[40px]">
+                          <div
+                            class="item relative border-l-[2px] pl-[35px] border-btn pb-[16px]"
+                          >
+                            <div>
+                              <span
+                                class="w-[22px] h-[22px] left-[-11px] top-0 bg-body border border-btn rounded-full absolute"
+                              ></span>
+                            </div>
+                            <p class="text-text">2021 - Present</p>
+                            <h3
+                              class="text-[20px] md:text-[25px] font-medium mt-[15px] text-btn dark:text-white"
+                            >
+                              Framer Designer & Developer
+                            </h3>
+                            <p class="text-text mt-[5px]">
+                              Liza Yoolo ITC Company
+                            </p>
+                            <p class="text-text mt-[15px]">
+                              Brought into the world in 1994, Stomach muscle
+                              type living in USA. We give on-screen plan to
+                              sites and applications, as well as front-end
+                              execution. We will keep on chasing after a large
+                              number of articulations and better code by seeking
+                              after our "likes". Featured and popular products
+                              are the best-selling items for your product.
+                            </p>
+                            <div class="mt-[30px]">
+                              <h3
+                                class="text-[18px] font-normal text-btn dark:text-white"
+                              >
+                                Performance
+                              </h3>
+                              <div class="mt-[20px]">
+                                <div id="bar1" class="barfiller">
+                                  <div class="tipWrap">
+                                    <span class="tip"></span>
+                                  </div>
+                                  <span
+                                    class="fill"
+                                    data-percentage="90"
+                                  ></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="item relative border-l-[2px] pl-[35px] border-btn pb-[16px]"
+                          >
+                            <div>
+                              <span
+                                class="w-[22px] h-[22px] left-[-11px] top-0 bg-body border border-btn rounded-full absolute"
+                              ></span>
+                            </div>
+                            <p class="text-text pt-[2px]">2015 - 2021</p>
+                            <h3
+                              class="text-[20px] md:text-[25px] font-medium mt-[15px] text-btn dark:text-white"
+                            >
+                              Web Application Manager
+                            </h3>
+                            <p class="text-text mt-[5px]">Ultra Luca Company</p>
+                            <p class="text-text mt-[15px]">
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua. Featured and
+                              popular products are the best-selling items for
+                              your product.
+                            </p>
+                            <div class="mt-[30px]">
+                              <h3
+                                class="text-[18px] font-normal text-btn dark:text-white"
+                              >
+                                Performance
+                              </h3>
+                              <div class="mt-[20px]">
+                                <div id="bar2" class="barfiller">
+                                  <div class="tipWrap">
+                                    <span class="tip"></span>
+                                  </div>
+                                  <span
+                                    class="fill"
+                                    data-percentage="80"
+                                  ></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="item relative border-l-[2px] pl-[35px] border-btn pb-[16px]"
+                          >
+                            <div>
+                              <span
+                                class="w-[22px] h-[22px] left-[-11px] top-0 bg-body border border-btn rounded-full absolute"
+                              ></span>
+                            </div>
+                            <p class="text-text pt-[2px]">2010 - 2015</p>
+                            <h3
+                              class="text-[20px] md:text-[25px] font-medium mt-[15px] text-btn dark:text-white"
+                            >
+                              Front-End WordPress Developer
+                            </h3>
+                            <p class="text-text mt-[5px]">Unix Company</p>
+                            <p class="text-text mt-[15px]">
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua. consectetur
+                              adipisicing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua. Featured and
+                              popular products are the best-selling items for
+                              your product.
+                            </p>
+                            <div class="mt-[30px]">
+                              <h3
+                                class="text-[18px] font-normal text-btn dark:text-white"
+                              >
+                                Performance
+                              </h3>
+                              <div class="mt-[20px]">
+                                <div id="bar3" class="barfiller">
+                                  <div
+                                    class="tipWrap wow !block"
+                                    style="width: 60%"
+                                  >
+                                    <span class="tip"></span>
+                                  </div>
+                                  <span
+                                    class="fill wow"
+                                    data-wow-duration="2s"
+                                    data-wow-delay="5s"
+                                    data-percentage="60"
+                                  ></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mt-[120px]">
+                        <h2
+                          class="text-[26px] md:text-[40px] font-medium leading-[36px] md:leading-[50px] text-btn dark:text-white"
+                        >
+                          Educational
+                          <span class="text-btn dark:text-theme"
+                            >Qualifications</span
+                          >
+                        </h2>
+
+                        <div class="items grid gap-[40px] mt-[40px]">
+                          <div
+                            class="item relative border-l-[2px] pl-[35px] border-btn pb-[16px]"
+                          >
+                            <div>
+                              <span
+                                class="w-[22px] h-[22px] left-[-11px] top-0 bg-body border border-btn rounded-full absolute"
+                              ></span>
+                            </div>
+                            <p class="text-text pt-[2px]">May 2018–Present</p>
+                            <h3
+                              class="text-[20px] md:text-[25px] font-medium mt-[15px] text-btn dark:text-white"
+                            >
+                              Software Engineer
+                            </h3>
+                            <p class="text-text mt-[5px]">
+                              Carnegie Mellon University
+                            </p>
+                            <p class="text-text mt-[15px]">
+                              We give on-screen plan to sites and applications,
+                              as well as front-end execution. We will keep on
+                              chasing after a large number of articulations and
+                              better code by seeking after our "likes". Featured
+                              and popular products are the best-selling items
+                              for your product.
+                            </p>
+                            <div class="mt-[30px]">
+                              <h3
+                                class="text-[18px] font-normal text-btn dark:text-white"
+                              >
+                                Performance
+                              </h3>
+                              <div class="mt-[20px]">
+                                <div id="bar4" class="barfiller">
+                                  <div class="tipWrap">
+                                    <span class="tip"></span>
+                                  </div>
+                                  <span
+                                    class="fill"
+                                    data-percentage="90"
+                                  ></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="item relative border-l-[2px] pl-[35px] border-btn pb-[16px]"
+                          >
+                            <div>
+                              <span
+                                class="w-[22px] h-[22px] left-[-11px] top-0 bg-body border border-btn rounded-full absolute"
+                              ></span>
+                            </div>
+                            <p class="text-text pt-[2px]">2014-2018</p>
+                            <h3
+                              class="text-[20px] md:text-[25px] font-medium mt-[15px] text-btn dark:text-white"
+                            >
+                              Bachelor of Computer Science
+                            </h3>
+                            <p class="text-text mt-[5px]">Ultra Luca Company</p>
+                            <p class="text-text mt-[15px]">
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua. Featured and
+                              popular products are the best-selling items for
+                              your product.
+                            </p>
+                            <div class="mt-[30px]">
+                              <h3
+                                class="text-[18px] font-normal text-btn dark:text-white"
+                              >
+                                Performance
+                              </h3>
+                              <div class="mt-[20px]">
+                                <div id="bar5" class="barfiller">
+                                  <div class="tipWrap">
+                                    <span class="tip"></span>
+                                  </div>
+                                  <span
+                                    class="fill"
+                                    data-percentage="70"
+                                  ></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="item relative border-l-[2px] pl-[35px] border-btn pb-[16px]"
+                          >
+                            <div>
+                              <span
+                                class="w-[22px] h-[22px] left-[-11px] top-0 bg-body border border-btn rounded-full absolute"
+                              ></span>
+                            </div>
+                            <p class="text-text pt-[2px]">2012-2014</p>
+                            <h3
+                              class="text-[20px] md:text-[25px] font-medium mt-[15px] text-btn dark:text-white"
+                            >
+                              Masters of Sciences
+                            </h3>
+                            <p class="text-text mt-[5px]">
+                              University of Oregon
+                            </p>
+                            <p class="text-text mt-[15px]">
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua. consectetur
+                              adipisicing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua. Featured and
+                              popular products are the best-selling items for
+                              your product.
+                            </p>
+                            <div class="mt-[30px]">
+                              <h3
+                                class="text-[18px] font-normal text-btn dark:text-white"
+                              >
+                                Performance
+                              </h3>
+                              <div class="mt-[20px]">
+                                <div id="bar6" class="barfiller">
+                                  <div class="tipWrap wow !block">
+                                    <span class="tip"></span>
+                                  </div>
+                                  <span
+                                    class="fill wow"
+                                    data-wow-duration="2s"
+                                    data-wow-delay="5s"
+                                    data-percentage="80"
+                                  ></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mt-[120px]">
+                        <h2
+                          class="text-[26px] md:text-[40px] font-medium leading-[36px] md:leading-[50px] text-btn dark:text-white"
+                        >
+                          My
+                          <span class="text-btn dark:text-theme"
+                            >Advantages</span
+                          >
+                        </h2>
+
+                        <div class="items mt-[40px]">
+                          <div class="grid grid-cols-12 gap-5">
+                            <div class="col-span-12 md:col-span-4">
+                              <div
+                                class="item p-[30px] dark:bg-transparent boxShadow dark:shadow-none border grid justify-center dark:border-btn rounded-2xl"
+                              >
+                                <div class="imgFile flex justify-center">
+                                  <img
+                                    src="assets/images/show/figma.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <h3
+                                  class="text-[40px] font-medium mt-2 text-btn dark:text-theme"
+                                >
+                                  <span class="counter w-[50px] inline-block"
+                                    >90</span
+                                  >
+                                  %
+                                </h3>
+                              </div>
+                            </div>
+                            <div class="col-span-12 md:col-span-4">
+                              <div
+                                class="item p-[30px] dark:bg-transparent boxShadow dark:shadow-none border grid justify-center dark:border-btn rounded-2xl"
+                              >
+                                <div class="imgFile flex justify-center">
+                                  <img
+                                    src="assets/images/show/react.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <h3
+                                  class="text-[40px] font-medium mt-2 text-btn dark:text-theme"
+                                >
+                                  <span class="counter w-[50px] inline-block"
+                                    >80</span
+                                  >
+                                  %
+                                </h3>
+                              </div>
+                            </div>
+                            <div class="col-span-12 md:col-span-4">
+                              <div
+                                class="item p-[30px] dark:bg-transparent boxShadow dark:shadow-none border grid justify-center dark:border-btn rounded-2xl"
+                              >
+                                <div class="imgFile flex justify-center">
+                                  <img
+                                    src="assets/images/show/php.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <h3
+                                  class="text-[40px] font-medium mt-2 text-btn dark:text-theme"
+                                >
+                                  <span class="counter w-[50px] inline-block"
+                                    >82</span
+                                  >
+                                  %
+                                </h3>
+                              </div>
+                            </div>
+                            <div class="col-span-12 md:col-span-4">
+                              <div
+                                class="item p-[30px] dark:bg-transparent boxShadow dark:shadow-none border grid justify-center dark:border-btn rounded-2xl"
+                              >
+                                <div class="imgFile flex justify-center">
+                                  <img
+                                    src="assets/images/show/vue.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <h3
+                                  class="text-[40px] font-medium mt-2 text-btn dark:text-theme"
+                                >
+                                  <span class="counter w-[50px] inline-block"
+                                    >72</span
+                                  >
+                                  %
+                                </h3>
+                              </div>
+                            </div>
+                            <div class="col-span-12 md:col-span-4">
+                              <div
+                                class="item p-[30px] dark:bg-transparent boxShadow dark:shadow-none border grid justify-center dark:border-btn rounded-2xl"
+                              >
+                                <div class="imgFile flex justify-center">
+                                  <img
+                                    src="assets/images/show/laravel.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <h3
+                                  class="text-[40px] font-medium mt-2 text-btn dark:text-theme"
+                                >
+                                  <span class="counter w-[50px] inline-block"
+                                    >68</span
+                                  >
+                                  %
+                                </h3>
+                              </div>
+                            </div>
+                            <div class="col-span-12 md:col-span-4">
+                              <div
+                                class="item p-[30px] dark:bg-transparent boxShadow dark:shadow-none border grid justify-center dark:border-btn rounded-2xl"
+                              >
+                                <div class="imgFile flex justify-center">
+                                  <img src="assets/images/show/js.png" alt="" />
+                                </div>
+                                <h3
+                                  class="text-[40px] font-medium mt-2 text-btn dark:text-theme"
+                                >
+                                  <span class="counter w-[50px] inline-block"
+                                    >83</span
+                                  >
+                                  %
+                                </h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Blog Section -->
+                    <div id="blogs" class="blog__section mt-[100px]">
+                      <div class="menuBox">
+                        <div
+                          class="border border-text darK:border-btn px-[20px] py-[5px] rounded-full inline-block"
+                        >
+                          <span
+                            ><i
+                              class="fa-sharp fa-regular fa-blog text-[14px] text-btn dark:text-white"
+                            ></i
+                          ></span>
+                          <span
+                            class="pl-[6px] text-[14px] text-btn dark:text-white"
+                            >Blog</span
+                          >
+                        </div>
+                      </div>
+                      <div class="mt-[40px]">
+                        <h2
+                          class="text-[26px] md:text-[40px] font-medium capitalize leading-[36px] md:leading-[50px] text-btn dark:text-white"
+                        >
+                          Visit my blog and leave your
+                          <br class="hidden md:block" />
+                          feedback
+                          <span class="text-btn dark:text-theme">My Blog</span>
+                        </h2>
+                      </div>
+                      <div class="mt-[40px]">
+                        <div
+                          class="grid md:grid-cols-12 gap-[50px] md:gap-[30px]"
+                        >
+                          <div class="col-span-6">
+                            <div
+                              class="item group dark:bg-btn bg-white boxShadow dark:shadow-none p-[20px] md:p-[30px] rounded-2xl"
+                            >
+                              <div class="overflow-hidden rounded-2xl">
+                                <img
+                                  src="assets/images/blog/blog-1.jpg"
+                                  alt=""
+                                  class="w-full h-full object-cover group-hover:scale-[110%] transition-all duration-500"
+                                />
+                              </div>
+                              <div class="mt-[20px]">
+                                <div class="flex justify-between">
+                                  <span
+                                    class="text-text dark:text-theme text-[16px]"
+                                    >Development</span
+                                  >
+                                  <span class="text-[16px] text-text">
+                                    <i class="fa-regular fa-timer mr-2"></i> 4
+                                    min read</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="mt-[30px]">
+                                <div
+                                  class="dark:hover:text-theme dark:text-white text-text hover:text-btn blog-button-open cursor-pointer transition-all duration-300"
+                                >
+                                  <h2
+                                    class="text-[18px] md:text-[24px] font-medium capitalize"
+                                  >
+                                    Secondary research might come from reports
+                                    found on the websites.
+                                  </h2>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-span-6">
+                            <div
+                              class="item group dark:bg-btn bg-white boxShadow dark:shadow-none p-[20px] md:p-[30px] rounded-2xl"
+                            >
+                              <div class="overflow-hidden rounded-2xl">
+                                <img
+                                  src="assets/images/blog/blog-2.jpg"
+                                  alt=""
+                                  class="w-full h-full object-cover group-hover:scale-[110%] transition-all duration-500"
+                                />
+                              </div>
+                              <div class="mt-[20px]">
+                                <div class="flex justify-between">
+                                  <span
+                                    class="text-text dark:text-theme text-[16px]"
+                                    >Development</span
+                                  >
+                                  <span class="text-[16px] text-text">
+                                    <i class="fa-regular fa-timer mr-2"></i> 4
+                                    min read</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="mt-[30px]">
+                                <div
+                                  class="dark:hover:text-theme dark:text-white text-text hover:text-btn blog-button-open cursor-pointer transition-all duration-300"
+                                >
+                                  <h2
+                                    class="text-[18px] md:text-[24px] font-medium capitalize"
+                                  >
+                                    consider adding a survey form to your
+                                    website or sending a addresses.
+                                  </h2>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-span-6">
+                            <div
+                              class="item group dark:bg-btn bg-white boxShadow dark:shadow-none p-[20px] md:p-[30px] rounded-2xl"
+                            >
+                              <div class="overflow-hidden rounded-2xl">
+                                <img
+                                  src="assets/images/blog/blog-3.jpg"
+                                  alt=""
+                                  class="w-full h-full object-cover group-hover:scale-[110%] transition-all duration-500"
+                                />
+                              </div>
+                              <div class="mt-[20px]">
+                                <div class="flex justify-between">
+                                  <span
+                                    class="text-text dark:text-theme text-[16px]"
+                                    >Design</span
+                                  >
+                                  <span class="text-[16px] text-text">
+                                    <i class="fa-regular fa-timer mr-2"></i> 4
+                                    min read</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="mt-[30px]">
+                                <div
+                                  class="dark:hover:text-theme dark:text-white text-text hover:text-btn blog-button-open cursor-pointer transition-all duration-300"
+                                >
+                                  <h2
+                                    class="text-[18px] md:text-[24px] font-medium capitalize"
+                                  >
+                                    Surveys are one of the most effective ways
+                                    to conduct business.
+                                  </h2>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-span-6">
+                            <div
+                              class="item group dark:bg-btn bg-white boxShadow dark:shadow-none p-[20px] md:p-[30px] rounded-2xl"
+                            >
+                              <div class="overflow-hidden rounded-2xl">
+                                <img
+                                  src="assets/images/blog/blog-4.jpg"
+                                  alt=""
+                                  class="w-full h-full object-cover group-hover:scale-[110%] transition-all duration-500"
+                                />
+                              </div>
+                              <div class="mt-[20px]">
+                                <div class="flex justify-between">
+                                  <span
+                                    class="text-text dark:text-theme text-[16px]"
+                                    >Application</span
+                                  >
+                                  <span class="text-[16px] text-text">
+                                    <i class="fa-regular fa-timer mr-2"></i> 4
+                                    min read</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="mt-[30px]">
+                                <div
+                                  class="dark:hover:text-theme dark:text-white text-text hover:text-btn blog-button-open cursor-pointer transition-all duration-300"
+                                >
+                                  <h2
+                                    class="text-[18px] md:text-[24px] font-medium capitalize"
+                                  >
+                                    Surveys allow you to solicit feedback from
+                                    prospective and existing customers.
+                                  </h2>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Service Section -->
+                    <div id="services" class="service__section mt-[100px]">
+                      <div class="menuBox">
+                        <div
+                          class="border border-text darK:border-btn px-[20px] py-[5px] rounded-full inline-block"
+                        >
+                          <span
+                            ><i
+                              class="fa-light fa-grid-2-plus text-[14px] text-btn dark:text-white"
+                            ></i
+                          ></span>
+                          <span
+                            class="pl-[6px] text-[14px] text-btn dark:text-white"
+                            >Services</span
+                          >
+                        </div>
+                      </div>
+                      <div class="mt-[40px]">
+                        <h2
+                          class="text-[26px] md:text-[40px] font-medium leading-[36px] md:leading-[50px] text-btn dark:text-white"
+                        >
+                          All the general services that
+                          <br class="hidden md:block" />
+                          I provide to
+                          <span class="text-btn dark:text-theme">clients</span>
+                        </h2>
+                        <p class="text-text mt-[20px]">
+                          Since starting my excursion as an independent creator
+                          almost quite a while back, I've accomplished remote
+                          work for organizations, counseled for new companies,
+                          and teamed up with capable individuals to make
+                          computerized items for both business and purchaser
+                          use. I'm discreetly sure, normally inquisitive, and
+                          ceaselessly dealing with further developing my chops
+                          each plan issue in turn.
+                        </p>
+                      </div>
+                      <div class="mt-[80px]">
+                        <div
+                          class="grid md:grid-cols-12 gap-[60px] md:gap-[30px]"
+                        >
+                          <div class="col-span-6">
+                            <div
+                              class="p-[20px] border border-text dark:border-btn rounded-lg relative"
+                            >
+                              <div
+                                class="sup absolute top-[-30px] left-[30px] bg-white w-[80px] h-[80px] rounded-2xl flex justify-center items-center"
+                              >
+                                <img
+                                  src="assets/images/show/coding.svg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pt-[60px]">
+                                <h2
+                                  class="text-[20px] md:text-[26px] font-medium dark:text-white text-btn"
+                                >
+                                  Front-end Development
+                                </h2>
+                                <p class="mt-[10px] text-text">
+                                  Counseled for new companies, and teamed up
+                                  with capable individuals to make computerized
+                                  items for both business and purchaser use.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-span-6">
+                            <div
+                              class="p-[20px] border border-text dark:border-btn rounded-lg relative"
+                            >
+                              <div
+                                class="sup absolute top-[-30px] left-[30px] bg-white w-[80px] h-[80px] rounded-2xl flex justify-center items-center"
+                              >
+                                <img
+                                  src="assets/images/show/backend.svg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pt-[60px]">
+                                <h2
+                                  class="text-[20px] md:text-[26px] font-medium dark:text-white text-btn"
+                                >
+                                  Back-end Development
+                                </h2>
+                                <p class="mt-[10px] text-text">
+                                  Counseled for new companies, and teamed up
+                                  with capable individuals to make computerized
+                                  items for both business and purchaser use.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-span-6 md:mt-[30px]">
+                            <div
+                              class="p-[20px] border border-text dark:border-btn rounded-lg relative"
+                            >
+                              <div
+                                class="sup absolute top-[-30px] left-[30px] bg-white w-[80px] h-[80px] rounded-2xl flex justify-center items-center"
+                              >
+                                <img
+                                  src="assets/images/show/backend.svg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="pt-[60px]">
+                                <h2
+                                  class="text-[20px] md:text-[26px] font-medium dark:text-white text-btn"
+                                >
+                                  Planning and Strategy
+                                </h2>
+                                <p class="mt-[10px] text-text">
+                                  Counseled for new companies, and teamed up
+                                  with capable individuals to make computerized
+                                  items for both business and purchaser use.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-span-6 md:mt-[30px]">
+                            <div
+                              class="p-[20px] border border-text dark:border-btn rounded-lg relative"
+                            >
+                              <div
+                                class="sup absolute top-[-30px] left-[30px] bg-white w-[80px] h-[80px] rounded-2xl flex justify-center items-center"
+                              >
+                                <img src="assets/images/show/ux.svg" alt="" />
+                              </div>
+                              <div class="pt-[60px]">
+                                <h2
+                                  class="text-[20px] md:text-[26px] font-medium dark:text-white text-btn"
+                                >
+                                  (UX) Design
+                                </h2>
+                                <p class="mt-[10px] text-text">
+                                  Counseled for new companies, and teamed up
+                                  with capable individuals to make computerized
+                                  items for both business and purchaser use.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mt-[80px]">
+                        <h2
+                          class="text-[26px] md:text-[40px] font-medium leading-[36px] md:leading-[50px] text-btn dark:text-white"
+                        >
+                          What People
+                          <span class="text-btn dark:text-theme">Says?</span>
+                        </h2>
+                        <div class="mt-[40px]">
+                          <!-- Slider  -->
+                          <div class="swiper review overflow-hidden">
+                            <div class="swiper-wrapper py-2">
+                              <div
+                                class="swiper-slide py-[40px] px-[30px] rounded-xl border shadow dark:border-btn dark:shadow-none"
+                              >
+                                <p
+                                  class="italic text-[18px] text-text pb-[25px]"
+                                >
+                                  I recently had the pleasure of using LoraXD
+                                  for my business, and I must say it has
+                                  exceeded my expectations in every way
+                                  possible.
+                                </p>
+                                <hr />
+                                <div class="flex gap-4 items-center mt-[30px]">
+                                  <div
+                                    class="overflow-hidden w-[80px] rounded-full inline-block"
+                                  >
+                                    <img
+                                      src="assets/images/user/user-1.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="grid gap-[16px]">
+                                    <p
+                                      class="text-[24px] font-normal text-btn dark:text-white"
+                                    >
+                                      Larry N. Alexandre
+                                    </p>
+                                    <div class="flex gap-[5px]">
+                                      <i
+                                        class="fa-sharp fa-solid fa-star text-theme"
+                                      ></i>
+                                      <i
+                                        class="fa-sharp fa-solid fa-star text-theme"
+                                      ></i>
+                                      <i
+                                        class="fa-sharp fa-solid fa-star text-theme"
+                                      ></i>
+                                      <i
+                                        class="fa-sharp fa-solid fa-star text-theme"
+                                      ></i>
+                                      <i
+                                        class="fa-sharp fa-solid fa-star text-theme"
+                                      ></i>
+                                    </div>
+                                    <div
+                                      class="absolute bottom-[38px] right-[115px]"
+                                    >
+                                      <img
+                                        src="assets/images/show/qut.svg"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="swiper-slide py-[40px] px-[30px] rounded-xl border shadow dark:border-btn dark:shadow-none"
+                              >
+                                <p
+                                  class="italic text-[18px] text-text pb-[25px]"
+                                >
+                                  I had the pleasure of interacting with a
+                                  product that truly stood out in terms of its
+                                  exceptional UX design. Resulting in a seamless
+                                  and intuitive experience.
+                                </p>
+                                <hr />
+                                <div class="flex gap-4 items-center mt-[30px]">
+                                  <div
+                                    class="overflow-hidden w-[80px] rounded-full inline-block"
+                                  >
+                                    <img
+                                      src="assets/images/user/user-4.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="grid gap-[16px]">
+                                    <p
+                                      class="text-[24px] font-normal text-btn dark:text-white"
+                                    >
+                                      Neil E. Saulter
+                                    </p>
+                                    <div class="flex gap-[5px]">
+                                      <i
+                                        class="fa-sharp fa-solid fa-star text-theme"
+                                      ></i>
+                                      <i
+                                        class="fa-sharp fa-solid fa-star text-theme"
+                                      ></i>
+                                      <i
+                                        class="fa-sharp fa-solid fa-star text-theme"
+                                      ></i>
+                                      <i
+                                        class="fa-sharp fa-solid fa-star text-theme"
+                                      ></i>
+                                      <i
+                                        class="fa-sharp fa-solid fa-star text-theme"
+                                      ></i>
+                                    </div>
+                                    <div
+                                      class="absolute bottom-[38px] right-[115px]"
+                                    >
+                                      <img
+                                        src="assets/images/show/qut.svg"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="swiper-slide py-[40px] px-[30px] rounded-xl border shadow dark:border-btn dark:shadow-none"
+                              >
+                                <p
+                                  class="italic text-[18px] text-text pb-[25px]"
+                                >
+                                  I recently had the pleasure of using LoraXD
+                                  for my business, and I must say it has
+                                  exceeded my expectations in every way
+                                  possible.
+                                </p>
+                                <hr />
+                                <div class="flex gap-4 items-center mt-[30px]">
+                                  <div
+                                    class="overflow-hidden w-[80px] rounded-full inline-block"
+                                  >
+                                    <img
+                                      src="assets/images/user/user-6.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="grid gap-[16px]">
+                                    <p
+                                      class="text-[24px] font-normal text-btn dark:text-white"
+                                    >
+                                      Maria Isala
+                                    </p>
+                                    <div class="flex gap-[5px]">
+                                      <i
+                                        class="fa-sharp fa-solid fa-star text-theme"
+                                      ></i>
+                                      <i
+                                        class="fa-sharp fa-solid fa-star text-theme"
+                                      ></i>
+                                      <i
+                                        class="fa-sharp fa-solid fa-star text-theme"
+                                      ></i>
+                                      <i
+                                        class="fa-sharp fa-solid fa-star text-theme"
+                                      ></i>
+                                      <i
+                                        class="fa-sharp fa-solid fa-star text-theme"
+                                      ></i>
+                                    </div>
+                                    <div
+                                      class="absolute bottom-[38px] right-[115px]"
+                                    >
+                                      <img
+                                        src="assets/images/show/qut.svg"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="flex gap-[60px] mt-[30px] relative">
+                              <button
+                                class="z-10 swiper-next border dark:hover:border-theme transition-all duration-150 dark:hover:text-theme hover:text-btn text-text border-btn w-[50px] h-[50px] flex justify-center items-center rounded-full"
+                              >
+                                <i class="fa-light fa-chevron-left"></i>
+                              </button>
+                              <button
+                                class="z-10 swiper-prev border dark:hover:border-theme transition-all duration-150 dark:hover:text-theme hover:text-btn text-text border-btn w-[50px] h-[50px] flex justify-center items-center rounded-full"
+                              >
+                                <i class="fa-light fa-chevron-right"></i>
+                              </button>
+                              <span
+                                class="pagination absolute text-btn dark:text-white left-[64px] z-0"
+                              ></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mt-[100px]">
+                        <h2
+                          class="text-[26px] md:text-[40px] font-medium leading-[36px] md:leading-[50px] capitalize text-btn dark:text-white"
+                        >
+                          A collection for web <br class="hidden md:block" />
+                          Apps pricing
+                          <span class="text-btn dark:text-theme">Tables</span>
+                        </h2>
+                        <div class="grid md:flex gap-[40px] mt-[40px]">
+                          <div
+                            class="border border-transparent dark:border-btn boxShadow dark:shadow-none px-[30px] py-[40px] rounded-2xl w-full"
+                          >
+                            <h2
+                              class="text-[26px] font-normal uppercase text-btn dark:text-white"
+                            >
+                              Regular Plan
+                            </h2>
+                            <div class="mt-[16px] pb-[16px]">
+                              <span class="text-btn dark:text-white">$</span>
+                              <span class="text-[40px] text-btn dark:text-white"
+                                >29.99</span
+                              >
+                              <span class="text-btn dark:text-white"
+                                >/Hours</span
+                              >
+                            </div>
+                            <hr />
+                            <div class="mt-[30px]">
+                              <ul class="grid gap-[20px]">
+                                <li class="capitalize">
+                                  <i
+                                    class="fa-solid fa-caret-right text-btn dark:text-theme mr-2"
+                                  ></i>
+                                  <span class="text-text text-[16px]"
+                                    >Simple portfolio website.</span
+                                  >
+                                </li>
+                                <li class="capitalize">
+                                  <i
+                                    class="fa-solid fa-caret-right text-btn dark:text-theme mr-2"
+                                  ></i>
+                                  <span class="text-text text-[16px]"
+                                    >Responsive design.</span
+                                  >
+                                </li>
+                                <li class="capitalize">
+                                  <i
+                                    class="fa-solid fa-caret-right text-btn dark:text-theme mr-2"
+                                  ></i>
+                                  <span class="text-text text-[16px]"
+                                    >Integration with GitHub or Bitbucket.</span
+                                  >
+                                </li>
+                                <li class="capitalize">
+                                  <i
+                                    class="fa-solid fa-caret-right text-btn dark:text-theme mr-2"
+                                  ></i>
+                                  <span class="text-text text-[16px]"
+                                    >Contact form and basic information.</span
+                                  >
+                                </li>
+                                <li class="capitalize">
+                                  <i
+                                    class="fa-solid fa-caret-right text-btn dark:text-theme mr-2"
+                                  ></i>
+                                  <span class="text-text text-[16px]"
+                                    >Tailored solution based on specific.</span
+                                  >
+                                </li>
+                                <li class="capitalize">
+                                  <i
+                                    class="fa-solid fa-caret-right text-btn dark:text-theme mr-2"
+                                  ></i>
+                                  <span class="text-text text-[16px]"
+                                    >Support 6 months.</span
+                                  >
+                                </li>
+                              </ul>
+                              <div class="mt-[40px] wow animated fadeIn">
+                                <a
+                                  href="#"
+                                  class="block text-center rounded-full border-2 border-theme bg-theme py-[13px] font-normal text-btn transition-all duration-300 dark:hover:bg-transparent dark:hover:text-theme text-[16px]"
+                                >
+                                  Pick This Package!
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="border dark:border-btn border-transparent boxShadow dark:shadow-none px-[30px] py-[40px] rounded-2xl w-full"
+                          >
+                            <h2
+                              class="text-[26px] font-normal uppercase text-btn dark:text-white"
+                            >
+                              Premium Plan
+                            </h2>
+                            <div class="mt-[16px] pb-[16px]">
+                              <span class="text-btn dark:text-white">$</span>
+                              <span class="text-[40px] text-btn dark:text-white"
+                                >49.79</span
+                              >
+                              <span class="text-btn dark:text-white"
+                                >/Hours</span
+                              >
+                            </div>
+                            <hr />
+                            <div class="mt-[30px]">
+                              <ul class="grid gap-[20px]">
+                                <li class="capitalize">
+                                  <i
+                                    class="fa-solid fa-caret-right text-btn dark:text-theme mr-2"
+                                  ></i>
+                                  <span class="text-text text-[16px]"
+                                    >All features from the Basic package.</span
+                                  >
+                                </li>
+                                <li class="capitalize">
+                                  <i
+                                    class="fa-solid fa-caret-right text-btn dark:text-theme mr-2"
+                                  ></i>
+                                  <span class="text-text text-[16px]"
+                                    >Custom domain setup.</span
+                                  >
+                                </li>
+                                <li class="capitalize">
+                                  <i
+                                    class="fa-solid fa-caret-right text-btn dark:text-theme mr-2"
+                                  ></i>
+                                  <span class="text-text text-[16px]"
+                                    >Project showcase with descriptions.</span
+                                  >
+                                </li>
+                                <li class="capitalize">
+                                  <i
+                                    class="fa-solid fa-caret-right text-btn dark:text-theme mr-2"
+                                  ></i>
+                                  <span class="text-text text-[16px]"
+                                    >Additional pages for projects .</span
+                                  >
+                                </li>
+                                <li class="capitalize">
+                                  <i
+                                    class="fa-solid fa-caret-right text-btn dark:text-theme mr-2"
+                                  ></i>
+                                  <span class="text-text text-[16px]"
+                                    >Advanced customization options.</span
+                                  >
+                                </li>
+                                <li class="capitalize">
+                                  <i
+                                    class="fa-solid fa-caret-right text-btn dark:text-theme mr-2"
+                                  ></i>
+                                  <span class="text-text text-[16px]"
+                                    >SEO optimization.</span
+                                  >
+                                </li>
+                              </ul>
+                              <div class="mt-[40px] wow animated fadeIn">
+                                <a
+                                  href="#"
+                                  class="block text-center rounded-full border-2 border-theme bg-theme py-[13px] font-normal text-btn transition-all duration-300 dark:hover:bg-transparent dark:hover:text-theme text-[16px]"
+                                >
+                                  Pick This Package!
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mt-[100px]">
+                        <h2
+                          class="text-[26px] md:text-[40px] font-medium leading-[36px] md:leading-[50px] capitalize text-btn dark:text-white"
+                        >
+                          WORK WITH 60+ <br />
+                          BRANDS
+                          <span class="text-btn dark:text-theme"
+                            >WORLDWIDE</span
+                          >
+                        </h2>
+                        <div class="mt-[50px]">
+                          <div
+                            class="grid md:grid-cols-12 gap-[60px] md:gap-[40px]"
+                          >
+                            <div class="col-span-3">
+                              <img
+                                src="assets/images/brand/brand-1.png"
+                                alt=""
+                                class="dark:filter-none filter-grayscale"
+                              />
+                            </div>
+                            <div class="col-span-3">
+                              <img
+                                src="assets/images/brand/brand-2.png"
+                                alt=""
+                                class="dark:filter-none filter-grayscale"
+                              />
+                            </div>
+                            <div class="col-span-3">
+                              <img
+                                src="assets/images/brand/brand-3.png"
+                                alt=""
+                                class="dark:filter-none filter-grayscale"
+                              />
+                            </div>
+                            <div class="col-span-3">
+                              <img
+                                src="assets/images/brand/brand-4.png"
+                                alt=""
+                                class="dark:filter-none filter-grayscale"
+                              />
+                            </div>
+                            <div class="col-span-3">
+                              <img
+                                src="assets/images/brand/brand-5.png"
+                                alt=""
+                                class="dark:filter-none filter-grayscale"
+                              />
+                            </div>
+                            <div class="col-span-3">
+                              <img
+                                src="assets/images/brand/brand-6.png"
+                                alt=""
+                                class="dark:filter-none filter-grayscale"
+                              />
+                            </div>
+                            <div class="col-span-3">
+                              <img
+                                src="assets/images/brand/brand-7.png"
+                                alt=""
+                                class="dark:filter-none filter-grayscale"
+                              />
+                            </div>
+                            <div class="col-span-3">
+                              <img
+                                src="assets/images/brand/brand-8.png"
+                                alt=""
+                                class="dark:filter-none filter-grayscale"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- portfolio Section -->
+                    <div id="portfolio" class="portfolio__section mt-[100px]">
+                      <div class="menuBox">
+                        <div
+                          class="border border-text darK:border-btn px-[20px] py-[5px] rounded-full inline-block"
+                        >
+                          <span>
+                            <i
+                              class="fa-light fa-laptop-code text-[14px] text-btn dark:text-white"
+                            ></i
+                          ></span>
+                          <span
+                            class="pl-[6px] text-[14px] text-btn dark:text-white"
+                            >Portfolio</span
+                          >
+                        </div>
+                      </div>
+                      <div class="mt-[40px]">
+                        <h2
+                          class="text-[26px] md:text-[40px] font-medium leading-[36px] md:leading-[50px] capitalize text-btn dark:text-white"
+                        >
+                          Never compromise for our
+                          <br class="hidden md:block" />
+                          portfolio
+                          <span class="text-btn dark:text-theme">quality!</span>
+                        </h2>
+
+                        <div class="items mt-[40px]">
+                          <div class="grid md:grid-cols-12 gap-[30px]">
+                            <div class="col-span-6">
+                              <div
+                                class="p-[30px] dark:bg-btn boxShadow dark:shadow-none rounded-2xl group"
+                              >
+                                <div class="rounded-2xl overflow-hidden">
+                                  <img
+                                    src="assets/images/projects/project-1.png"
+                                    alt=""
+                                    class="w-full object-cover group-hover:scale-[110%] transition-all duration-500"
+                                  />
+                                </div>
+                                <div>
+                                  <p class="text-text text-[18px] mt-[16px]">
+                                    Mobile Application
+                                  </p>
+                                  <div
+                                    class="hover:text-btn dark:hover:text-theme text-text dark:text-white cursor-pointer portfolio-button-open transition-all duration-300"
+                                  >
+                                    <h2
+                                      class="mt-[15px] text-[20px] md:text-[26px] font-medium capitalize"
+                                    >
+                                      A vibrant and colorful Mobile application
+                                    </h2>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-span-6">
+                              <div
+                                class="p-[30px] dark:bg-btn boxShadow dark:shadow-none rounded-2xl group"
+                              >
+                                <div class="rounded-2xl overflow-hidden">
+                                  <img
+                                    src="assets/images/projects/project-2.png"
+                                    alt=""
+                                    class="w-full object-cover group-hover:scale-[110%] transition-all duration-500"
+                                  />
+                                </div>
+                                <div>
+                                  <p class="text-text text-[18px] mt-[16px]">
+                                    Web Design & Development
+                                  </p>
+                                  <div
+                                    class="hover:text-btn dark:hover:text-theme text-text dark:text-white cursor-pointer portfolio-button-open transition-all duration-300"
+                                  >
+                                    <h2
+                                      class="mt-[15px] text-[20px] md:text-[26px] font-medium capitalize"
+                                    >
+                                      flexible and versatile web application
+                                      template
+                                    </h2>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="grid grid-cols-12 mt-[30px]">
+                            <div class="col-span-12">
+                              <div
+                                class="p-[30px] dark:bg-btn boxShadow dark:shadow-none rounded-2xl group"
+                              >
+                                <div class="rounded-2xl overflow-hidden">
+                                  <img
+                                    src="assets/images/projects/project-3.png"
+                                    alt=""
+                                    class="w-full object-cover group-hover:scale-[110%] transition-all duration-500"
+                                  />
+                                </div>
+                                <div>
+                                  <p class="text-text text-[18px] mt-[16px]">
+                                    Mobile Application
+                                  </p>
+                                  <div
+                                    class="hover:text-btn dark:hover:text-theme text-text dark:text-white cursor-pointer portfolio-button-open transition-all duration-300"
+                                  >
+                                    <h2
+                                      class="mt-[15px] text-[20px] md:text-[26px] font-medium capitalize"
+                                    >
+                                      An all-in-one Mobile application template
+                                      that combines multiple functionalities
+                                      into a cohesive.
+                                    </h2>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="grid md:grid-cols-12 gap-[30px] mt-[30px]"
+                          >
+                            <div class="col-span-6">
+                              <div
+                                class="p-[30px] dark:bg-btn boxShadow dark:shadow-none rounded-2xl group"
+                              >
+                                <div class="rounded-2xl overflow-hidden">
+                                  <img
+                                    src="assets/images/projects/project-4.png"
+                                    alt=""
+                                    class="w-full object-cover group-hover:scale-[110%] transition-all duration-500"
+                                  />
+                                </div>
+                                <div>
+                                  <p class="text-text text-[18px] mt-[16px]">
+                                    Mobile Application
+                                  </p>
+                                  <div
+                                    class="hover:text-btn dark:hover:text-theme text-text dark:text-white cursor-pointer portfolio-button-open transition-all duration-300"
+                                  >
+                                    <h2
+                                      class="mt-[15px] text-[20px] md:text-[26px] font-medium capitalize"
+                                    >
+                                      A pixel-perfect Mobile application
+                                      template
+                                    </h2>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-span-6">
+                              <div
+                                class="p-[30px] dark:bg-btn boxShadow dark:shadow-none rounded-2xl group"
+                              >
+                                <div class="rounded-2xl overflow-hidden">
+                                  <img
+                                    src="assets/images/projects/project-5.png"
+                                    alt=""
+                                    class="w-full object-cover group-hover:scale-[110%] transition-all duration-500"
+                                  />
+                                </div>
+                                <div>
+                                  <p class="text-text text-[18px] mt-[16px]">
+                                    Web Design & Development
+                                  </p>
+                                  <div
+                                    class="hover:text-btn dark:hover:text-theme text-text dark:text-white cursor-pointer portfolio-button-open transition-all duration-300"
+                                  >
+                                    <h2
+                                      class="mt-[15px] text-[20px] md:text-[26px] font-medium capitalize"
+                                    >
+                                      A sleek and modern web application
+                                      designed
+                                    </h2>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Contact Section -->
+                    <div id="contact" class="contact__section mt-[100px]">
+                      <div class="menuBox">
+                        <div
+                          class="border border-text darK:border-btn px-[20px] py-[5px] rounded-full inline-block"
+                        >
+                          <span
+                            ><i
+                              class="fa-light fa-user text-[14px] text-btn dark:text-white"
+                            ></i
+                          ></span>
+                          <span
+                            class="pl-[6px] text-[14px] text-btn dark:text-white"
+                            >Contact</span
+                          >
+                        </div>
+                      </div>
+                      <div class="mt-[40px]">
+                        <h2
+                          class="text-[26px] md:text-[40px] font-medium leading-[36px] md:leading-[50px] text-btn dark:text-white"
+                        >
+                          Let's Work
+                          <span class="text-btn dark:text-theme"
+                            >Together!</span
+                          >
+                        </h2>
+                      </div>
+                      <div class="mt-[30px]">
+                        <form
+                          id="contact-form"
+                          class="contact-form"
+                          action="mail.php"
+                          method="POST"
+                        >
+                          <div class="grid md:flex gap-[30px]">
+                            <input
+                              class="inputBox"
+                              type="text"
+                              placeholder="Enter Your Name"
+                              id="name"
+                              name="name"
+                              required="required"
+                            />
+                            <input
+                              class="inputBox"
+                              type="email"
+                              id="email"
+                              name="email"
+                              required="required"
+                              placeholder="Enter Your Email"
+                            />
+                          </div>
+                          <div class="mt-[30px]">
+                            <input
+                              class="inputBox"
+                              placeholder="Website Link:"
+                              type="url"
+                              id="website"
+                              name="website"
+                              required="required"
+                            />
+                          </div>
+                          <div class="mt-[30px]">
+                            <textarea
+                              name="message"
+                              id="massage"
+                              placeholder="Enter Your Massage"
+                              required
+                              rows="10"
+                              cols="50"
+                              class="w-full p-[15px] bg-transparent border text-text focus:outline-none dark:border-btn rounded-lg pl-[10px]"
+                            ></textarea>
+                          </div>
+
+                          <div class="mt-[30px] wow animated fadeIn">
+                            <button
+                              type="submit"
+                              class="inline-block rounded-full border-2 border-theme bg-theme px-[26px] py-[10px] font-normal text-btn transition-all duration-300 dark:hover:bg-transparent dark:hover:text-theme"
+                            >
+                              SEND MESSAGE
+                            </button>
+                            <p
+                              class="mt-[15px] dark:text-theme text-btn form-Messages"
+                            ></p>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <!-- footer section one start -->
+        <footer
+          data-wow-duration="1.5s"
+          data-wow-delay="0.3s"
+          class="pb-[100px] md:pb-0"
+        >
+          <div
+            class="container mx-auto mt-[100px] flex justify-center pb-[40px]"
+          >
+            <div>
+              <p class="text-center text-text wow animated fadeIn">
+                Copyright
+                <span class="text-btn dark:text-theme">ESTRANDA</span> &#169;
+                2023. All rights reserved
+              </p>
+              <div
+                class="mt-[20px] flex justify-center text-center wow animated fadeIn"
+              >
+                <img
+                  src="assets/images/logo.svg"
+                  alt="pucu portfolio web template"
+                  class="filter-grayscale dark:filter-none"
+                />
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- footer section one end -->
+      </div>
+    </div>
+
+    <!-- JS here -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/waypoints.js"></script>
+    <script src="assets/js/backtotop.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/barfiller.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/swiper-bundle.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/jquery.scrollTo.js"></script>
+    <script src="assets/js/scrollbar.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/vanilla-tilt.min.js"></script>
+    <script src="assets/js/counterup.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
